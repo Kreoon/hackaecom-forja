@@ -1,0 +1,61 @@
+{
+  "version": "1",
+  "projectId": "demo-termo",
+  "locale": "es-CO",
+  "currency": "COP",
+  "seo": {
+    "title": "Termo inteligente con temperatura LED | 12 h caliente",
+    "description": "Termo de acero inoxidable con pantalla LED que te muestra la temperatura. 12 h caliente, 24 h frío. Pago contraentrega en toda Colombia.",
+    "handle": "termo-inteligente-led"
+  },
+  "tokens": {
+    "palette": { "background": "#F6F3EE", "surface": "#FFFFFF", "text": "#1B1A17", "muted": "#6B665E", "primary": "#1F4D3A", "primaryText": "#FFFFFF", "accent": "#E07A2E" },
+    "fonts": { "heading": "Bricolage Grotesque", "body": "Figtree" },
+    "radius": "lg",
+    "style": "bold",
+    "motion": "subtle",
+    "rationale": "Verde profundo y naranja tomados de la web de referencia; fondo crema para que el acero del termo resalte."
+  },
+  "assets": [
+    { "id": "a_hero", "kind": "image", "source": "upload", "url": "https://example.com/termo-hero.webp", "alt": "Termo negro con pantalla LED mostrando 62 °C sobre una mesa de madera" },
+    { "id": "a_loop", "kind": "video", "source": "generated", "url": "https://example.com/termo-loop.mp4", "alt": "Vapor saliendo del termo abierto", "prompt": "slow push-in, steam rising" }
+  ],
+  "sections": [
+    { "id": "s_ann", "type": "announcement", "text": "Pago contraentrega y envío gratis a toda Colombia", "locked": false, "emphasis": [] },
+    {
+      "id": "s_hero", "type": "hero", "locked": false, "emphasis": ["12 horas"],
+      "headline": "Tu café caliente 12 horas, sin adivinar",
+      "subheadline": "La tapa LED te dice la temperatura exacta antes del primer sorbo. Acero inoxidable 304, 500 ml.",
+      "cta": { "label": "Quiero el mío", "action": "scroll_to:s_offer" },
+      "mediaAssetId": "a_hero", "layout": "split", "badges": ["Contraentrega", "Garantía 30 días"]
+    },
+    {
+      "id": "s_ben", "type": "benefits", "title": "Hecho para tu día", "locked": false, "emphasis": [],
+      "items": [
+        { "icon": "thermometer", "title": "Temperatura a la vista", "body": "Toca la tapa y ves los grados. Cero quemaduras." },
+        { "icon": "clock", "title": "12 h caliente, 24 h frío", "body": "Doble pared al vacío." },
+        { "icon": "shield", "title": "Sin sabor a metal", "body": "Acero 304 grado alimenticio." }
+      ]
+    },
+    { "id": "s_vid", "type": "video", "assetId": "a_loop", "autoplay": true, "locked": false, "emphasis": [] },
+    {
+      "id": "s_offer", "type": "offer", "locked": false, "emphasis": [],
+      "priceTiers": [
+        { "label": "1 termo", "qty": 1, "price": 89900, "highlight": false },
+        { "label": "2 termos", "qty": 2, "price": 159900, "compareAt": 179800, "highlight": true },
+        { "label": "3 termos", "qty": 3, "price": 219900, "compareAt": 269700, "highlight": false }
+      ],
+      "guarantee": "Si no te encanta, te devolvemos tu dinero.",
+      "cta": { "label": "Pedir con pago contraentrega", "action": "buy_now" }
+    },
+    {
+      "id": "s_faq", "type": "faq", "locked": false, "emphasis": [],
+      "items": [
+        { "q": "¿Cuánto tarda en llegar?", "a": "Depende de tu ciudad; te confirmamos por WhatsApp al despachar." },
+        { "q": "¿Cómo pago?", "a": "Pagas en efectivo cuando lo recibes." },
+        { "q": "¿Se le cambia la batería?", "a": "Sí, usa una pila de botón que se cambia en segundos." }
+      ]
+    },
+    { "id": "s_wa", "type": "whatsapp_cta", "phone": "573001234567", "message": "Hola, quiero el termo LED", "locked": false, "emphasis": [] }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "forja-hud",
+  "version": "0.1.0",
+  "description": "HUD del escuadrón FORJA: banda con tu carril, aviso al editar carpetas de otro carril o contratos, y comando /forja-lane.",
+  "author": { "name": "Escuadrón 02 · HackaEcom (Kreoon)" },
+  "types": "./types/index.d.ts"
+}

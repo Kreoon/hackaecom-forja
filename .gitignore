@@ -1,0 +1,17 @@
+node_modules/
+.next/
+out/
+dist/
+coverage/
+.vercel/
+.env
+.env.local
+.env.*.local
+*.log
+.DS_Store
+# carril personal de cada integrante
+.claude/lane.local
+.claude/settings.local.json
+# tipos que el engine genera para el mod
+mods/*/.claude-plugin/types/
+golden/**/outputs/
