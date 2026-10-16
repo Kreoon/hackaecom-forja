@@ -1,0 +1,15 @@
+{
+  "_nota": "Paletas curadas por FORJA. Verificar contraste con scripts/contrast.mjs tras cualquier ajuste.",
+  "crema-terracota": { "background": "#F6F1EA", "surface": "#FFFFFF", "text": "#22190F", "muted": "#6E6255", "primary": "#B4462B", "primaryText": "#FFFFFF", "accent": "#2F5D50" },
+  "tinta-lima": { "background": "#0F1114", "surface": "#1A1D22", "text": "#F2F4F1", "muted": "#9AA19A", "primary": "#C6F432", "primaryText": "#0F1114", "accent": "#5B8CFF" },
+  "hueso-rosa-viejo": { "background": "#F7F2EE", "surface": "#FFFFFF", "text": "#2A1F22", "muted": "#7A6A6E", "primary": "#8C3B4D", "primaryText": "#FFFFFF", "accent": "#D9A99A" },
+  "blanco-calido-verde": { "background": "#FAFAF7", "surface": "#FFFFFF", "text": "#16231C", "muted": "#5E6B63", "primary": "#1F6B4A", "primaryText": "#FFFFFF", "accent": "#E8B23A" },
+  "arena-tinta": { "background": "#EFE9E1", "surface": "#F8F5F0", "text": "#151515", "muted": "#6B665F", "primary": "#151515", "primaryText": "#F8F5F0", "accent": "#A2562E" },
+  "tinta-naranja": { "background": "#111111", "surface": "#1C1C1C", "text": "#F5F5F2", "muted": "#A3A39C", "primary": "#FF5A1F", "primaryText": "#111111", "accent": "#F5F5F2" },
+  "crema-mostaza": { "background": "#FFF8EC", "surface": "#FFFFFF", "text": "#2B2116", "muted": "#7B6C58", "primary": "#2B4C7E", "primaryText": "#FFFFFF", "accent": "#F2B233" },
+  "hueso-salvia": { "background": "#F5F3EE", "surface": "#FFFFFF", "text": "#24302A", "muted": "#5E6862", "primary": "#3F6B57", "primaryText": "#FFFFFF", "accent": "#E6B8A2" },
+  "tinta-oro": { "background": "#0E0D0B", "surface": "#191714", "text": "#F3EEE4", "muted": "#A69E8E", "primary": "#C9A45C", "primaryText": "#0E0D0B", "accent": "#F3EEE4" },
+  "grafito-amarillo": { "background": "#1B1D1F", "surface": "#25282B", "text": "#F1F1EE", "muted": "#A0A39F", "primary": "#FFC72C", "primaryText": "#1B1D1F", "accent": "#E4572E" },
+  "papel-oliva": { "background": "#F3EFE4", "surface": "#FBF9F3", "text": "#2A2A1F", "muted": "#6F6D5C", "primary": "#5A6B2E", "primaryText": "#FFFFFF", "accent": "#C7783A" },
+  "tinta-violeta-electrico": { "background": "#0D0B14", "surface": "#18152A", "text": "#F1EEFA", "muted": "#9C96B5", "primary": "#6E4BFF", "primaryText": "#FFFFFF", "accent": "#3EE6C4" }
+}

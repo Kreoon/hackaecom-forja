@@ -8,8 +8,8 @@ Este repo no trae la app hecha: trae el **equipo de agentes** que la construye c
 |---|---|---|
 | Cerebro del proyecto | `CLAUDE.md` / `AGENTS.md` | misión, contrato, carriles, reglas (Claude Code y Codex) |
 | 11 agentes FORJA | `.claude/agents/forja-*.md` | arquitecto, prompts, ingesta, marca, copy, visual, mockup, Shopify, Liquid, seguridad, demo |
-| 8 skills FORJA | `.claude/skills/forja-*` | contratos PageSpec/ProductDNA, prompts v1 + rúbrica, BYOK, Shopify deploy, Liquid, Supabase, CRO LATAM |
-| 15 skills de diseño | `.claude/skills/*` | de **Tododeia claude-webkit** (MIT, ver `ATTRIBUTION-tododeia.md`): frontend-design, emil-design-eng, animate, shadcn-ui, humanizer, seo-audit… |
+| 8 skills de producto | `.claude/skills/forja-*` | contratos PageSpec/ProductDNA, prompts v1 + rúbrica, BYOK, Shopify deploy, Liquid, Supabase, CRO LATAM |
+| 9 skills de diseño y calidad | `.claude/skills/forja-*` | dirección de arte (con paletas, fuentes y presets por categoría), motion compartido React/Liquid, revisión de motion, voz humana LATAM, SEO Shopify, UI de la app, revisión de UI, lector de referencias, rendimiento Next.js |
 | 6 comandos | `.claude/commands/` | `/forja-start` `/forja-task` `/forja-prompt-lab` `/forja-contract-check` `/forja-demo` `/forja-standup` |
 | Hooks | `.claude/hooks/` | bloqueo de llaves en código/comandos · contexto del carril al iniciar sesión |
 | Mod | `mods/forja-hud/` | banda con tu carril, aviso al tocar carpetas de otro carril o contratos, `/forja-lane` |
@@ -47,4 +47,4 @@ Antes de tocar Shopify, lee el riesgo #1 en `.claude/skills/forja-shopify-deploy
 Algunos agentes mencionan `frontend-designer`, `image-creator`, `video-producer` o `docs-researcher`: vienen del setup de Kreoon (`claude-team-setup`). Si no los tienes, los agentes FORJA funcionan igual.
 
 ---
-Diseño base: [Tododeia](https://github.com/Hainrixz/claude-webkit) (MIT). Hecho para HackaEcom · Feria Effix 2026.
+Hecho por el escuadrón 02 para HackaEcom · Feria Effix 2026. Todos los skills son propios de FORJA.

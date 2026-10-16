@@ -32,7 +32,7 @@ Next.js (App Router) + TypeScript + Tailwind + shadcn/ui · Supabase (Auth, Post
 | Carril | Dueño | Qué entrega | Agentes |
 |---|---|---|---|
 | **A · Cerebro IA** | _asignar_ | ingesta, ProductDNA, tokens, copy, imágenes/animación, BYOK adapters | `forja-ingest`, `forja-prompt-engineer`, `forja-brand-director`, `forja-copy-chief`, `forja-visual-producer` |
-| **B · App + Mockup** | _asignar_ | auth, onboarding de llaves, uploads, editor/mockup, flujo de aprobación | `forja-page-composer`, `frontend-designer`, `forja-byok-guardian` |
+| **B · App + Mockup** | _asignar_ | auth, onboarding de llaves, uploads, editor/mockup, flujo de aprobación | `forja-page-composer`, `forja-byok-guardian` |
 | **C · Shopify** | _asignar_ | conexión de tienda, compilador PageSpec→Liquid, deploy, verificación | `forja-shopify-engineer`, `forja-liquid-compiler` |
 | Transversal | todos | contratos, QA, demo | `forja-architect`, `forja-demo-qa` |
 
@@ -51,7 +51,7 @@ Cada quien trabaja en su carpeta: A → `src/lib/ai/**`, `src/lib/ingest/**` · 
 - **Llaves del usuario**: se cifran (Supabase Vault), solo se descifran en servidor, nunca se loguean, nunca llegan al cliente. Ver skill `forja-byok-providers`.
 - Toda salida de LLM se valida con Zod (structured output). Si falla, se reintenta una vez con el error.
 - Cada sección del PageSpec debe renderizar igual en mockup y Liquid. Si agregas un tipo de sección, lo agregas en los DOS lados el mismo commit.
-- Nada de diseño "genérico de IA": usar skills `frontend-design`, `emil-design-eng`, `forja-ecom-cro`.
+- Nada de diseño "genérico de IA": usar skills `forja-art-direction`, `forja-motion`, `forja-voz-humana`, `forja-ecom-cro`.
 - Antes de usar una API externa, `docs-researcher` confirma la versión (Shopify API `2026-10`).
 - No publicar el tema en vivo sin ✓ explícito del usuario. Por defecto: tema/página **sin publicar** + link de preview.
 - Commits pequeños por carril: `feat(a): …`, `feat(b): …`, `feat(c): …`.

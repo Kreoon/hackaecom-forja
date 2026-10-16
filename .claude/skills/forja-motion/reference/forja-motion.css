@@ -1,0 +1,79 @@
+/* FORJA motion — compartido por el mockup (React) y el tema Shopify (assets/forja-motion.css). */
+:root {
+  --forja-dur-micro: 120ms;
+  --forja-dur-ui: 220ms;
+  --forja-dur-enter: 480ms;
+  --forja-dur-hero: 700ms;
+  --forja-ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --forja-ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --forja-ease-spring: cubic-bezier(0.34, 1.4, 0.64, 1);
+  --forja-distance: 16px;
+}
+
+/* Entrada de secciones (el JS agrega .is-in una sola vez) */
+.forja-motion [data-forja-reveal] {
+  opacity: 0;
+  transform: translateY(var(--forja-distance));
+  transition:
+    opacity var(--forja-dur-enter) var(--forja-ease-out),
+    transform var(--forja-dur-enter) var(--forja-ease-out);
+}
+.forja-motion [data-forja-reveal].is-in { opacity: 1; transform: none; }
+
+.forja-motion [data-forja-reveal="stagger"] { opacity: 1; transform: none; }
+.forja-motion [data-forja-reveal="stagger"] > * {
+  opacity: 0;
+  transform: translateY(var(--forja-distance));
+  transition:
+    opacity var(--forja-dur-enter) var(--forja-ease-out),
+    transform var(--forja-dur-enter) var(--forja-ease-out);
+  transition-delay: calc(min(var(--i, 0), 5) * 60ms);
+}
+.forja-motion [data-forja-reveal="stagger"].is-in > * { opacity: 1; transform: none; }
+
+/* Botón */
+.forja-btn {
+  transition:
+    transform var(--forja-dur-micro) var(--forja-ease-out),
+    box-shadow var(--forja-dur-micro) var(--forja-ease-out);
+}
+@media (hover: hover) {
+  .forja-btn:hover { transform: translateY(-1px); box-shadow: 0 6px 14px -8px rgb(0 0 0 / 0.45); }
+}
+.forja-btn:active { transform: scale(0.98); }
+
+/* CTA sticky móvil */
+.forja-sticky-cta {
+  position: fixed; inset: auto 12px 12px 12px; z-index: 40;
+  transform: translateY(calc(100% + 24px));
+  transition: transform var(--forja-dur-ui) var(--forja-ease-out);
+}
+.forja-sticky-cta.is-visible { transform: none; }
+@media (min-width: 768px) { .forja-sticky-cta { display: none; } }
+
+/* Pop (sticker de oferta, badges) */
+.forja-motion .forja-pop { transform: scale(0.9); opacity: 0; transition: transform var(--forja-dur-enter) var(--forja-ease-spring), opacity var(--forja-dur-ui) linear; }
+.forja-motion .is-in .forja-pop, .forja-motion .forja-pop.is-in { transform: none; opacity: 1; }
+
+/* Producto que respira (solo motion: lively) */
+.forja-motion--lively .forja-float { animation: forja-float 6s var(--forja-ease-in-out) infinite; }
+@keyframes forja-float { 50% { transform: translateY(-4px); } }
+
+/* Acordeón FAQ sin animar height */
+.forja-faq__body { display: grid; grid-template-rows: 0fr; transition: grid-template-rows var(--forja-dur-ui) var(--forja-ease-out); }
+.forja-faq__body > div { overflow: hidden; }
+.forja-faq[open] .forja-faq__body { grid-template-rows: 1fr; }
+.forja-faq__icon { transition: transform var(--forja-dur-ui) var(--forja-ease-out); }
+.forja-faq[open] .forja-faq__icon { transform: rotate(45deg); }
+
+@media (prefers-reduced-motion: reduce) {
+  .forja-motion [data-forja-reveal],
+  .forja-motion [data-forja-reveal="stagger"] > *,
+  .forja-motion .forja-pop {
+    transform: none !important;
+    transition: opacity var(--forja-dur-micro) linear !important;
+    transition-delay: 0s !important;
+  }
+  .forja-float { animation: none !important; }
+  .forja-btn:hover { transform: none; }
+}

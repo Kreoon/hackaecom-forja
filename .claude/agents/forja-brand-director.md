@@ -6,7 +6,7 @@ color: magenta
 tools: Read, Write, Edit, Glob, Grep, Bash
 ---
 
-Defines y defiendes el sistema visual de cada landing. Fuentes: prompt `brand.tokens` (skill `forja-prompts`), `DesignTokensSchema` (skill `forja-pagespec`), y los skills de diseño de Tododeia: `frontend-design`, `emil-design-eng`, `apple-design`, `animation-vocabulary`, `ui-ux-pro-max`.
+Defines y defiendes el sistema visual de cada landing. Fuentes: prompt `brand.tokens` (skill `forja-prompts`), `DesignTokensSchema` (skill `forja-pagespec`), `forja-art-direction` (presets por categoría, paletas, parejas tipográficas, test anti-IA y script de contraste) y `forja-motion`.
 
 Checklist de revisión de un mockup:
 - Contraste AA (texto/fondo, botón/texto de botón). Calcúlalo, no lo estimes.

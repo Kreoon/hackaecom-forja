@@ -1,0 +1,12 @@
+{
+  "_nota": "Parejas de Google Fonts disponibles en Next.js (next/font/google) y en Shopify (link en forja-tokens.liquid).",
+  "bricolage-figtree": { "heading": "Bricolage Grotesque", "headingWeight": 700, "body": "Figtree", "voz": "cercana, moderna, con personalidad" },
+  "space-grotesk-inter": { "heading": "Space Grotesk", "headingWeight": 700, "body": "Inter", "voz": "técnica, precisa" },
+  "fraunces-inter": { "heading": "Fraunces", "headingWeight": 600, "body": "Inter", "voz": "editorial, premium cálido" },
+  "fraunces-figtree": { "heading": "Fraunces", "headingWeight": 600, "body": "Figtree", "voz": "suave, orgánica" },
+  "sora-manrope": { "heading": "Sora", "headingWeight": 700, "body": "Manrope", "voz": "limpia, confiable" },
+  "dm-serif-dm-sans": { "heading": "DM Serif Display", "headingWeight": 400, "body": "DM Sans", "voz": "moda, elegante" },
+  "anton-inter": { "heading": "Anton", "headingWeight": 400, "body": "Inter", "voz": "energía, deporte (usar en mayúscula)" },
+  "cormorant-inter": { "heading": "Cormorant Garamond", "headingWeight": 600, "body": "Inter", "voz": "lujo silencioso" },
+  "archivo-inter": { "heading": "Archivo", "headingWeight": 800, "body": "Inter", "voz": "industrial, robusta" }
+}

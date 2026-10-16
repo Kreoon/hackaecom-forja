@@ -26,4 +26,4 @@ description: Criterio de conversión para landings de producto e-commerce LATAM 
 
 ## Señales de "se ve hecho por IA" (evitar)
 Gradientes morado-azul, íconos genéricos en círculos, "Descubre/Eleva/Revoluciona", tres tarjetas idénticas,
-fotos de stock sin el producto real, emojis en titulares, todo centrado. Ver también skills `frontend-design` y `emil-design-eng`.
+fotos de stock sin el producto real, emojis en titulares, todo centrado. Ver también `forja-art-direction` (test anti-IA) y `forja-voz-humana`.

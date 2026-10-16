@@ -1,0 +1,15 @@
+{
+  "_nota": "Puntos de partida por categoría. Las referencias del usuario mandan sobre esto.",
+  "cocina_hogar": { "style": "bold", "palette": "crema-terracota", "fonts": "bricolage-figtree", "radius": "lg", "motion": "subtle", "idea": "producto recortado sobre bloque de color con sombra de contacto" },
+  "gadget_tecnologia": { "style": "bold", "palette": "tinta-lima", "fonts": "space-grotesk-inter", "radius": "md", "motion": "lively", "idea": "titular gigante con cifra clave (12 h, 5000 mAh) como elemento gráfico" },
+  "belleza_cosmetica": { "style": "premium", "palette": "hueso-rosa-viejo", "fonts": "fraunces-inter", "radius": "full", "motion": "subtle", "idea": "macro de textura del producto a sangre completa" },
+  "salud_suplementos": { "style": "clinical", "palette": "blanco-calido-verde", "fonts": "sora-manrope", "radius": "md", "motion": "subtle", "idea": "tabla de ingredientes limpia como sección protagonista" },
+  "moda_ropa": { "style": "minimal", "palette": "arena-tinta", "fonts": "dm-serif-dm-sans", "radius": "none", "motion": "subtle", "idea": "fotos de cuerpo entero con mucho aire y titulares en serif" },
+  "fitness_deporte": { "style": "bold", "palette": "tinta-naranja", "fonts": "anton-inter", "radius": "sm", "motion": "lively", "idea": "titulares condensados en mayúscula cruzando la foto" },
+  "mascotas": { "style": "playful", "palette": "crema-mostaza", "fonts": "bricolage-figtree", "radius": "full", "motion": "lively", "idea": "sticker de oferta girado y fotos de la mascota usando el producto" },
+  "bebes_familia": { "style": "organic", "palette": "hueso-salvia", "fonts": "fraunces-figtree", "radius": "lg", "motion": "subtle", "idea": "formas orgánicas suaves detrás del producto" },
+  "joyeria_accesorios": { "style": "premium", "palette": "tinta-oro", "fonts": "cormorant-inter", "radius": "none", "motion": "subtle", "idea": "fondo oscuro, producto iluminado, mucho espacio negativo" },
+  "herramientas_auto": { "style": "bold", "palette": "grafito-amarillo", "fonts": "archivo-inter", "radius": "sm", "motion": "subtle", "idea": "comparativa técnica como bloque de alto contraste" },
+  "organico_natural": { "style": "organic", "palette": "papel-oliva", "fonts": "fraunces-figtree", "radius": "lg", "motion": "subtle", "idea": "textura de papel y fotos con luz natural" },
+  "infoproducto_curso": { "style": "bold", "palette": "tinta-violeta-electrico", "fonts": "sora-manrope", "radius": "md", "motion": "lively", "idea": "resultado prometido en cifra gigante + mockup del curso en dispositivo" }
+}

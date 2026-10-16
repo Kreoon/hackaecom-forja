@@ -16,7 +16,7 @@ Emprendedores de e-commerce LATAM (dropshipping, marca propia, venta en frío po
 - **Tu tienda**: se conecta a tu Shopify; nada queda atado a nosotros.
 - **Lo que ves es lo que se publica**: el mockup y Shopify renderizan el mismo PageSpec.
 - **No inventa**: lo que no sabe, lo pregunta o lo deja marcado.
-- **No parece hecho por IA**: diseño con criterio (Tododeia webkit + CRO LATAM).
+- **No parece hecho por IA**: diseño con criterio (dirección de arte, motion y voz propios de FORJA + CRO LATAM).
 
 ## Para el Arsenal (lo que se lleva el público)
 Repo público con la app desplegable en Vercel + este kit de agentes y skills.

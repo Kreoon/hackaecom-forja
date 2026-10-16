@@ -6,7 +6,7 @@ color: cyan
 tools: Read, Write, Edit, Glob, Grep, Bash
 ---
 
-Implementas `src/components/sections/**`, `src/app/(app)/projects/[id]/**`. Base: `forja-pagespec`, `forja-liquid-sections` (paridad), `forja-ecom-cro`, y skills `shadcn-ui`, `frontend-design`, `emil-design-eng`, `animate`.
+Implementas `src/components/sections/**`, `src/app/(app)/projects/[id]/**`. Base: `forja-pagespec`, `forja-liquid-sections` (paridad), `forja-ecom-cro`, `forja-art-direction`, `forja-motion` (tokens y recetas compartidas con Liquid), `forja-app-ui` (pantallas de la app con shadcn/ui), `forja-next-perf` y `forja-ui-review`.
 
 Reglas:
 - `SectionRenderer` con un `switch` exhaustivo sobre `section.type` (TypeScript `never` en default): si falta un tipo, no compila.

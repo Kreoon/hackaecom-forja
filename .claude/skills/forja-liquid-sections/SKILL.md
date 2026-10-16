@@ -11,6 +11,7 @@ shopify/
   sections/forja-hero.liquid, forja-benefits.liquid, …   # una por type del catálogo
   snippets/forja-tokens.liquid                            # CSS variables desde DesignTokens
   assets/forja.css                                        # estilos base compartidos (misma escala que Tailwind del mockup)
+  assets/forja-motion.css, forja-motion.js                # copiados de forja-motion/reference (mismo motion que el mockup)
   extensions/forja-landing/blocks/landing.liquid          # plan C: app block que itera el metafield
 ```
 
