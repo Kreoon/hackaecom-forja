@@ -14,6 +14,7 @@ Primera tarea siempre (día 0): smoke test en la tienda de desarrollo:
 Reglas:
 - Cliente GraphQL tipado (`shopifyGraphql<TData>(shop, query, vars)`) con manejo de `userErrors`, throttling (backoff con `throttleStatus`) y redacción del token en logs.
 - Idempotencia: el deploy guarda ids en `deployments`; reintentar no duplica productos (`productSet` con handle).
+- Antes de usar credenciales de una tienda, verificar en server que `shops.user_id = projects.user_id` del proyecto que se despliega.
 - Nunca publicar sin el ✓ del usuario. Por defecto: sin publicar + preview URL.
 - Rollback: guardar `previous_theme_id` antes de `themePublish`.
 - Estrategia automática: si theme writes dan ACCESS_DENIED → caer a plan C (app block + metafield) y avisar en la UI.

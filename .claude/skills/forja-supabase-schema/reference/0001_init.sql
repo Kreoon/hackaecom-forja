@@ -147,14 +147,30 @@ create policy own_profile on public.profiles for all using (id = auth.uid()) wit
 -- provider_keys y shops: el cliente solo LEE metadatos; escrituras pasan por RPC security definer
 create policy read_own_keys on public.provider_keys for select using (user_id = auth.uid());
 create policy read_own_shops on public.shops for select using (user_id = auth.uid());
-create policy own_projects on public.projects for all using (user_id = auth.uid()) with check (user_id = auth.uid());
+-- Un proyecto solo puede apuntar a una tienda del mismo usuario (evita usar credenciales ajenas)
+create policy own_projects on public.projects for all
+  using (user_id = auth.uid())
+  with check (
+    user_id = auth.uid()
+    and (shop_id is null or exists (select 1 from public.shops s where s.id = shop_id and s.user_id = auth.uid()))
+  );
 create policy read_own_usage on public.usage_events for select using (user_id = auth.uid());
 
--- Tablas hijas de projects
+-- jobs y deployments: el cliente solo LEE; los escribe el server (service role)
+create policy read_own_jobs on public.jobs for select
+  using (exists (select 1 from public.projects p where p.id = project_id and p.user_id = auth.uid()));
+create policy read_own_deployments on public.deployments for select
+  using (
+    exists (select 1 from public.projects p where p.id = project_id and p.user_id = auth.uid())
+    and exists (select 1 from public.shops s where s.id = shop_id and s.user_id = auth.uid())
+  );
+-- El worker de deploy además re-verifica shops.user_id = projects.user_id antes de usar credenciales.
+
+-- Tablas hijas de projects editables por el cliente
 do $$
 declare t text;
 begin
-  foreach t in array array['inputs','evidence','product_dna','assets','page_spec_versions','jobs','deployments'] loop
+  foreach t in array array['inputs','evidence','product_dna','assets','page_spec_versions'] loop
     execute format(
       'create policy own_%1$s on public.%1$I for all using (exists (select 1 from public.projects p where p.id = project_id and p.user_id = auth.uid())) with check (exists (select 1 from public.projects p where p.id = project_id and p.user_id = auth.uid()))',
       t);
