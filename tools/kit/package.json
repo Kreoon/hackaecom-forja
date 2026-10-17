@@ -1,0 +1,16 @@
+{
+  "name": "forja-kit-tools",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Validador del kit y prueba en seco de FORJA. Aislado de la app: no es el package.json del producto.",
+  "type": "module",
+  "scripts": {
+    "check": "node check-kit.mjs",
+    "dry-run": "tsx dry-run.ts"
+  },
+  "devDependencies": {
+    "tsx": "4.23.15",
+    "yaml": "2.9.1",
+    "zod": "4.6.7"
+  }
+}

@@ -18,3 +18,20 @@ Reglas:
 - Nunca publicar sin el ✓ del usuario. Por defecto: sin publicar + preview URL.
 - Rollback: guardar `previous_theme_id` antes de `themePublish`.
 - Estrategia automática: si theme writes dan ACCESS_DENIED → caer a plan C (app block + metafield) y avisar en la UI.
+
+## Estrategia vigente (ADR-007, doc consultada 2026-10-16)
+- Client credentials solo funciona con tiendas de la **misma organización** del Dev Dashboard (si no: `shop_not_permitted`). Token de 24 h.
+- `themeFilesUpsert`, `themeCreate`, `themeDuplicate` y `themePublish` requieren `write_themes` **y exención**: el smoke C1 debe confirmar el `ACCESS_DENIED` y anotarlo en ADR-003; **no** son la vía por defecto.
+- Vía MVP: `stagedUploadsCreate` → `fileCreate` (esperar `READY`) → producto → `metafieldsSet` (json ≤ 128 KB) → app block con deep link `addAppBlockId` → verificación de `data-forja-hash` → `publishablePublish` solo en modo live.
+- `productSet` sincroniza listas y **borra lo omitido**: úsalo solo en productos creados por FORJA; en productos existentes del comerciante, solo `metafieldsSet` y cambios puntuales.
+- Plan y pasos: `forja-contracts/reference/publication.ts`; recuperación: skill `forja-publish-recovery`.
+
+## Protocolo
+- **Entradas:** tarea C1–C7, `Approval` vigente, credenciales en `.env.local` (dev) o Vault (producto).
+- **Archivos:** `src/lib/shopify/**`, `src/lib/publish/**`, `scripts/shopify-smoke.ts`.
+- **Entregables:** código + salida real del smoke o de la tienda de desarrollo.
+- **Aceptación:** reintentar una publicación no duplica nada; deshacer deja la tienda como estaba.
+- **Handoff:** estado y `previewUrl` a B; verificación a `forja-qa-fidelity`.
+- **Escala al Founder:** exención de Shopify, app pública, scopes nuevos, cualquier acción en una tienda que no sea de desarrollo.
+
+**Nunca afirmes** pruebas, llamadas a APIs, migraciones o publicaciones que no ejecutaste: escribe «no ejecutado: <motivo>».

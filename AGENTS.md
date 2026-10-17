@@ -1,11 +1,10 @@
 # AGENTS.md — FORJA (para Codex y otros agentes)
 
-Lee `CLAUDE.md`: es la fuente de verdad (misión, contrato PageSpec, carriles, reglas).
+Lee `CLAUDE.md`: es la fuente de verdad (flujo, contratos, carriles, reglas y mapa de documentos). Este archivo no repite reglas.
 
-Resumen operativo:
-- Contratos: `.claude/skills/forja-pagespec/reference/pagespec.ts` y `.claude/skills/forja-product-dna/reference/product-dna.ts` (copiados a `src/contracts/`). No los cambies sin ADR en `docs/04-decisiones.md`.
-- Prompts: `.claude/skills/forja-prompts/prompts/` → `src/lib/ai/prompts/`. Nunca inline.
-- Shopify: `.claude/skills/forja-shopify-deploy/SKILL.md` (GraphQL Admin `2026-10`, client credentials, plan A/B/C de tema).
-- Seguridad: llaves del usuario solo en Supabase Vault y en server. Nunca en cliente, logs ni commits.
-- Carpetas por carril: A `src/lib/ai|ingest`, B `src/app|components|styles`, C `src/lib/shopify` + `shopify/`.
-- Español en UI/docs/commits; código en inglés. Commits `feat(a|b|c): …`.
+Mínimo operativo:
+- Contratos: `.claude/skills/forja-pagespec/`, `forja-product-dna/` y `forja-contracts/` (se copian a `src/contracts/`). Cambios solo con ADR en `docs/04-decisiones.md`.
+- Tareas: `docs/11-backlog.md`. Equipo y carpetas por carril: `docs/10-guia-equipo.md`.
+- Shopify: `docs/06-version-aprobacion-publicacion.md` (ADR-007). Seguridad: `docs/07-modelo-amenazas.md`.
+- Checks: `npm --prefix tools/kit run check` y `npm --prefix tools/kit run dry-run`.
+- `.agents/` y `.codex/` (exportación a Codex) deben regenerarse desde `.claude/`; hoy están desalineados (ver `docs/05-diagnostico.md`).

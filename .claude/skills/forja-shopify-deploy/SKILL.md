@@ -5,6 +5,8 @@ description: Cómo FORJA conecta la tienda Shopify del usuario y publica la pág
 
 # Deploy a Shopify
 
+> **Actualización 2026-10-16 (ADR-007):** la vía por defecto es la **estrategia C (app block + metafield)** con modo `draft`; la A requiere exención y la B (Theme Access) se descarta para producto. Client credentials solo sirve para tiendas de la misma organización del Dev Dashboard. Plan de pasos, aprobación y recuperación: [`docs/06-version-aprobacion-publicacion.md`](../../../docs/06-version-aprobacion-publicacion.md) y [`forja-contracts`](../forja-contracts/SKILL.md). Fuentes: [`docs/fuentes.md`](../../../docs/fuentes.md).
+
 API: **GraphQL Admin API `2026-10`** (REST es legacy). Verificar con el MCP de Shopify (`search_docs_chunks`) antes de cada mutation nueva.
 
 ## 1. Conexión de la tienda (BYO app)
@@ -44,7 +46,7 @@ Smoke test de conexión: `{ shop { name myshopifyDomain primaryDomain { url } cu
 | **B · Theme Access + CLI** | Usuario instala la app **Theme Access** y pega su password; FORJA arma el tema en carpeta y ejecuta `shopify theme push --password … --store … --unpublished` (en Vercel Sandbox / función con CLI) | Ruta oficial para pushear temas, sin exención | Un dato más que pide al usuario; más lento |
 | **C · Theme app extension** | La app FORJA trae un **app block** "FORJA Landing" que lee el metafield `forja.page_spec` y renderiza todas las secciones. El usuario lo agrega una vez al template de producto (deep link al editor) | Cero escritura de temas; correcto para app pública | 1 paso manual del usuario la primera vez |
 
-**Decisión por defecto para la demo**: A si el smoke test pasa; si no, C con el deep link preparado (y B como respaldo). Las secciones Liquid son las mismas en los 3 planes (skill `forja-liquid-sections`), solo cambia cómo llegan.
+**Decisión vigente (ADR-007)**: C con el deep link preparado. A solo si Shopify concede la exención. B no se usa en producto. Las secciones Liquid son las mismas en los 3 planes (skill `forja-liquid-sections`), solo cambia cómo llegan.
 
 ## 4. Publicación
 - Por defecto todo queda **sin publicar** + `previewUrl` (`https://{shop}/products/{handle}?preview_theme_id={id}`).

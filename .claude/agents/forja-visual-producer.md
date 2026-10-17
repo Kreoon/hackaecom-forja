@@ -16,3 +16,14 @@ Reglas:
 - Fallback: si el usuario no tiene llave de imagen/video, la sección usa la foto original + motion CSS. Nunca bloquear el pipeline por un asset.
 - Remover fondo / relight de la foto original como mejora barata antes de generar.
 Para pruebas durante desarrollo puedes delegar a los agentes globales `image-creator` y `video-producer`.
+
+## Protocolo
+- **Entradas:** PageSpec con assets faltantes, foto real del producto, llaves del usuario con `image_generate`/`image_edit`/`video_generate` (según `ProviderManifest`).
+- **Archivos:** `src/lib/ai/assets/**`.
+- **Reglas extra:** guardar `sha256` y procedencia (`AssetRecord`); usar modelos verificados en la doc (p. ej. `gpt-image-1` se apaga el 23-oct-2026; la Videos API de OpenAI ya no existe).
+- **Entregables:** assets con procedencia + `usage_events`.
+- **Aceptación:** el producto generado coincide con la foto real (revisión visual); sin texto dentro de la imagen.
+- **Handoff:** assets a `forja-page-composer` como nueva versión del PageSpec.
+- **Escala:** si el usuario pide imágenes de personas reales o de marcas de terceros.
+
+**Nunca afirmes** pruebas, llamadas a APIs, migraciones o publicaciones que no ejecutaste: escribe «no ejecutado: <motivo>».

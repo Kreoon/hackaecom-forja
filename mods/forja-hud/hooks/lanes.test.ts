@@ -11,6 +11,9 @@ test('asigna cada carpeta a su carril', () => {
   expect(ownerOf('shopify/sections/forja-hero.liquid')).toBe('C')
   expect(ownerOf('src/contracts/pagespec.ts')).toBe('contracts')
   expect(ownerOf('supabase/migrations/0001_init.sql')).toBe('contracts')
+  expect(ownerOf('src/lib/server/keys.ts')).toBe('A')
+  expect(ownerOf('src/lib/publish/approval.ts')).toBe('C')
+  expect(ownerOf('e2e/fidelity.spec.ts')).toBe('C')
   expect(ownerOf('README.md')).toBe(null)
 })
 
