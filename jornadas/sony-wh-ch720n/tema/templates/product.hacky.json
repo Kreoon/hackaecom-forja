@@ -1,0 +1,1000 @@
+{
+ "sections": {
+  "pop": {
+   "type": "hk-popup",
+   "settings": {
+    "enabled": true,
+    "delay": 5,
+    "logo": "shopify://shop_images/hk-logo-hacky.png",
+    "pill": "Lanzamiento HACKY 🎧",
+    "heading": "¡Estás de suerte!",
+    "text": "Rasca la tarjeta y mira lo que ganaste 👀",
+    "prize": "ENVÍO GRATIS HOY",
+    "image": "shopify://shop_images/hk-g3.jpg"
+   },
+   "blocks": {},
+   "block_order": []
+  },
+  "mq": {
+   "type": "hk-marquee",
+   "settings": {},
+   "blocks": {
+    "mq_0": {
+     "type": "item",
+     "settings": {
+      "text": "Cancelación de ruido"
+     }
+    },
+    "mq_1": {
+     "type": "item",
+     "settings": {
+      "text": "35 h de batería"
+     }
+    },
+    "mq_2": {
+     "type": "item",
+     "settings": {
+      "text": "2 dispositivos a la vez"
+     }
+    },
+    "mq_3": {
+     "type": "item",
+     "settings": {
+      "text": "Llamadas claras"
+     }
+    },
+    "mq_4": {
+     "type": "item",
+     "settings": {
+      "text": "Livianos y cómodos"
+     }
+    },
+    "mq_5": {
+     "type": "item",
+     "settings": {
+      "text": "Pagas al recibir"
+     }
+    }
+   },
+   "block_order": [
+    "mq_0",
+    "mq_1",
+    "mq_2",
+    "mq_3",
+    "mq_4",
+    "mq_5"
+   ]
+  },
+  "main": {
+   "type": "hk-buybox",
+   "settings": {
+    "features": "Cancelación de ruido\n35 h de batería\nMultipunto\nLlamadas claras\nProcesador V1\nCarga rápida",
+    "color_option": "Color",
+    "scarcity": 87,
+    "scarcity_label": "vendido · Lote de lanzamiento",
+    "eta_days": 3,
+    "shipping": "Pide hoy y recíbelo el",
+    "origin": "Envío desde Colombia 🇨🇴",
+    "button": "PEDIR AHORA · PAGO CONTRAENTREGA",
+    "gifts_label": "REGALOS DESBLOQUEADOS",
+    "trust": "🔒 No pagas nada por adelantado | ↩ Devolución hasta 7 días",
+    "layout": "full",
+    "proof": "Calificados 4,4/5 en Amazon · 490 opiniones",
+    "eyebrow": "Audífonos Sony con cancelación de ruido",
+    "heading": "Silencio para ti, música para todo el día",
+    "subheading": "Los Sony WH-CH720N bajan el ruido del bus, la oficina y la calle, y te acompañan hasta 35 horas con una sola carga."
+   },
+   "blocks": {
+    "main_0": {
+     "type": "offer",
+     "settings": {
+      "option_value": "1 unidad",
+      "title": "Lleva 1",
+      "meta": "$349.900 la unidad"
+     }
+    },
+    "main_1": {
+     "type": "offer",
+     "settings": {
+      "option_value": "Pack x2 + estuche de regalo",
+      "title": "Lleva 2 + regalo",
+      "meta": "$314.950 c/u · Uno para ti y otro para regalar",
+      "tag": "Más elegido",
+      "gift": "GRATIS Estuche rígido de viaje (valor $59.900)"
+     }
+    },
+    "main_2": {
+     "type": "gift",
+     "settings": {
+      "image": "shopify://shop_images/hk-g1.jpg",
+      "title": "Envío GRATIS",
+      "value": "$15.000"
+     }
+    },
+    "main_3": {
+     "type": "gift",
+     "settings": {
+      "image": "shopify://shop_images/hk-g2.jpg",
+      "title": "Estuche de viaje GRATIS",
+      "value": "$59.900",
+      "locked": true,
+      "unlock_offer": "Pack x2 + estuche de regalo"
+     }
+    },
+    "main_4": {
+     "type": "gift",
+     "settings": {
+      "image": "shopify://shop_images/hk-w1.jpg",
+      "title": "Garantía 7 días",
+      "value": ""
+     }
+    },
+    "main_5": {
+     "type": "avatar",
+     "settings": {
+      "image": "shopify://shop_images/hk-ugc04.jpg"
+     }
+    },
+    "main_6": {
+     "type": "avatar",
+     "settings": {
+      "image": "shopify://shop_images/hk-ugc11.jpg"
+     }
+    },
+    "main_7": {
+     "type": "avatar",
+     "settings": {
+      "image": "shopify://shop_images/hk-ugc15.jpg"
+     }
+    },
+    "main_8": {
+     "type": "avatar",
+     "settings": {
+      "image": "shopify://shop_images/hk-ugc19.jpg"
+     }
+    },
+    "main_9": {
+     "type": "accordion",
+     "settings": {
+      "title": "Descripción",
+      "body": "<p>Los WH-CH720N son los audífonos de diadema con cancelación de ruido más livianos de Sony. El procesador integrado V1 y la tecnología de sensor de ruido dual reducen el ruido de tu entorno para que te concentres en tu música, tus clases o tus llamadas. Hasta 35 horas de batería con la cancelación de ruido encendida.</p>"
+     }
+    },
+    "main_10": {
+     "type": "accordion",
+     "settings": {
+      "title": "¿Por qué estos audífonos?",
+      "body": "<p>Si tu día pasa entre el bus, la oficina y la casa, el ruido cansa. Con estos te aíslas cuando quieres, cambias del computador al celular sin volver a emparejar y llegas al viernes con batería.</p>"
+     }
+    },
+    "main_11": {
+     "type": "accordion",
+     "settings": {
+      "title": "Sobre tu regalo",
+      "body": "<p><strong>Estuche rígido de viaje:</strong> protege tus audífonos en la maleta o el morral. Viene de regalo con el Pack x2.</p><p><strong>Envío gratis:</strong> en todos los pedidos de hoy.</p>"
+     }
+    },
+    "main_12": {
+     "type": "accordion",
+     "settings": {
+      "title": "Especificaciones",
+      "body": "<ul><li>Diadema sobre la oreja</li><li>Bluetooth con multipunto (2 dispositivos)</li><li>Swift Pair y Fast Pair</li><li>Cancelación activa de ruido con sensor dual</li><li>Procesador V1 y DSEE</li><li>Ecualizador en la app Sony | Headphones Connect · 360 Reality Audio</li><li>Micrófonos con formación de haz</li><li>Compatible con Google Assistant y Siri</li><li>Cable de audio para uso con cable</li><li>No resistentes al agua</li></ul>"
+     }
+    },
+    "main_13": {
+     "type": "accordion",
+     "settings": {
+      "title": "Qué incluye",
+      "body": "<p>Audífonos Sony WH-CH720N, cable de audio y cable USB. En el Pack x2: estuche rígido de viaje de regalo.</p>"
+     }
+    },
+    "main_14": {
+     "type": "accordion",
+     "settings": {
+      "title": "¿Tienen garantía?",
+      "body": "<p>Sí. Tienes hasta 7 días después de la entrega. Si llega dañado o con defecto, te devolvemos el dinero o te lo cambiamos. Si simplemente no te gustó, lo puedes devolver y el envío de regreso corre por tu cuenta.</p>"
+     }
+    },
+    "main_15": {
+     "type": "video",
+     "settings": {
+      "image": "shopify://shop_images/hk-ugc11.jpg",
+      "caption": ""
+     }
+    },
+    "main_16": {
+     "type": "video",
+     "settings": {
+      "image": "shopify://shop_images/hk-ugc12.jpg",
+      "caption": "Los usé 1 semana"
+     }
+    },
+    "main_17": {
+     "type": "video",
+     "settings": {
+      "image": "shopify://shop_images/hk-ugc13.jpg",
+      "caption": "Por esto no vuelvo atrás"
+     }
+    }
+   },
+   "block_order": [
+    "main_0",
+    "main_1",
+    "main_2",
+    "main_3",
+    "main_4",
+    "main_5",
+    "main_6",
+    "main_7",
+    "main_8",
+    "main_9",
+    "main_10",
+    "main_11",
+    "main_12",
+    "main_13",
+    "main_14",
+    "main_15",
+    "main_16",
+    "main_17"
+   ]
+  },
+  "stats": {
+   "type": "hk-stats",
+   "settings": {
+    "bg": "shopify://shop_images/hk-t1.jpg",
+    "heading": "Menos ruido. Más foco. Todo el día.",
+    "text": "La tecnología de Sony, ahora con pago al recibir.",
+    "button": "Pídelos sin riesgo hoy"
+   },
+   "blocks": {
+    "stats_0": {
+     "type": "stat",
+     "settings": {
+      "number": "35 h",
+      "label": "De batería con cancelación de ruido"
+     }
+    },
+    "stats_1": {
+     "type": "stat",
+     "settings": {
+      "number": "2",
+      "label": "Dispositivos conectados a la vez"
+     }
+    },
+    "stats_2": {
+     "type": "stat",
+     "settings": {
+      "number": "V1",
+      "label": "Procesador integrado de Sony"
+     }
+    },
+    "stats_3": {
+     "type": "stat",
+     "settings": {
+      "number": "4,4/5",
+      "label": "En Amazon, 490 calificaciones"
+     }
+    }
+   },
+   "block_order": [
+    "stats_0",
+    "stats_1",
+    "stats_2",
+    "stats_3"
+   ]
+  },
+  "tech": {
+   "type": "hk-cards",
+   "settings": {
+    "heading": "4 tecnologías <em>haciendo su trabajo</em>",
+    "columns": "4",
+    "style": "square",
+    "alt": true
+   },
+   "blocks": {
+    "tech_0": {
+     "type": "card",
+     "settings": {
+      "image": "shopify://shop_images/hk-t1.jpg",
+      "title": "Sensor de ruido dual",
+      "text": "Dos micrófonos escuchan el ruido de afuera y la cancelación lo reduce para que no subas tanto el volumen."
+     }
+    },
+    "tech_1": {
+     "type": "card",
+     "settings": {
+      "image": "shopify://shop_images/hk-t2.jpg",
+      "title": "Procesador V1",
+      "text": "El cerebro de los audífonos: procesa la cancelación de ruido y el sonido con precisión."
+     }
+    },
+    "tech_2": {
+     "type": "card",
+     "settings": {
+      "image": "shopify://shop_images/hk-t3.jpg",
+      "title": "DSEE",
+      "text": "Recupera detalles de la música comprimida para que suene más natural."
+     }
+    },
+    "tech_3": {
+     "type": "card",
+     "settings": {
+      "image": "shopify://shop_images/hk-t4.jpg",
+      "title": "Captación precisa de voz",
+      "text": "Micrófonos con formación de haz y reducción de ruido de viento para que te escuchen claro."
+     }
+    }
+   },
+   "block_order": [
+    "tech_0",
+    "tech_1",
+    "tech_2",
+    "tech_3"
+   ]
+  },
+  "rev1": {
+   "type": "hk-reviews",
+   "settings": {
+    "score": "",
+    "heading": "Historias reales, <em>resultados reales</em>",
+    "text": "Mira lo que dicen quienes ya los usan.",
+    "alt": true,
+    "layout": "grid"
+   },
+   "blocks": {
+    "rev1_0": {
+     "type": "thumb",
+     "settings": {
+      "image": "shopify://shop_images/hk-ugc01.jpg"
+     }
+    },
+    "rev1_1": {
+     "type": "thumb",
+     "settings": {
+      "image": "shopify://shop_images/hk-ugc02.jpg"
+     }
+    },
+    "rev1_2": {
+     "type": "thumb",
+     "settings": {
+      "image": "shopify://shop_images/hk-ugc03.jpg"
+     }
+    },
+    "rev1_3": {
+     "type": "thumb",
+     "settings": {
+      "image": "shopify://shop_images/hk-ugc04.jpg"
+     }
+    },
+    "rev1_4": {
+     "type": "thumb",
+     "settings": {
+      "image": "shopify://shop_images/hk-ugc05.jpg"
+     }
+    },
+    "rev1_5": {
+     "type": "thumb",
+     "settings": {
+      "image": "shopify://shop_images/hk-ugc06.jpg"
+     }
+    },
+    "rev1_6": {
+     "type": "thumb",
+     "settings": {
+      "image": "shopify://shop_images/hk-ugc07.jpg"
+     }
+    },
+    "rev1_7": {
+     "type": "thumb",
+     "settings": {
+      "image": "shopify://shop_images/hk-ugc08.jpg"
+     }
+    },
+    "rev1_8": {
+     "type": "thumb",
+     "settings": {
+      "image": "shopify://shop_images/hk-ugc09.jpg"
+     }
+    },
+    "rev1_9": {
+     "type": "thumb",
+     "settings": {
+      "image": "shopify://shop_images/hk-ugc10.jpg"
+     }
+    },
+    "rev1_10": {
+     "type": "review",
+     "settings": {
+      "rating": "5.0",
+      "title": "Por fin trabajo sin escuchar la obra del vecino",
+      "text": "Los uso en la casa y en el bus. La cancelación de ruido me cambió el día y la batería me dura toda la semana.",
+      "author": "Laura M.",
+      "avatar": "shopify://shop_images/hk-ugc04.jpg",
+      "tags": "Concentración | Batería",
+      "demo": true
+     }
+    },
+    "rev1_11": {
+     "type": "review",
+     "settings": {
+      "rating": "4.9",
+      "title": "Livianos de verdad",
+      "text": "Me los pongo a las 8 y me acuerdo que los tengo puestos a la hora del almuerzo. Nada de dolor de cabeza.",
+      "author": "Andrés P.",
+      "avatar": "shopify://shop_images/hk-ugc05.jpg",
+      "tags": "Comodidad | Uso diario",
+      "demo": true
+     }
+    },
+    "rev1_12": {
+     "type": "review",
+     "settings": {
+      "rating": "5.0",
+      "title": "Llamadas clarísimas",
+      "text": "Trabajo en llamadas todo el día y me dejaron de decir que no me escuchan. Y cambio del PC al celular sin desconectar.",
+      "author": "Camila R.",
+      "avatar": "shopify://shop_images/hk-ugc06.jpg",
+      "tags": "Llamadas | Multipunto",
+      "demo": true
+     }
+    }
+   },
+   "block_order": [
+    "rev1_0",
+    "rev1_1",
+    "rev1_2",
+    "rev1_3",
+    "rev1_4",
+    "rev1_5",
+    "rev1_6",
+    "rev1_7",
+    "rev1_8",
+    "rev1_9",
+    "rev1_10",
+    "rev1_11",
+    "rev1_12"
+   ]
+  },
+  "bc": {
+   "type": "hk-benefits-center",
+   "settings": {
+    "heading": "<em>Suenan mejor.</em> Todos los días.",
+    "text": "Del primer trayecto de la mañana a la última serie de la noche.",
+    "image": "shopify://shop_images/hk-p1.png"
+   },
+   "blocks": {
+    "bc_0": {
+     "type": "item",
+     "settings": {
+      "icon": "ANC",
+      "title": "Cancelación de ruido"
+     }
+    },
+    "bc_1": {
+     "type": "item",
+     "settings": {
+      "icon": "35h",
+      "title": "35 h de batería"
+     }
+    },
+    "bc_2": {
+     "type": "item",
+     "settings": {
+      "icon": "2×",
+      "title": "Multipunto"
+     }
+    },
+    "bc_3": {
+     "type": "item",
+     "settings": {
+      "icon": "🎙",
+      "title": "Llamadas claras"
+     }
+    }
+   },
+   "block_order": [
+    "bc_0",
+    "bc_1",
+    "bc_2",
+    "bc_3"
+   ]
+  },
+  "rows": {
+   "type": "hk-rows",
+   "settings": {
+    "heading": "<em>Beneficios reales.</em> Para tu día a día.",
+    "text": "Cuatro momentos en los que vas a notar la diferencia."
+   },
+   "blocks": {
+    "rows_0": {
+     "type": "row",
+     "settings": {
+      "image": "shopify://shop_images/hk-b1.jpg",
+      "title": "Trabajo y estudio",
+      "subtitle": "Concéntrate en serio.",
+      "text": "Baja el ruido de la oficina, el café o la casa y entra en modo foco."
+     }
+    },
+    "rows_1": {
+     "type": "row",
+     "settings": {
+      "image": "shopify://shop_images/hk-b2.jpg",
+      "title": "Viajes",
+      "subtitle": "El ruido se queda afuera.",
+      "text": "Ideal para trayectos largos y vuelos; la batería aguanta hasta 35 horas."
+     }
+    },
+    "rows_2": {
+     "type": "row",
+     "settings": {
+      "image": "shopify://shop_images/hk-t4.jpg",
+      "title": "Llamadas",
+      "subtitle": "Te escuchan claro.",
+      "text": "Micrófonos que captan tu voz y reducen el viento."
+     }
+    },
+    "rows_3": {
+     "type": "row",
+     "settings": {
+      "image": "shopify://shop_images/hk-b4.jpg",
+      "title": "Música",
+      "subtitle": "Tu música, como debe sonar.",
+      "text": "Ajusta el sonido a tu gusto con el ecualizador de la app."
+     }
+    }
+   },
+   "block_order": [
+    "rows_0",
+    "rows_1",
+    "rows_2",
+    "rows_3"
+   ]
+  },
+  "mq2": {
+   "type": "hk-marquee",
+   "settings": {},
+   "blocks": {
+    "mq2_0": {
+     "type": "item",
+     "settings": {
+      "text": "Cancelación de ruido"
+     }
+    },
+    "mq2_1": {
+     "type": "item",
+     "settings": {
+      "text": "35 h de batería"
+     }
+    },
+    "mq2_2": {
+     "type": "item",
+     "settings": {
+      "text": "2 dispositivos a la vez"
+     }
+    },
+    "mq2_3": {
+     "type": "item",
+     "settings": {
+      "text": "Llamadas claras"
+     }
+    },
+    "mq2_4": {
+     "type": "item",
+     "settings": {
+      "text": "Livianos y cómodos"
+     }
+    },
+    "mq2_5": {
+     "type": "item",
+     "settings": {
+      "text": "Pagas al recibir"
+     }
+    }
+   },
+   "block_order": [
+    "mq2_0",
+    "mq2_1",
+    "mq2_2",
+    "mq2_3",
+    "mq2_4",
+    "mq2_5"
+   ]
+  },
+  "tl": {
+   "type": "hk-timeline",
+   "settings": {
+    "image": "shopify://shop_images/hk-l1.jpg",
+    "heading": "<em>Tu día</em> con los WH-CH720N",
+    "text": "Hechos para usarlos todo el día, no solo un rato. Así cambia tu rutina.",
+    "button": "Quiero los míos →"
+   },
+   "blocks": {
+    "tl_0": {
+     "type": "step",
+     "settings": {
+      "title": "7:00 a. m. · Trayecto",
+      "items": "Cancelación de ruido encendida en el bus o el carro\nLlegas sin el estrés del ruido\nTu playlist suena clara a volumen bajo"
+     }
+    },
+    "tl_1": {
+     "type": "step",
+     "settings": {
+      "title": "9:00 a. m. · Trabajo o clase",
+      "items": "Conectados al computador y al celular a la vez\nCambias sin volver a emparejar\nModo foco sin interrupciones"
+     }
+    },
+    "tl_2": {
+     "type": "step",
+     "settings": {
+      "title": "3:00 p. m. · Llamadas",
+      "items": "Micrófonos que captan tu voz\nTu equipo te escucha claro\nCómodos después de horas"
+     }
+    },
+    "tl_3": {
+     "type": "step",
+     "settings": {
+      "title": "9:00 p. m. · Descanso",
+      "items": "Tu serie o tu playlist\nTodavía te queda batería para el resto de la semana\nCarga rápida si se te olvida cargarlos"
+     }
+    }
+   },
+   "block_order": [
+    "tl_0",
+    "tl_1",
+    "tl_2",
+    "tl_3"
+   ]
+  },
+  "why": {
+   "type": "hk-cards",
+   "settings": {
+    "badge": "5 razones",
+    "heading": "Por qué los WH-CH720N son distintos a todo lo que has probado",
+    "columns": "3",
+    "style": "wide",
+    "alt": true,
+    "button": "Pídelos sin riesgo hoy"
+   },
+   "blocks": {
+    "why_0": {
+     "type": "card",
+     "settings": {
+      "image": "shopify://shop_images/hk-z1.jpg",
+      "kicker": "Razón 1",
+      "title": "Batería de 35 horas",
+      "text": "Cárgalos el lunes y olvídate del cable buena parte de la semana."
+     }
+    },
+    "why_1": {
+     "type": "card",
+     "settings": {
+      "image": "shopify://shop_images/hk-z2.jpg",
+      "kicker": "Razón 2",
+      "title": "Livianos de verdad",
+      "text": "Los audífonos de diadema con cancelación de ruido más livianos de Sony."
+     }
+    },
+    "why_2": {
+     "type": "card",
+     "settings": {
+      "image": "shopify://shop_images/hk-z3.jpg",
+      "kicker": "Razón 3",
+      "title": "Dos dispositivos a la vez",
+      "text": "Computador y celular conectados; contestas la llamada sin desconectar nada."
+     }
+    },
+    "why_3": {
+     "type": "card",
+     "settings": {
+      "image": "shopify://shop_images/hk-z4.jpg",
+      "kicker": "Razón 4",
+      "title": "Llamadas claras",
+      "text": "Captación precisa de voz y reducción de ruido de viento."
+     }
+    },
+    "why_4": {
+     "type": "card",
+     "settings": {
+      "image": "shopify://shop_images/hk-z5.jpg",
+      "kicker": "Razón 5",
+      "title": "Sonido a tu gusto",
+      "text": "Ecualizador en la app Sony | Headphones Connect y 360 Reality Audio."
+     }
+    }
+   },
+   "block_order": [
+    "why_0",
+    "why_1",
+    "why_2",
+    "why_3",
+    "why_4"
+   ]
+  },
+  "cmp": {
+   "type": "hk-compare",
+   "settings": {
+    "us": "WH-CH720N",
+    "them": "Genéricos",
+    "heading": "WH-CH720N vs. audífonos genéricos",
+    "points": "<strong>Cancelación de ruido real</strong> — sensor dual y procesador V1\n<strong>Batería que dura</strong> — hasta 35 h con ANC\n<strong>Multipunto</strong> — 2 dispositivos a la vez\n<strong>Sonido a tu gusto</strong> — app con ecualizador",
+    "button": "Pídelos sin riesgo hoy"
+   },
+   "blocks": {
+    "cmp_0": {
+     "type": "row",
+     "settings": {
+      "us": "ANC con sensor dual",
+      "them": "ANC sin especificar"
+     }
+    },
+    "cmp_1": {
+     "type": "row",
+     "settings": {
+      "us": "Hasta 35 h de batería",
+      "them": "Batería sin dato confiable"
+     }
+    },
+    "cmp_2": {
+     "type": "row",
+     "settings": {
+      "us": "2 dispositivos a la vez",
+      "them": "Uno a la vez"
+     }
+    },
+    "cmp_3": {
+     "type": "row",
+     "settings": {
+      "us": "App con ecualizador",
+      "them": "Sin app"
+     }
+    },
+    "cmp_4": {
+     "type": "row",
+     "settings": {
+      "us": "Marca Sony",
+      "them": "Marca desconocida"
+     }
+    }
+   },
+   "block_order": [
+    "cmp_0",
+    "cmp_1",
+    "cmp_2",
+    "cmp_3",
+    "cmp_4"
+   ]
+  },
+  "gu": {
+   "type": "hk-guarantee",
+   "settings": {
+    "number": "7",
+    "unit": "DÍAS",
+    "kicker": "Compra sin riesgo",
+    "heading": "Garantía de 7 días",
+    "text": "Si llega dañado o con defecto, te devolvemos el dinero o te lo cambiamos. Y pagas solo cuando lo recibes.",
+    "image": "shopify://shop_images/hk-w1.jpg"
+   },
+   "blocks": {},
+   "block_order": []
+  },
+  "vids2": {
+   "type": "hk-videos",
+   "settings": {
+    "heading": "Gente real. <em>Resultados reales.</em>",
+    "text": "Escúchalo en sus propias palabras.",
+    "button": "Pídelos sin riesgo hoy"
+   },
+   "blocks": {
+    "vids2_0": {
+     "type": "video",
+     "settings": {
+      "image": "shopify://shop_images/hk-ugc10.jpg",
+      "caption": ""
+     }
+    },
+    "vids2_1": {
+     "type": "video",
+     "settings": {
+      "image": "shopify://shop_images/hk-ugc14.jpg",
+      "caption": "Me los regalaron"
+     }
+    },
+    "vids2_2": {
+     "type": "video",
+     "settings": {
+      "image": "shopify://shop_images/hk-ugc16.jpg",
+      "caption": "Así suenan"
+     }
+    },
+    "vids2_3": {
+     "type": "video",
+     "settings": {
+      "image": "shopify://shop_images/hk-ugc18.jpg",
+      "caption": ""
+     }
+    },
+    "vids2_4": {
+     "type": "video",
+     "settings": {
+      "image": "shopify://shop_images/hk-ugc20.jpg",
+      "caption": "Mi mamá los ama"
+     }
+    },
+    "vids2_5": {
+     "type": "video",
+     "settings": {
+      "image": "shopify://shop_images/hk-ugc22.jpg",
+      "caption": ""
+     }
+    }
+   },
+   "block_order": [
+    "vids2_0",
+    "vids2_1",
+    "vids2_2",
+    "vids2_3",
+    "vids2_4",
+    "vids2_5"
+   ]
+  },
+  "buy2": {
+   "type": "hk-buybox",
+   "settings": {
+    "features": "Cancelación de ruido\n35 h de batería\nMultipunto\nLlamadas claras\nProcesador V1\nCarga rápida",
+    "color_option": "Color",
+    "scarcity": 87,
+    "scarcity_label": "vendido · Lote de lanzamiento",
+    "eta_days": 3,
+    "shipping": "Pide hoy y recíbelo el",
+    "origin": "Envío desde Colombia 🇨🇴",
+    "button": "PEDIR AHORA · PAGO CONTRAENTREGA",
+    "gifts_label": "REGALOS DESBLOQUEADOS",
+    "trust": "🔒 No pagas nada por adelantado | ↩ Devolución hasta 7 días",
+    "layout": "compact",
+    "header_image": "shopify://shop_images/hk-g5.jpg",
+    "heading": "<em>Compártelos.</em> Llévate dos y ahorra.",
+    "subheading": "Uno para ti y otro para regalar. El pack x2 trae estuche de viaje de regalo."
+   },
+   "blocks": {
+    "buy2_0": {
+     "type": "offer",
+     "settings": {
+      "option_value": "1 unidad",
+      "title": "Lleva 1",
+      "meta": "$349.900 la unidad"
+     }
+    },
+    "buy2_1": {
+     "type": "offer",
+     "settings": {
+      "option_value": "Pack x2 + estuche de regalo",
+      "title": "Lleva 2 + regalo",
+      "meta": "$314.950 c/u · Uno para ti y otro para regalar",
+      "tag": "Más elegido",
+      "gift": "GRATIS Estuche rígido de viaje (valor $59.900)"
+     }
+    },
+    "buy2_2": {
+     "type": "gift",
+     "settings": {
+      "image": "shopify://shop_images/hk-g1.jpg",
+      "title": "Envío GRATIS",
+      "value": "$15.000"
+     }
+    },
+    "buy2_3": {
+     "type": "gift",
+     "settings": {
+      "image": "shopify://shop_images/hk-g2.jpg",
+      "title": "Estuche de viaje GRATIS",
+      "value": "$59.900",
+      "locked": true,
+      "unlock_offer": "Pack x2 + estuche de regalo"
+     }
+    },
+    "buy2_4": {
+     "type": "gift",
+     "settings": {
+      "image": "shopify://shop_images/hk-w1.jpg",
+      "title": "Garantía 7 días",
+      "value": ""
+     }
+    }
+   },
+   "block_order": [
+    "buy2_0",
+    "buy2_1",
+    "buy2_2",
+    "buy2_3",
+    "buy2_4"
+   ]
+  },
+  "rev2": {
+   "type": "hk-reviews",
+   "settings": {
+    "score": "Calificados 4,4/5 en Amazon · 490 opiniones",
+    "heading": "Lo sintieron. Tú también lo vas a sentir.",
+    "alt": false,
+    "layout": "list"
+   },
+   "blocks": {
+    "rev2_0": {
+     "type": "review",
+     "settings": {
+      "rating": "5.0",
+      "title": "El bus ya no me estresa",
+      "text": "Dos horas diarias en TransMilenio y ahora llego tranquila. La cancelación de ruido sí se nota.",
+      "tags": "Transporte | Cancelación de ruido",
+      "demo": true
+     }
+    },
+    "rev2_1": {
+     "type": "review",
+     "settings": {
+      "rating": "5.0",
+      "title": "La batería es una locura",
+      "text": "Los cargué el domingo y el viernes todavía tenían batería. Los uso para trabajar y para el gimnasio.",
+      "tags": "Batería | Uso diario",
+      "demo": true
+     }
+    },
+    "rev2_2": {
+     "type": "review",
+     "settings": {
+      "rating": "5.0",
+      "title": "Pagué al recibir, sin miedo",
+      "text": "Me llegaron en 3 días, revisé que todo estuviera bien y pagué. Muy buena experiencia.",
+      "tags": "Contraentrega | Envío",
+      "demo": true
+     }
+    },
+    "rev2_3": {
+     "type": "review",
+     "settings": {
+      "rating": "4.8",
+      "title": "Ideal para estudiar",
+      "text": "Me encierro en mi música y rindo más. Livianos y no me aprietan con gafas.",
+      "tags": "Estudio | Comodidad",
+      "demo": true
+     }
+    }
+   },
+   "block_order": [
+    "rev2_0",
+    "rev2_1",
+    "rev2_2",
+    "rev2_3"
+   ]
+  },
+  "foot": {
+   "type": "hk-footer",
+   "settings": {
+    "logo": "shopify://shop_images/hk-logo-hacky-blanco.png",
+    "news_title": "Únete a la lista HACKY",
+    "news_text": "Recibe lanzamientos, ofertas y descuentos exclusivos.",
+    "legal": "<p>Sony y WH-CH720N son marcas de Sony Group Corporation. HACKY es un revendedor independiente.</p><p>* Las reseñas marcadas como demo son de ejemplo y se reemplazan por reseñas reales. Tienda demo del HackaEcom 2026.</p>"
+   },
+   "blocks": {},
+   "block_order": []
+  }
+ },
+ "order": [
+  "pop",
+  "mq",
+  "main",
+  "stats",
+  "tech",
+  "rev1",
+  "bc",
+  "rows",
+  "mq2",
+  "tl",
+  "why",
+  "cmp",
+  "gu",
+  "vids2",
+  "buy2",
+  "rev2",
+  "foot"
+ ]
+}

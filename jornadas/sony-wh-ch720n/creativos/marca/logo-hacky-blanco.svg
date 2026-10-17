@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 64" role="img" aria-label="HACKY">
+  <g fill="#FFFFFF">
+    <!-- isotipo: ondas de sonido dentro de un hexágono -->
+    <path d="M28 4 52 18v28L28 60 4 46V18z" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round"/>
+    <rect x="17" y="27" width="4" height="10" rx="2"/>
+    <rect x="24" y="21" width="4" height="22" rx="2"/>
+    <rect x="31" y="16" width="4" height="32" rx="2" fill="#FFF7D4"/>
+    <rect x="38" y="24" width="4" height="16" rx="2"/>
+    <text x="66" y="44" font-family="'Clash Grotesk','Space Grotesk',Arial,sans-serif" font-size="34" font-weight="600" letter-spacing="3">HACKY</text>
+  </g>
+</svg>

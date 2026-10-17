@@ -1,0 +1,16 @@
+/* Tokens de la jornada sony-wh-ch720n (tomados de la referencia Resilia) */
+.hk {
+  --hk-primary: #095946;
+  --hk-secondary: #009370;
+  --hk-accent: #FFF7D4;
+  --hk-bg-alt: #F1F0EA;
+  --hk-text: #121212;
+  --hk-text-soft: #4b4f4c;
+  --hk-border: #dcdcd6;
+  --hk-alert: #D93B3B;
+  --hk-dark-2: #3c4a1f;
+  --hk-dark-3: #1d2410;
+  --hk-cmp-us: #5a6b2b;
+  --hk-font-head: 'Clash Grotesk', 'Satoshi', system-ui, sans-serif;
+  --hk-font-body: 'Satoshi', system-ui, -apple-system, sans-serif;
+}

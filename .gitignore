@@ -22,3 +22,9 @@ CLAUDE.local.md
 # herramientas del kit
 tools/kit/node_modules/
 tools/kit/.contracts/
+.build-tema/
+.pull/
+jornadas/*/referencia/screenshot-full.png
+jornadas/*/referencia/pagina*.md
+jornadas/*/insumos/*.md
+!jornadas/*/insumos/ficha-producto.md
