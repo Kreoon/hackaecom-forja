@@ -183,10 +183,21 @@
     "padding-block-end": 48
    },
    "disabled": true
+  },
+  "hk_foot": {
+   "type": "hk-footer",
+   "settings": {
+    "logo": "shopify://shop_images/hk-logo-hacky-blanco.png",
+    "menu": "footer",
+    "news_title": "Únete a la lista HACKY",
+    "news_text": "Recibe lanzamientos, ofertas y descuentos exclusivos.",
+    "legal": "<p>Sony y WH-CH720N son marcas de Sony Group Corporation. HACKY es un revendedor independiente.</p><p>* Las reseñas marcadas como demo son de ejemplo y se reemplazan por reseñas reales. Tienda demo del HackaEcom 2026.</p>"
+   }
   }
  },
  "order": [
   "footer_m9NzUG",
-  "footer_utilities_jLGE8U"
+  "footer_utilities_jLGE8U",
+  "hk_foot"
  ]
 }

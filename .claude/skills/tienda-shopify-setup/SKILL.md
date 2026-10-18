@@ -23,5 +23,15 @@ description: "Fase 3 de tienda-express — configura la tienda Shopify destino v
 - Instalar la app COD (Releasit/EasySell) y activar su *App embed* en el editor de temas.
 - Quitar la contraseña de la tienda (solo con OK del orquestador; en tiendas de desarrollo no se puede).
 
+## 6. Navegación completa (obligatorio antes de dar la tienda por lista)
+Regla: **todo enlace del menú o del footer apunta a una página que existe**; si no, se quita.
+1. Páginas mínimas COD con `pageCreate` (publicadas, español, marcadas demo si aplica): `preguntas-frecuentes`, `rastrear-pedido`, `envios-y-entregas`, `politica-de-devoluciones`, `terminos-y-condiciones`; renombrar `contact` → "Contacto" y `data-sharing-opt-out` → "Tus opciones de privacidad" con `pageUpdate`. Contenido = ficha + decisiones (sin inventar).
+2. Menús con `menuUpdate`: principal (producto, FAQ, rastrear, contacto) y footer (FAQ, contacto, rastrear, envíos, devoluciones, términos, privacidad). Usar `type: PAGE` + `resourceId` para páginas.
+3. Inicio: en el tema de trabajo, `templates/index.json` con la sección `hk-redirect` → landing del producto (no redirige dentro del editor).
+4. Idioma: si el idioma principal de la tienda es inglés, fusionar `locales/es.json` sobre `locales/en.default.json` en el tema (carrito, búsqueda, cuenta en español). Los archivos de locale traen comentarios `/* */` y `//`: limpiarlos antes de `json.loads`. El checkout y `<html lang>` solo cambian cambiando el idioma principal en el admin.
+5. Footer y anuncio en los grupos globales (`footer-group.json`, `header-group.json`) para que salgan en todas las páginas, no solo en la plantilla del producto.
+6. Verificar en el preview con un `fetch` de cada `a[href]` interno (con `preview_theme_id`): todos deben dar 200 y el título de la página correcto.
+`shopPolicyUpdate` necesita `write_legal_policies` (el conector no lo tiene): por eso las políticas van como páginas; la política de privacidad automática de Shopify se traduce en el admin.
+
 ## 5. Medios
 Subir imágenes al producto cuando existan (`productSet` con `files` o `productCreateMedia`), en el orden de la galería del brief; alt text en español.

@@ -141,10 +141,10 @@ sec("rev2", "hk-reviews", {"score": "Calificados 4,4/5 en Amazon · 490 opinione
     b("review", rating="5.0", title="La batería es una locura", text="Los cargué el domingo y el viernes todavía tenían batería. Los uso para trabajar y para el gimnasio.", tags="Batería | Uso diario", demo=True),
     b("review", rating="5.0", title="Pagué al recibir, sin miedo", text="Me llegaron en 3 días, revisé que todo estuviera bien y pagué. Muy buena experiencia.", tags="Contraentrega | Envío", demo=True),
     b("review", rating="4.8", title="Ideal para estudiar", text="Me encierro en mi música y rindo más. Livianos y no me aprietan con gafas.", tags="Estudio | Comodidad", demo=True)])
-# 18 · Footer
-sec("foot", "hk-footer", {"logo": img("hk-logo-hacky-blanco.png"), "news_title": "Únete a la lista HACKY",
+# 18 · Footer → va en sections/footer-group.json (aparece en todas las páginas)
+FOOT = {"type": "hk-footer", "settings": {"logo": img("hk-logo-hacky-blanco.png"), "menu": "footer", "news_title": "Únete a la lista HACKY",
     "news_text": "Recibe lanzamientos, ofertas y descuentos exclusivos.",
-    "legal": "<p>Sony y WH-CH720N son marcas de Sony Group Corporation. HACKY es un revendedor independiente.</p><p>* Las reseñas marcadas como demo son de ejemplo y se reemplazan por reseñas reales. Tienda demo del HackaEcom 2026.</p>"})
+    "legal": "<p>Sony y WH-CH720N son marcas de Sony Group Corporation. HACKY es un revendedor independiente.</p><p>* Las reseñas marcadas como demo son de ejemplo y se reemplazan por reseñas reales. Tienda demo del HackaEcom 2026.</p>"}}
 
 out = Path(__file__).parent / "templates" / "product.hacky.json"
 out.parent.mkdir(exist_ok=True)
@@ -157,3 +157,13 @@ if hg.exists():
     h["order"] = ["hk_ann"] + [k for k in h["order"] if k != "hk_ann"]
     hg.write_text(json.dumps(h, ensure_ascii=False, indent=1), encoding="utf-8")
     print("header-group con anuncio arriba")
+fg = Path(__file__).parent / "sections" / "footer-group.json"
+if fg.exists():
+    f = json.loads(fg.read_text(encoding="utf-8"))
+    for k, v in f["sections"].items():
+        if k != "hk_foot":
+            v["disabled"] = True
+    f["sections"]["hk_foot"] = FOOT
+    f["order"] = [k for k in f["order"] if k != "hk_foot"] + ["hk_foot"]
+    fg.write_text(json.dumps(f, ensure_ascii=False, indent=1), encoding="utf-8")
+    print("footer-group con footer HACKY")

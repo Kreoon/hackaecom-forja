@@ -26,6 +26,7 @@ Documento maestro (roles, fases, checkpoints): [`docs/jornada-02-tienda-express.
 Si una skill aún no existe, hacer el paso a mano, anotar lo que funcionó en `jornadas/<slug>/notas-skill.md` y al cerrar la fase convertirlo en la skill.
 
 ## Reglas
+- **Navegación sin callejones**: si la página tiene menú (header o footer), cada enlace lleva a una página creada, publicada y en español, verificada con status 200 en el preview. Si una página no se puede crear, se quita el enlace (o el menú). El inicio (`/`) no puede quedar con el contenido genérico del tema: en tiendas de un producto redirige a la landing (`hk-redirect`). Detalle en `tienda-shopify-setup` §6.
 - La referencia aporta estructura y estilo; los datos salen del producto. Cifras, reseñas, garantías y "envío gratis" solo si el equipo los confirma.
 - Cada fase cierra con su checkpoint del orquestador (Juan Diego) antes de pasar a la siguiente.
 - Nada se publica sin contraseña quitada por decisión explícita del orquestador; pedidos de prueba se cancelan/reembolsan.
