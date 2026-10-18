@@ -1,0 +1,44 @@
+{
+  "version": "1",
+  "projectId": "demo-termo",
+  "dnaVersion": 1,
+  "dna": {
+    "version": "1",
+    "name": "FIXTURE Termo inteligente LED",
+    "category": "hogar/cocina",
+    "oneLiner": "Termo de 500 ml que muestra la temperatura en la tapa, para quien toma café en la oficina.",
+    "price": { "amount": 89900, "currency": "COP" },
+    "audience": {
+      "who": "Oficinistas que toman bebidas calientes durante la jornada",
+      "pains": ["Se queman con el café recién servido"],
+      "desires": ["Saber si la bebida está a buena temperatura"],
+      "objections": ["¿La batería dura?", "¿De verdad mantiene el calor?"]
+    },
+    "benefits": ["Ves la temperatura antes de tomar", "Acero 304 sin sabor a metal"],
+    "features": [
+      { "key": "capacidad", "value": "500 ml", "confidence": 0.95, "sources": [{ "inputId": "in_form", "kind": "user_form" }] },
+      { "key": "material", "value": "acero inoxidable 304", "confidence": 0.95, "sources": [{ "inputId": "in_form", "kind": "user_form" }] },
+      { "key": "pantalla", "value": "temperatura en la tapa al tocar", "confidence": 0.85, "sources": [{ "inputId": "in_audio", "kind": "audio" }] },
+      { "key": "retencion_calor", "value": "12 h (dato del proveedor)", "confidence": 0.6, "sources": [{ "inputId": "in_form", "kind": "user_form" }] }
+    ],
+    "usage": ["Llena el termo", "Toca la tapa para ver la temperatura"],
+    "differentiators": ["Pantalla de temperatura en la tapa"],
+    "offerIdeas": ["Pago contraentrega", "Pack de 2"],
+    "tone": "cercano",
+    "photos": [{ "assetId": "a_hero", "description": "Termo negro con LED sobre madera", "cleanBackground": true, "heroCandidate": true }],
+    "references": [{ "inputId": "in_ref", "takeaways": ["Hero con video", "Oferta por packs", "Verde oscuro + naranja"] }],
+    "riskFlags": [],
+    "unknowns": ["Duración real de la pila", "Garantía ofrecida por el vendedor", "Prueba propia de retención de calor"]
+  },
+  "provenance": [
+    { "path": "price.amount", "inputId": "in_form", "kind": "user_form", "quote": "Precio: 89.900 COP", "confidence": 0.95 },
+    { "path": "features[2].value", "inputId": "in_audio", "kind": "audio", "locator": "00:02-00:07", "confidence": 0.85 },
+    { "path": "features[3].value", "inputId": "in_form", "kind": "user_form", "quote": "según el proveedor; sin prueba propia", "confidence": 0.6 }
+  ],
+  "openQuestions": [
+    { "id": "q_garantia", "field": "offer.guarantee", "question": "¿Qué garantía ofreces exactamente (días y condiciones)?", "blocking": false },
+    { "id": "q_pila", "field": "features.bateria", "question": "¿Cuánto dura la pila con uso diario?", "blocking": false }
+  ],
+  "confirmedPaths": ["price.amount"],
+  "status": "ready"
+}

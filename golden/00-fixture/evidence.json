@@ -1,0 +1,43 @@
+{
+  "_fixture": "FIXTURE: salida simulada de extractores; no proviene de ningún proveedor real",
+  "inputs": [
+    { "id": "in_form", "kind": "user_form", "file": "inputs/ficha.txt" },
+    { "id": "in_audio", "kind": "audio", "file": "inputs/nota-de-voz.transcripcion.txt" },
+    { "id": "in_ref", "kind": "url", "file": "inputs/urls.txt" },
+    { "id": "in_photo", "kind": "photo", "file": "(sin archivo: foto simulada)" }
+  ],
+  "evidence": [
+    {
+      "source": { "inputId": "in_form", "kind": "user_form" },
+      "text": "Termo LED 500 ml, acero 304, doble pared, 12 h caliente / 24 h frío según proveedor, 89.900 COP, contraentrega.",
+      "facts": [
+        { "key": "capacidad", "value": "500 ml", "confidence": 0.95 },
+        { "key": "material", "value": "acero inoxidable 304", "confidence": 0.95 },
+        { "key": "retencion_calor", "value": "12 h (dato del proveedor, sin prueba propia)", "confidence": 0.6 },
+        { "key": "precio", "value": "89900 COP", "confidence": 0.95 }
+      ],
+      "confidence": 0.9
+    },
+    {
+      "source": { "inputId": "in_audio", "kind": "audio" },
+      "text": "La tapa muestra la temperatura al tocarla; pila de botón reemplazable; público: oficinistas que se queman con el café. [Instrucción embebida descartada]",
+      "facts": [
+        { "key": "pantalla", "value": "temperatura en la tapa al tocar", "confidence": 0.85 },
+        { "key": "bateria", "value": "pila de botón reemplazable", "confidence": 0.8 }
+      ],
+      "confidence": 0.8
+    },
+    {
+      "source": { "inputId": "in_ref", "kind": "url" },
+      "text": "Referencia de competidor: hero con video, oferta por packs, verde oscuro + naranja. Solo estilo/estructura.",
+      "facts": [],
+      "confidence": 0.7
+    },
+    {
+      "source": { "inputId": "in_photo", "kind": "photo" },
+      "text": "Termo negro sobre mesa de madera, fondo limpio, pantalla LED encendida.",
+      "facts": [{ "key": "color", "value": "negro", "confidence": 0.9 }],
+      "confidence": 0.85
+    }
+  ]
+}

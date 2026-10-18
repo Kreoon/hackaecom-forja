@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "shopify-dev": {
+      "command": "npx",
+      "args": ["-y", "@shopify/dev-mcp@1.17.0"]
+    },
+    "supabase": {
+      "type": "http",
+      "url": "https://mcp.supabase.com/mcp?read_only=true&features=database,docs,debugging&project_ref=${SUPABASE_PROJECT_REF:-configure-me}"
+    }
+  }
+}

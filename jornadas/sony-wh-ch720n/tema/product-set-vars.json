@@ -1,0 +1,161 @@
+{
+ "input": {
+  "title": "Audífonos Sony WH-CH720N con cancelación de ruido",
+  "handle": "sony-wh-ch720n",
+  "descriptionHtml": "<p>Los Sony WH-CH720N son los audífonos de diadema con cancelación de ruido más livianos de Sony. El procesador integrado V1 y la tecnología de sensor de ruido dual reducen el ruido de tu entorno para que te concentres en tu música, tus clases o tus llamadas.</p>\n<ul><li>Hasta 35 horas de batería con la cancelación de ruido encendida</li><li>Multipunto: conecta 2 dispositivos a la vez</li><li>Captación precisa de voz para llamadas claras</li><li>Ecualizador en la app Sony | Headphones Connect</li></ul>\n<p>Incluye: audífonos, cable de audio y cable USB. Pago contraentrega en toda Colombia.</p>",
+  "vendor": "Sony",
+  "productType": "Audífonos",
+  "status": "ACTIVE",
+  "tags": [
+   "hackaecom-demo",
+   "contraentrega"
+  ],
+  "seo": {
+   "title": "Audífonos Sony WH-CH720N con cancelación de ruido | HACKY",
+   "description": "Audífonos Sony con cancelación de ruido, 35 h de batería y multipunto. Paga al recibir en toda Colombia."
+  },
+  "productOptions": [
+   {
+    "name": "Color",
+    "values": [
+     {
+      "name": "Negro"
+     },
+     {
+      "name": "Blanco"
+     },
+     {
+      "name": "Rosado"
+     }
+    ]
+   },
+   {
+    "name": "Oferta",
+    "values": [
+     {
+      "name": "1 unidad"
+     },
+     {
+      "name": "Pack x2 + estuche de regalo"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Color",
+      "name": "Negro"
+     },
+     {
+      "optionName": "Oferta",
+      "name": "1 unidad"
+     }
+    ],
+    "price": "349900",
+    "compareAtPrice": "459900",
+    "inventoryPolicy": "CONTINUE",
+    "inventoryItem": {
+     "tracked": false
+    },
+    "sku": "WHCH720N-NEG-X1"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Color",
+      "name": "Negro"
+     },
+     {
+      "optionName": "Oferta",
+      "name": "Pack x2 + estuche de regalo"
+     }
+    ],
+    "price": "629900",
+    "compareAtPrice": "919800",
+    "inventoryPolicy": "CONTINUE",
+    "inventoryItem": {
+     "tracked": false
+    },
+    "sku": "WHCH720N-NEG-X2"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Color",
+      "name": "Blanco"
+     },
+     {
+      "optionName": "Oferta",
+      "name": "1 unidad"
+     }
+    ],
+    "price": "349900",
+    "compareAtPrice": "459900",
+    "inventoryPolicy": "CONTINUE",
+    "inventoryItem": {
+     "tracked": false
+    },
+    "sku": "WHCH720N-BLA-X1"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Color",
+      "name": "Blanco"
+     },
+     {
+      "optionName": "Oferta",
+      "name": "Pack x2 + estuche de regalo"
+     }
+    ],
+    "price": "629900",
+    "compareAtPrice": "919800",
+    "inventoryPolicy": "CONTINUE",
+    "inventoryItem": {
+     "tracked": false
+    },
+    "sku": "WHCH720N-BLA-X2"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Color",
+      "name": "Rosado"
+     },
+     {
+      "optionName": "Oferta",
+      "name": "1 unidad"
+     }
+    ],
+    "price": "349900",
+    "compareAtPrice": "459900",
+    "inventoryPolicy": "CONTINUE",
+    "inventoryItem": {
+     "tracked": false
+    },
+    "sku": "WHCH720N-ROS-X1"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Color",
+      "name": "Rosado"
+     },
+     {
+      "optionName": "Oferta",
+      "name": "Pack x2 + estuche de regalo"
+     }
+    ],
+    "price": "629900",
+    "compareAtPrice": "919800",
+    "inventoryPolicy": "CONTINUE",
+    "inventoryItem": {
+     "tracked": false
+    },
+    "sku": "WHCH720N-ROS-X2"
+   }
+  ]
+ }
+}

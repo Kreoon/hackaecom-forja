@@ -15,3 +15,16 @@ coverage/
 # tipos que el engine genera para el mod
 mods/*/.claude-plugin/types/
 golden/**/outputs/
+
+# worktrees de Claude Code y notas personales
+.claude/worktrees/
+CLAUDE.local.md
+# herramientas del kit
+tools/kit/node_modules/
+tools/kit/.contracts/
+.build-tema/
+.pull/
+jornadas/*/referencia/screenshot-full.png
+jornadas/*/referencia/pagina*.md
+jornadas/*/insumos/*.md
+!jornadas/*/insumos/ficha-producto.md

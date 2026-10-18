@@ -1,0 +1,13 @@
+{
+ "sections": {
+  "redir": {
+   "type": "hk-redirect",
+   "settings": {
+    "text": "Ir a la tienda"
+   }
+  }
+ },
+ "order": [
+  "redir"
+ ]
+}

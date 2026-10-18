@@ -6,7 +6,7 @@ import { join } from "node:path";
 const root = process.env.CLAUDE_PROJECT_DIR ?? process.cwd();
 const lanePath = join(root, ".claude", "lane.local");
 const estadoPath = join(root, "docs", "estado.md");
-const names = { A: "A · Cerebro IA", B: "B · App + Mockup", C: "C · Shopify" };
+const names = { A: "A · Cerebro + backend", B: "B · Producto + preview", C: "C · Shopify + calidad" };
 
 const lane = existsSync(lanePath) ? readFileSync(lanePath, "utf8").trim().toUpperCase() : "";
 const lines = [];
@@ -15,5 +15,5 @@ if (existsSync(estadoPath)) {
   const tail = readFileSync(estadoPath, "utf8").trim().split("\n").slice(-12).join("\n");
   lines.push("Últimas notas de docs/estado.md:\n" + tail);
 }
-lines.push("Contratos: src/contracts (o referencias en .claude/skills/forja-pagespec y forja-product-dna). Cambios de contrato → forja-architect.");
+lines.push("Contratos: src/contracts (o referencias en .claude/skills/forja-pagespec, forja-product-dna y forja-contracts). Cambios de contrato → forja-architect. Tareas: docs/11-backlog.md. Orientación: /forja-orientacion.");
 process.stdout.write(lines.join("\n\n"));

@@ -16,3 +16,14 @@ Ensayo:
 5. Consola y red sin errores.
 
 Reporte: tabla de tiempos (meta total < 4 min hasta mockup, < 1 min deploy), fallos con pasos para reproducir, y el plan B si algo falla en vivo (video de respaldo, proyecto precargado).
+
+## Protocolo
+- **Entradas:** URL de la app (local o preview), cuenta demo, producto (`golden/*`).
+- **Archivos:** `docs/03-demo-runbook.md`, `docs/estado.md` (resultado del ensayo).
+- **Límites:** ensayo cronometrado y plan B; las pruebas automatizadas son de `forja-qa-fidelity`. No publicas en `live` sin ✓ del humano.
+- **Entregables:** tabla de tiempos, fallos con repro, plan B.
+- **Aceptación:** cada etapa medida en la app real.
+- **Handoff:** fallos a cada carril; resumen en `docs/estado.md`.
+- **Escala:** si un fallo no tiene plan B antes de tarima.
+
+**Nunca afirmes** pruebas, llamadas a APIs, migraciones o publicaciones que no ejecutaste: escribe «no ejecutado: <motivo>».

@@ -1,0 +1,116 @@
+{
+ "colorScheme": "light",
+ "fonts": [
+  {
+   "family": "Satoshi",
+   "role": "body"
+  },
+  {
+   "family": "Clash Grotesk",
+   "role": "heading"
+  }
+ ],
+ "colors": {
+  "primary": "#095946",
+  "secondary": "#009370",
+  "accent": "#FFF7D4",
+  "background": "#FFFFFF",
+  "textPrimary": "#085946",
+  "link": "#FFF7D4"
+ },
+ "typography": {
+  "fontFamilies": {
+   "primary": "Satoshi",
+   "heading": "Clash Grotesk"
+  },
+  "fontStacks": {
+   "heading": [
+    "Clash Grotesk",
+    "sans-serif"
+   ],
+   "body": [
+    "Satoshi",
+    "system-ui",
+    "-apple-system",
+    "sans-serif"
+   ],
+   "paragraph": [
+    "Satoshi",
+    "system-ui",
+    "-apple-system",
+    "sans-serif"
+   ]
+  },
+  "fontSizes": {
+   "h1": "28px",
+   "h2": "31px",
+   "body": "16.94px"
+  }
+ },
+ "spacing": {
+  "baseUnit": 4,
+  "borderRadius": "5px"
+ },
+ "components": {
+  "input": {
+   "background": "#085946",
+   "textColor": "#FFFFFF",
+   "borderColor": "#FFFFFF",
+   "borderRadius": "4px",
+   "borderRadiusCorners": {
+    "topLeft": "4px",
+    "topRight": "4px",
+    "bottomRight": "4px",
+    "bottomLeft": "4px"
+   },
+   "shadow": "none"
+  },
+  "buttonPrimary": {
+   "background": "#095946",
+   "textColor": "#FFFFFF",
+   "borderRadius": "5px",
+   "borderRadiusCorners": {
+    "topLeft": "5px",
+    "topRight": "5px",
+    "bottomRight": "5px",
+    "bottomLeft": "5px"
+   },
+   "shadow": "none"
+  },
+  "buttonSecondary": {
+   "background": "#FFF7D4",
+   "textColor": "#000000",
+   "borderRadius": "100px",
+   "borderRadiusCorners": {
+    "topLeft": "100px",
+    "topRight": "100px",
+    "bottomRight": "100px",
+    "bottomLeft": "100px"
+   },
+   "shadow": "none"
+  }
+ },
+ "images": {
+  "logo": "https://resilia.shop/cdn/shop/files/logo_1.png?v=1783182409&width=280",
+  "favicon": null,
+  "ogImage": "http://resilia.shop/cdn/shop/files/oregano-updated-1_e481c659-c9fb-4714-bb2c-950280ff9d64.webp?v=1788373547",
+  "logoHref": "/es",
+  "logoAlt": "Resilia"
+ },
+ "personality": {
+  "tone": "professional",
+  "energy": "low",
+  "targetAudience": "general consumers"
+ },
+ "designSystem": {
+  "framework": "custom",
+  "componentLibrary": ""
+ },
+ "confidence": {
+  "buttons": 0.7,
+  "colors": 0.7366666666666667,
+  "overall": 0.7183333333333333
+ },
+ "brandName": "Resilia",
+ "logo": "https://resilia.shop/cdn/shop/files/logo_1.png?v=1783182409&width=280"
+}

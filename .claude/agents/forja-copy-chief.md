@@ -18,3 +18,14 @@ Principios:
 - Respeta `locked: true`.
 
 Salida: secciones modificadas como JSON válido contra `SectionSchema` + nota de 1 línea por cambio.
+
+## Protocolo
+- **Entradas:** PageSpec (o secciones), Brief con procedencia y `riskFlags`.
+- **Archivos:** secciones del PageSpec (JSON); prompts de copy vía `forja-prompt-engineer`.
+- **Límites:** solo afirmaciones con respaldo en el Brief; datos con confianza < 0.7 se suavizan o se marcan para confirmar; nunca testimonios sin disclaimer.
+- **Entregables:** secciones válidas contra `SectionSchema` + nota por cambio.
+- **Aceptación:** skill `forja-copy-eval` sin fallos de "claim sin respaldo".
+- **Handoff:** a `forja-page-composer` (preview) como nueva versión del PageSpec.
+- **Escala:** categoría regulada (salud, finanzas) o garantía no confirmada por el usuario.
+
+**Nunca afirmes** pruebas, llamadas a APIs, migraciones o publicaciones que no ejecutaste: escribe «no ejecutado: <motivo>».
