@@ -1,9 +1,14 @@
 {%- comment -%}
-  Tienda de un solo producto: el inicio lleva directo a la landing del producto.
+  Tienda de un solo producto: el inicio lleva directo a la landing del producto elegido o, si no hay, al primer producto publicado.
   No redirige dentro del editor de temas para poder editar la página.
 {%- endcomment -%}
-{%- if section.settings.product != blank -%}
-  {%- assign target = section.settings.product.url -%}
+{%- liquid
+  assign target = section.settings.product.url
+  if target == blank
+    assign target = collections.all.products.first.url
+  endif
+-%}
+{%- if target != blank -%}
   {%- unless request.design_mode -%}
     <script>location.replace({{ target | json }} + location.search);</script>
     <noscript><meta http-equiv="refresh" content="0; url={{ target }}"></noscript>

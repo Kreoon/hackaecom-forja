@@ -12,7 +12,8 @@ Pasos (skill `tienda-clonar-pagina` y `tienda-shopify-setup`):
 2. En paralelo (un solo mensaje):
    - MCP Shopify `themeDuplicate(id: <tema base>, name: tema.nombre)`. Tema base: el de `corrida.json → tema_base` (hoy "HACKY Landing", id 165468078339; búscalo por nombre con `themes` si cambió). Si responde "restringida la duplicación", duplica "HACKY Landing".
    - `productSet(input: <product-set.json>.input, synchronous: true)`.
-3. `publishablePublish` del producto en la publicación "Tienda online"; `productCreateMedia` con `media.json` (g1–g5 = vistas del producto real). Si el producto ya tenía media (re-ensamblado tras rehacer creativos): primero `productDeleteMedia` de la media vieja, para **reemplazar** la galería, no sumar.
+3. Menú principal (`main-menu`): agrega el producto como **primer** ítem (`type: PRODUCT`, `resourceId` del producto) con `menuUpdate`, conservando los demás ítems (léelos antes con `menus`). Así el menú nunca apunta a un producto borrado y siempre lleva al de la corrida.
+   `publishablePublish` del producto en la publicación "Tienda online"; `productCreateMedia` con `media.json` (g1–g5 = vistas del producto real). Si el producto ya tenía media (re-ensamblado tras rehacer creativos): primero `productDeleteMedia` de la media vieja, para **reemplazar** la galería, no sumar.
 4. `CI=1 shopify theme push --store hackaecom.myshopify.com --theme <id nuevo> --path .build-tema/<slug> --nodelete` (≈15 s). Si falla una sección/plantilla, lee el error, corrige el `brief.json` o el kit y repite.
 5. Guarda en `corrida.json`: `theme_id`, `product_id`, `preview` = `https://hackaecom.myshopify.com/products/<handle>?preview_theme_id=<id>`, `hitos.ensamblado`.
 6. Cierra con `python -I tools/tienda/estado.py jornadas/<slug>` → debe decir **AL DÍA**.
