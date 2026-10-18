@@ -50,7 +50,9 @@ Releasit > checkout de Shopify para COD con tráfico de anuncios (formulario de 
    - Diseñador **Lite** (el Pro no edita en pantallas angostas): país Colombia; título "PIDE Y PAGA AL RECIBIR"; "Ingresa tus datos de entrega"; Nombre/"Tu nombre"; Dirección 2 → "Barrio, apto o indicaciones"; Código postal **no obligatorio**; resumen "Envío"; envío "Método de envío"/"Gratis"; descuentos en español; botón final "CONFIRMAR PEDIDO - {order_total}" `#095946`. Guardar tras cada bloque.
    - Multiidioma es de pago: no hace falta si los textos se editan en español.
 4. `hk-buybox` ya integra la app: oculta su botón cuando aparece el de Releasit (`cod_selector` = `[class*="rsi_"]`) y, en la oferta repetida, copia color/oferta al bloque principal y abre el formulario. Releasit toma la variante del `input[name=id]` del formulario.
-5. Probar: abrir el formulario con cada oferta y color, revisar precio y envío; el pedido de prueba se envía solo con OK del usuario.
+5. Probar: abrir el formulario con cada oferta y color, revisar precio y envío; el pedido de prueba se envía solo con OK del usuario, con datos ficticios ("Prueba", teléfono 3000000000, "Pedido de prueba - no despachar").
+6. Verificar por API (`orders(first:3, reverse:true)`): variante, total COP, envío, gateway "Cash on Delivery (COD)", etiqueta `releasit_cod_form`.
+7. Cancelar: `orderCancel` está bloqueado en el conector → admin → pedido → ⋯ → Cancelar pedido, **desmarcar "Enviar notificación al cliente"**, nota interna, confirmar (queda cancelado y archivado). Probado 2026-10-17 con el pedido #1001.
 
 ## 5. Medios
 Subir imágenes al producto cuando existan (`productSet` con `files` o `productCreateMedia`), en el orden de la galería del brief; alt text en español.
