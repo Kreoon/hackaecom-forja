@@ -34,8 +34,16 @@ python -I tools/tienda/nueva.py <slug> "<url producto>" "<url referencia>"
 Prompt de cada agente: `Corrida jornadas/<slug>. Lee corrida.json y sigue tu definición. Presupuesto N min.` (nada más: el agente sabe qué hacer).
 Mientras corre la ola 2, avisar a Anuncios (Joaquín): ficha + ángulos del brief para empezar campañas; a Creativos: `creativos/revision.jpg` para aprobar.
 
+**Compuertas (lecciones de la corrida NÜMA, 2026-10-17):**
+- El insumo del producto puede ser fotos u hoja de branding: tienda-producto recorta cada vista a `insumos/ref_*.jpg` (frontal obligatoria). Sin vistas del producto no hay creativos fieles.
+- tienda-referencia deja `referencia/imgs/<id>.jpg` (imagen objetivo por ID) **antes** que el mapa; sin eso los creativos salen genéricos.
+- No lanzar tienda-ensamblador hasta que creativos termine (o corra el reloj y se ensamble con placeholders, marcando re-subida pendiente).
+- **Cualquier cambio después del armado (creativos rehechos, brief editado) ⇒ relanzar `tienda-ensamblador` en modo re-subida** en el mismo turno. La corrida no se cierra mientras `python -I tools/tienda/estado.py jornadas/<slug>` diga DESACTUALIZADO.
+- No terminar el turno con agentes corriendo sin avisar: si el usuario pide un cambio, relanza, espera la notificación y re-sube antes de reportar "listo".
+
 ## 3. Si algo se atrasa
-- Creativos tarde → ensamblar igual: las imágenes que falten salen como placeholder rayado con su ID; se re-sube solo `assets/` después (`--only assets/*`).
+- Creativos tarde → ensamblar igual: las imágenes que falten salen como placeholder rayado con su ID; cuando lleguen, ensamblador en modo re-subida.
+- Un agente se cortó a mitad → relánzalo con "continúa": `descargar.py` recupera lo ya generado desde `urls.json`.
 - Referencia con sección SIN KIT → usar la clave más cercana y anotarlo para crear la sección después (no frenar la corrida).
 - Agente sin acceso al navegador → el orquestador corre `tools/tienda/qa.js` él mismo.
 
@@ -47,6 +55,8 @@ Mientras corre la ola 2, avisar a Anuncios (Joaquín): ficha + ángulos del brie
 ## Reglas
 - La referencia aporta estructura y estilo; los datos salen del producto. Cifras, reseñas y garantías solo con fuente o decisión del equipo (reseñas demo marcadas).
 - Misma estructura que la referencia, sin quitar secciones ni elementos.
+- **Imágenes: se cambian todas** y el producto se ve igual en todas (mismo empaque, etiqueta legible). Galería = vistas del producto que mandó el usuario; secciones = composición calcada de la imagen equivalente de la referencia, con nuestro producto y paleta.
+- Si se rehacen creativos después de ensamblar: re-subir `assets/` (`--only assets/*`) **y reemplazar** la galería del producto (borrar media vieja, `productCreateMedia` con la nueva), no sumar.
 - **Navegación sin callejones**: todo enlace del menú apunta a una página creada o se quita.
 - Cada corrida en un **tema nuevo** y con su propia plantilla `product.<sufijo>`; nunca editar el tema publicado ni el base.
 - Trabajo largo fuera de la ruta crítica (variantes de anuncios, video) → Hermes (`delegar-hermes`).
