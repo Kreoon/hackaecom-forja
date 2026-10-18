@@ -48,7 +48,12 @@ def main(run_dir: str):
     (out / "assets").mkdir(parents=True)
 
     amap = {}
-    for f in sorted((run / "creativos").rglob("*")):
+    cre = run / "creativos"
+    # Solo creativos/<id>, creativos/ugc/<id> y creativos/marca/logo*: cualquier otra subcarpeta (v1/, viejos/…) es respaldo
+    # y NO entra (bug de la corrida NÜMA: v1/ugc/ugc08.jpg pisaba a ugc/ugc08.jpg por orden alfabético).
+    fuentes = [p for p in cre.iterdir() if p.is_file()] + \
+              [p for sub in ("ugc", "marca") if (cre / sub).is_dir() for p in (cre / sub).iterdir() if p.is_file()]
+    for f in sorted(fuentes):
         if f.suffix.lower() not in (".jpg", ".jpeg", ".png", ".webp") or SKIP.search(f.stem):
             continue
         if f.parent.name == "marca":
