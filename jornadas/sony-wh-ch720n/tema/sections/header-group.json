@@ -98,7 +98,8 @@
     "title": "LANZAMIENTO HACKY",
     "text": "Hasta 24 % de descuento · Paga al recibir",
     "countdown_hours": 2
-   }
+   },
+   "disabled": false
   }
  },
  "order": [

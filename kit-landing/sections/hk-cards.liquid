@@ -9,7 +9,7 @@
     <div class="hk-grid hk-grid--{{ section.settings.columns }}{% if section.settings.columns == '4' %} hk-grid--4m2{% endif %}">
       {%- for b in section.blocks -%}
         <article class="hk-card hk-tcard{% if section.settings.style == 'square' %} hk-tcard--center{% endif %}" {{ b.shopify_attributes }}>
-          <div class="hk-tcard__img{% if section.settings.style == 'wide' %} hk-tcard__img--wide{% endif %}">{% render 'hk-img', image: b.settings.image, label: b.settings.ph, sizes: '(min-width: 750px) 33vw, 100vw' %}</div>
+          <div class="hk-tcard__img{% if section.settings.style == 'wide' %} hk-tcard__img--wide{% endif %}">{% render 'hk-img', image: b.settings.image, asset: b.settings.image_asset, label: b.settings.ph, sizes: '(min-width: 750px) 33vw, 100vw' %}</div>
           <div class="hk-tcard__body">
             {%- if b.settings.kicker != blank -%}<p><span class="hk-badge">{{ b.settings.kicker }}</span></p>{%- endif -%}
             <h3>{{ b.settings.title }}</h3><p>{{ b.settings.text }}</p>
@@ -29,7 +29,7 @@
   { "type": "checkbox", "id": "alt", "label": "Fondo alterno", "default": true },
   { "type": "text", "id": "button", "label": "Botón (vacío = sin botón)" } ],
   "blocks": [{ "type": "card", "name": "Tarjeta", "settings": [
-    { "type": "image_picker", "id": "image", "label": "Imagen" }, { "type": "text", "id": "ph", "label": "Etiqueta placeholder" },
+    { "type": "image_picker", "id": "image", "label": "Imagen" }, { "type": "text", "id": "image_asset", "label": "Imagen · archivo del tema" }, { "type": "text", "id": "ph", "label": "Etiqueta placeholder" },
     { "type": "text", "id": "kicker", "label": "Etiqueta (ej. Razón 1)" },
     { "type": "text", "id": "title", "label": "Título" }, { "type": "textarea", "id": "text", "label": "Texto" } ] }],
   "presets": [{ "name": "HK · Tarjetas con foto" }] }

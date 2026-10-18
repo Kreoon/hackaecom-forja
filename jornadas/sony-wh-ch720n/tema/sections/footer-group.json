@@ -187,7 +187,7 @@
   "hk_foot": {
    "type": "hk-footer",
    "settings": {
-    "logo": "shopify://shop_images/hk-logo-hacky-blanco.png",
+    "logo_asset": "hk-logo_blanco.png",
     "menu": "footer",
     "news_title": "Únete a la lista HACKY",
     "news_text": "Recibe lanzamientos, ofertas y descuentos exclusivos.",

@@ -5,12 +5,12 @@
    "settings": {
     "enabled": true,
     "delay": 5,
-    "logo": "shopify://shop_images/hk-logo-hacky.png",
+    "logo_asset": "hk-logo.png",
     "pill": "Lanzamiento HACKY 🎧",
     "heading": "¡Estás de suerte!",
     "text": "Rasca la tarjeta y mira lo que ganaste 👀",
     "prize": "ENVÍO GRATIS HOY",
-    "image": "shopify://shop_images/hk-g3.jpg"
+    "image_asset": "hk-g3.jpg"
    },
    "blocks": {},
    "block_order": []
@@ -68,6 +68,7 @@
   "main": {
    "type": "hk-buybox",
    "settings": {
+    "layout": "full",
     "features": "Cancelación de ruido\n35 h de batería\nMultipunto\nLlamadas claras\nProcesador V1\nCarga rápida",
     "color_option": "Color",
     "scarcity": 87,
@@ -78,7 +79,7 @@
     "button": "PEDIR AHORA · PAGO CONTRAENTREGA",
     "gifts_label": "REGALOS DESBLOQUEADOS",
     "trust": "🔒 No pagas nada por adelantado | ↩ Devolución hasta 7 días",
-    "layout": "full",
+    "videos_heading": "Lo que dicen nuestros clientes:",
     "proof": "Calificados 4,4/5 en Amazon · 490 opiniones",
     "eyebrow": "Audífonos Sony con cancelación de ruido",
     "heading": "Silencio para ti, música para todo el día",
@@ -106,15 +107,16 @@
     "main_2": {
      "type": "gift",
      "settings": {
-      "image": "shopify://shop_images/hk-g1.jpg",
+      "image_asset": "hk-g1.jpg",
       "title": "Envío GRATIS",
-      "value": "$15.000"
+      "value": "$15.000",
+      "locked": false
      }
     },
     "main_3": {
      "type": "gift",
      "settings": {
-      "image": "shopify://shop_images/hk-g2.jpg",
+      "image_asset": "hk-g2.jpg",
       "title": "Estuche de viaje GRATIS",
       "value": "$59.900",
       "locked": true,
@@ -124,33 +126,34 @@
     "main_4": {
      "type": "gift",
      "settings": {
-      "image": "shopify://shop_images/hk-w1.jpg",
+      "image_asset": "hk-w1.jpg",
       "title": "Garantía 7 días",
-      "value": ""
+      "value": "",
+      "locked": false
      }
     },
     "main_5": {
      "type": "avatar",
      "settings": {
-      "image": "shopify://shop_images/hk-ugc04.jpg"
+      "image_asset": "hk-ugc04.jpg"
      }
     },
     "main_6": {
      "type": "avatar",
      "settings": {
-      "image": "shopify://shop_images/hk-ugc11.jpg"
+      "image_asset": "hk-ugc11.jpg"
      }
     },
     "main_7": {
      "type": "avatar",
      "settings": {
-      "image": "shopify://shop_images/hk-ugc15.jpg"
+      "image_asset": "hk-ugc15.jpg"
      }
     },
     "main_8": {
      "type": "avatar",
      "settings": {
-      "image": "shopify://shop_images/hk-ugc19.jpg"
+      "image_asset": "hk-ugc19.jpg"
      }
     },
     "main_9": {
@@ -198,21 +201,21 @@
     "main_15": {
      "type": "video",
      "settings": {
-      "image": "shopify://shop_images/hk-ugc11.jpg",
+      "image_asset": "hk-ugc11.jpg",
       "caption": ""
      }
     },
     "main_16": {
      "type": "video",
      "settings": {
-      "image": "shopify://shop_images/hk-ugc12.jpg",
+      "image_asset": "hk-ugc12.jpg",
       "caption": "Los usé 1 semana"
      }
     },
     "main_17": {
      "type": "video",
      "settings": {
-      "image": "shopify://shop_images/hk-ugc13.jpg",
+      "image_asset": "hk-ugc13.jpg",
       "caption": "Por esto no vuelvo atrás"
      }
     }
@@ -241,7 +244,7 @@
   "stats": {
    "type": "hk-stats",
    "settings": {
-    "bg": "shopify://shop_images/hk-t1.jpg",
+    "bg_asset": "hk-t1.jpg",
     "heading": "Menos ruido. Más foco. Todo el día.",
     "text": "La tecnología de Sony, ahora con pago al recibir.",
     "button": "Pídelos sin riesgo hoy"
@@ -295,7 +298,8 @@
     "tech_0": {
      "type": "card",
      "settings": {
-      "image": "shopify://shop_images/hk-t1.jpg",
+      "image_asset": "hk-t1.jpg",
+      "ph": "t1",
       "title": "Sensor de ruido dual",
       "text": "Dos micrófonos escuchan el ruido de afuera y la cancelación lo reduce para que no subas tanto el volumen."
      }
@@ -303,7 +307,8 @@
     "tech_1": {
      "type": "card",
      "settings": {
-      "image": "shopify://shop_images/hk-t2.jpg",
+      "image_asset": "hk-t2.jpg",
+      "ph": "t2",
       "title": "Procesador V1",
       "text": "El cerebro de los audífonos: procesa la cancelación de ruido y el sonido con precisión."
      }
@@ -311,7 +316,8 @@
     "tech_2": {
      "type": "card",
      "settings": {
-      "image": "shopify://shop_images/hk-t3.jpg",
+      "image_asset": "hk-t3.jpg",
+      "ph": "t3",
       "title": "DSEE",
       "text": "Recupera detalles de la música comprimida para que suene más natural."
      }
@@ -319,7 +325,8 @@
     "tech_3": {
      "type": "card",
      "settings": {
-      "image": "shopify://shop_images/hk-t4.jpg",
+      "image_asset": "hk-t4.jpg",
+      "ph": "t4",
       "title": "Captación precisa de voz",
       "text": "Micrófonos con formación de haz y reducción de ruido de viento para que te escuchen claro."
      }
@@ -345,61 +352,61 @@
     "rev1_0": {
      "type": "thumb",
      "settings": {
-      "image": "shopify://shop_images/hk-ugc01.jpg"
+      "image_asset": "hk-ugc01.jpg"
      }
     },
     "rev1_1": {
      "type": "thumb",
      "settings": {
-      "image": "shopify://shop_images/hk-ugc02.jpg"
+      "image_asset": "hk-ugc02.jpg"
      }
     },
     "rev1_2": {
      "type": "thumb",
      "settings": {
-      "image": "shopify://shop_images/hk-ugc03.jpg"
+      "image_asset": "hk-ugc03.jpg"
      }
     },
     "rev1_3": {
      "type": "thumb",
      "settings": {
-      "image": "shopify://shop_images/hk-ugc04.jpg"
+      "image_asset": "hk-ugc04.jpg"
      }
     },
     "rev1_4": {
      "type": "thumb",
      "settings": {
-      "image": "shopify://shop_images/hk-ugc05.jpg"
+      "image_asset": "hk-ugc05.jpg"
      }
     },
     "rev1_5": {
      "type": "thumb",
      "settings": {
-      "image": "shopify://shop_images/hk-ugc06.jpg"
+      "image_asset": "hk-ugc06.jpg"
      }
     },
     "rev1_6": {
      "type": "thumb",
      "settings": {
-      "image": "shopify://shop_images/hk-ugc07.jpg"
+      "image_asset": "hk-ugc07.jpg"
      }
     },
     "rev1_7": {
      "type": "thumb",
      "settings": {
-      "image": "shopify://shop_images/hk-ugc08.jpg"
+      "image_asset": "hk-ugc08.jpg"
      }
     },
     "rev1_8": {
      "type": "thumb",
      "settings": {
-      "image": "shopify://shop_images/hk-ugc09.jpg"
+      "image_asset": "hk-ugc09.jpg"
      }
     },
     "rev1_9": {
      "type": "thumb",
      "settings": {
-      "image": "shopify://shop_images/hk-ugc10.jpg"
+      "image_asset": "hk-ugc10.jpg"
      }
     },
     "rev1_10": {
@@ -409,7 +416,7 @@
       "title": "Por fin trabajo sin escuchar la obra del vecino",
       "text": "Los uso en la casa y en el bus. La cancelación de ruido me cambió el día y la batería me dura toda la semana.",
       "author": "Laura M.",
-      "avatar": "shopify://shop_images/hk-ugc04.jpg",
+      "avatar_asset": "hk-ugc04.jpg",
       "tags": "Concentración | Batería",
       "demo": true
      }
@@ -421,7 +428,7 @@
       "title": "Livianos de verdad",
       "text": "Me los pongo a las 8 y me acuerdo que los tengo puestos a la hora del almuerzo. Nada de dolor de cabeza.",
       "author": "Andrés P.",
-      "avatar": "shopify://shop_images/hk-ugc05.jpg",
+      "avatar_asset": "hk-ugc05.jpg",
       "tags": "Comodidad | Uso diario",
       "demo": true
      }
@@ -433,7 +440,7 @@
       "title": "Llamadas clarísimas",
       "text": "Trabajo en llamadas todo el día y me dejaron de decir que no me escuchan. Y cambio del PC al celular sin desconectar.",
       "author": "Camila R.",
-      "avatar": "shopify://shop_images/hk-ugc06.jpg",
+      "avatar_asset": "hk-ugc06.jpg",
       "tags": "Llamadas | Multipunto",
       "demo": true
      }
@@ -460,7 +467,7 @@
    "settings": {
     "heading": "<em>Suenan mejor.</em> Todos los días.",
     "text": "Del primer trayecto de la mañana a la última serie de la noche.",
-    "image": "shopify://shop_images/hk-p1.png"
+    "image_asset": "hk-p1.png"
    },
    "blocks": {
     "bc_0": {
@@ -509,7 +516,8 @@
     "rows_0": {
      "type": "row",
      "settings": {
-      "image": "shopify://shop_images/hk-b1.jpg",
+      "image_asset": "hk-b1.jpg",
+      "ph": "b1",
       "title": "Trabajo y estudio",
       "subtitle": "Concéntrate en serio.",
       "text": "Baja el ruido de la oficina, el café o la casa y entra en modo foco."
@@ -518,7 +526,8 @@
     "rows_1": {
      "type": "row",
      "settings": {
-      "image": "shopify://shop_images/hk-b2.jpg",
+      "image_asset": "hk-b2.jpg",
+      "ph": "b2",
       "title": "Viajes",
       "subtitle": "El ruido se queda afuera.",
       "text": "Ideal para trayectos largos y vuelos; la batería aguanta hasta 35 horas."
@@ -527,7 +536,8 @@
     "rows_2": {
      "type": "row",
      "settings": {
-      "image": "shopify://shop_images/hk-t4.jpg",
+      "image_asset": "hk-t4.jpg",
+      "ph": "t4",
       "title": "Llamadas",
       "subtitle": "Te escuchan claro.",
       "text": "Micrófonos que captan tu voz y reducen el viento."
@@ -536,7 +546,8 @@
     "rows_3": {
      "type": "row",
      "settings": {
-      "image": "shopify://shop_images/hk-b4.jpg",
+      "image_asset": "hk-b4.jpg",
+      "ph": "b4",
       "title": "Música",
       "subtitle": "Tu música, como debe sonar.",
       "text": "Ajusta el sonido a tu gusto con el ecualizador de la app."
@@ -603,7 +614,7 @@
   "tl": {
    "type": "hk-timeline",
    "settings": {
-    "image": "shopify://shop_images/hk-l1.jpg",
+    "image_asset": "hk-l1.jpg",
     "heading": "<em>Tu día</em> con los WH-CH720N",
     "text": "Hechos para usarlos todo el día, no solo un rato. Así cambia tu rutina.",
     "button": "Quiero los míos →"
@@ -659,7 +670,8 @@
     "why_0": {
      "type": "card",
      "settings": {
-      "image": "shopify://shop_images/hk-z1.jpg",
+      "image_asset": "hk-z1.jpg",
+      "ph": "z1",
       "kicker": "Razón 1",
       "title": "Batería de 35 horas",
       "text": "Cárgalos el lunes y olvídate del cable buena parte de la semana."
@@ -668,7 +680,8 @@
     "why_1": {
      "type": "card",
      "settings": {
-      "image": "shopify://shop_images/hk-z2.jpg",
+      "image_asset": "hk-z2.jpg",
+      "ph": "z2",
       "kicker": "Razón 2",
       "title": "Livianos de verdad",
       "text": "Los audífonos de diadema con cancelación de ruido más livianos de Sony."
@@ -677,7 +690,8 @@
     "why_2": {
      "type": "card",
      "settings": {
-      "image": "shopify://shop_images/hk-z3.jpg",
+      "image_asset": "hk-z3.jpg",
+      "ph": "z3",
       "kicker": "Razón 3",
       "title": "Dos dispositivos a la vez",
       "text": "Computador y celular conectados; contestas la llamada sin desconectar nada."
@@ -686,7 +700,8 @@
     "why_3": {
      "type": "card",
      "settings": {
-      "image": "shopify://shop_images/hk-z4.jpg",
+      "image_asset": "hk-z4.jpg",
+      "ph": "z4",
       "kicker": "Razón 4",
       "title": "Llamadas claras",
       "text": "Captación precisa de voz y reducción de ruido de viento."
@@ -695,7 +710,8 @@
     "why_4": {
      "type": "card",
      "settings": {
-      "image": "shopify://shop_images/hk-z5.jpg",
+      "image_asset": "hk-z5.jpg",
+      "ph": "z5",
       "kicker": "Razón 5",
       "title": "Sonido a tu gusto",
       "text": "Ecualizador en la app Sony | Headphones Connect y 360 Reality Audio."
@@ -772,7 +788,7 @@
     "kicker": "Compra sin riesgo",
     "heading": "Garantía de 7 días",
     "text": "Si llega dañado o con defecto, te devolvemos el dinero o te lo cambiamos. Y pagas solo cuando lo recibes.",
-    "image": "shopify://shop_images/hk-w1.jpg"
+    "image_asset": "hk-w1.jpg"
    },
    "blocks": {},
    "block_order": []
@@ -788,42 +804,42 @@
     "vids2_0": {
      "type": "video",
      "settings": {
-      "image": "shopify://shop_images/hk-ugc10.jpg",
+      "image_asset": "hk-ugc10.jpg",
       "caption": ""
      }
     },
     "vids2_1": {
      "type": "video",
      "settings": {
-      "image": "shopify://shop_images/hk-ugc14.jpg",
+      "image_asset": "hk-ugc14.jpg",
       "caption": "Me los regalaron"
      }
     },
     "vids2_2": {
      "type": "video",
      "settings": {
-      "image": "shopify://shop_images/hk-ugc16.jpg",
+      "image_asset": "hk-ugc16.jpg",
       "caption": "Así suenan"
      }
     },
     "vids2_3": {
      "type": "video",
      "settings": {
-      "image": "shopify://shop_images/hk-ugc18.jpg",
+      "image_asset": "hk-ugc18.jpg",
       "caption": ""
      }
     },
     "vids2_4": {
      "type": "video",
      "settings": {
-      "image": "shopify://shop_images/hk-ugc20.jpg",
+      "image_asset": "hk-ugc20.jpg",
       "caption": "Mi mamá los ama"
      }
     },
     "vids2_5": {
      "type": "video",
      "settings": {
-      "image": "shopify://shop_images/hk-ugc22.jpg",
+      "image_asset": "hk-ugc22.jpg",
       "caption": ""
      }
     }
@@ -840,6 +856,7 @@
   "buy2": {
    "type": "hk-buybox",
    "settings": {
+    "layout": "compact",
     "features": "Cancelación de ruido\n35 h de batería\nMultipunto\nLlamadas claras\nProcesador V1\nCarga rápida",
     "color_option": "Color",
     "scarcity": 87,
@@ -850,8 +867,8 @@
     "button": "PEDIR AHORA · PAGO CONTRAENTREGA",
     "gifts_label": "REGALOS DESBLOQUEADOS",
     "trust": "🔒 No pagas nada por adelantado | ↩ Devolución hasta 7 días",
-    "layout": "compact",
-    "header_image": "shopify://shop_images/hk-g5.jpg",
+    "videos_heading": "Lo que dicen nuestros clientes:",
+    "header_image_asset": "hk-g5.jpg",
     "heading": "<em>Compártelos.</em> Llévate dos y ahorra.",
     "subheading": "Uno para ti y otro para regalar. El pack x2 trae estuche de viaje de regalo."
    },
@@ -877,15 +894,16 @@
     "buy2_2": {
      "type": "gift",
      "settings": {
-      "image": "shopify://shop_images/hk-g1.jpg",
+      "image_asset": "hk-g1.jpg",
       "title": "Envío GRATIS",
-      "value": "$15.000"
+      "value": "$15.000",
+      "locked": false
      }
     },
     "buy2_3": {
      "type": "gift",
      "settings": {
-      "image": "shopify://shop_images/hk-g2.jpg",
+      "image_asset": "hk-g2.jpg",
       "title": "Estuche de viaje GRATIS",
       "value": "$59.900",
       "locked": true,
@@ -895,9 +913,10 @@
     "buy2_4": {
      "type": "gift",
      "settings": {
-      "image": "shopify://shop_images/hk-w1.jpg",
+      "image_asset": "hk-w1.jpg",
       "title": "Garantía 7 días",
-      "value": ""
+      "value": "",
+      "locked": false
      }
     }
    },

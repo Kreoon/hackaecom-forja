@@ -34,6 +34,21 @@ F4 Construir página (clon) ◀────────────────�
 | F5 QA | Pedido de prueba, móvil, velocidad, enlaces, píxel disparando ViewContent/AddToCart/Purchase | Sitio + Anuncios | Checklist en verde |
 | F6 Lanzamiento | Tienda abierta (sin contraseña), URL + UTMs entregadas a Anuncios | Orquestador | Primera campaña publicada |
 
+## Corrida de 15 minutos (agentes en paralelo)
+
+Guion: skill [`tienda-express`](../.claude/skills/tienda-express/SKILL.md). Agentes en `.claude/agents/tienda-*.md`. Scripts en `tools/tienda/`.
+
+| Min | Ola | Agentes | Persona |
+|---|---|---|---|
+| 0 | Arranque | `nueva.py` | Juan Diego entrega producto + referencia |
+| 0–4 | 1 | tienda-referencia · tienda-producto · tienda-creativos | — |
+| 4–8 | 2 | tienda-copy (creativos sigue) | Joaquín arranca ángulos con la ficha; Creativos revisa `revision.jpg` |
+| 8–11 | 3 | tienda-ensamblador (tema nuevo + producto + galería) | — |
+| 11–13 | 4 | tienda-qa | Alexander revisa el preview |
+| 13–15 | Cierre | resumen y link | Juan Diego aprueba y publica |
+
+Medido el 2026-10-17 con la jornada HACKY: armado del tema 2,4 s; subida a un tema nuevo 12 s; QA automático `ok` (20 secciones, 79 imágenes, 0 placeholders, 0 enlaces rotos, Releasit activo). La ruta crítica restante es generación de imágenes y copy.
+
 ## Skills que vamos a dejar construidas (se completan durante el ejemplo)
 
 | Skill | Fase | Qué hace |

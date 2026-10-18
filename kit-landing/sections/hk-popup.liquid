@@ -3,14 +3,14 @@
   <div class="hk-pop__box">
     <button type="button" class="hk-pop__close" data-hk-pop-close aria-label="Cerrar">✕</button>
     <div class="hk-pop__body">
-      {%- if section.settings.logo != blank -%}{{ section.settings.logo | image_url: width: 280 | image_tag: style: 'max-width:140px;height:auto', alt: shop.name }}{%- endif -%}
+      {%- capture src -%}{% render 'hk-src', image: section.settings.logo, asset: section.settings.logo_asset, width: 280 %}{%- endcapture -%}{%- if src != blank -%}<img src="{{ src }}" style="max-width:140px;height:auto" alt="{{ shop.name | escape }}">{%- endif -%}
       <span class="hk-pop__pill">{{ section.settings.pill }}</span>
       <h2>{{ section.settings.heading }}</h2>
       <p>{{ section.settings.text }}</p>
       <div class="hk-scratch"><span>{{ section.settings.prize }}</span><canvas width="200" height="100" aria-label="Rasca aquí"></canvas></div>
       <small>☝ Rasca arriba</small>
     </div>
-    <div class="hk-pop__img">{% render 'hk-img', image: section.settings.image, label: 'Imagen del popup' %}</div>
+    <div class="hk-pop__img">{% render 'hk-img', image: section.settings.image, asset: section.settings.image_asset, label: 'Imagen del popup' %}</div>
   </div>
 </div>
 <script>
@@ -35,8 +35,8 @@
 { "name": "HK · Popup rasca y gana", "settings": [
   { "type": "checkbox", "id": "enabled", "label": "Activo", "default": true },
   { "type": "range", "id": "delay", "label": "Aparece a los (s)", "min": 1, "max": 20, "step": 1, "default": 4 },
-  { "type": "image_picker", "id": "logo", "label": "Logo" }, { "type": "text", "id": "pill", "label": "Etiqueta" },
+  { "type": "image_picker", "id": "logo", "label": "Logo" }, { "type": "text", "id": "logo_asset", "label": "Logo · archivo del tema" }, { "type": "text", "id": "pill", "label": "Etiqueta" },
   { "type": "text", "id": "heading", "label": "Título" }, { "type": "text", "id": "text", "label": "Texto" },
-  { "type": "text", "id": "prize", "label": "Premio (debe existir de verdad)" }, { "type": "image_picker", "id": "image", "label": "Imagen" } ],
+  { "type": "text", "id": "prize", "label": "Premio (debe existir de verdad)" }, { "type": "image_picker", "id": "image", "label": "Imagen" }, { "type": "text", "id": "image_asset", "label": "Imagen · archivo del tema" } ],
   "presets": [{ "name": "HK · Popup rasca y gana" }] }
 {% endschema %}

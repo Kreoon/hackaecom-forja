@@ -5,6 +5,8 @@ description: "Fase 4 de tienda-express — construye en Shopify la página de pr
 
 # Clonar la página en Shopify
 
+> **Desde 2026-10-17 (corrida de 15 min):** no se escribe un generador por jornada. El copy va en `brief.json` (`tools/tienda/brief.schema.md`) y todo se arma con `python -I tools/tienda/armar.py jornadas/<slug>` (optimiza imágenes a `assets/hk-<id>`, genera plantilla, grupos de header/footer, tokens, `product-set.json` y `media.json`). Las imágenes se referencian como **assets del tema** (`*_asset`), así que ya no hace falta `fileCreate`. QA: `tools/tienda/qa.js`. Lo de abajo queda como referencia del método manual.
+
 ## Piezas
 | Pieza | Dónde | Qué cambia por jornada |
 |---|---|---|

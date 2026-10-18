@@ -1,33 +1,52 @@
 ---
 name: tienda-express
-description: "Orquesta una jornada \"tienda Shopify express\" — de cero a vendiendo un producto, replicando estructura y estilo de una página de referencia con creativos e info propios. Úsalo cuando alguien diga \"montemos la tienda de <producto>\", \"clonemos esta página para <producto>\", o al arrancar cualquier fase (insumos, referencia, brief, setup Shopify, página, QA, lanzamiento)."
+description: "Orquesta una corrida tienda-express en ~15 minutos: producto + página de referencia → página de producto clonada en un tema nuevo de Shopify, con creativos nuevos, copy, contraentrega (Releasit) y QA, usando 6 agentes en paralelo. Úsalo cuando alguien diga \"montemos la tienda de <producto>\", \"clonemos esta página para <producto>\" o \"corrida de 15 minutos\"."
 ---
 
-# Tienda express
+# Tienda express · corrida de 15 minutos
 
-Documento maestro (roles, fases, checkpoints): [`docs/jornada-02-tienda-express.md`](../../../docs/jornada-02-tienda-express.md).
+Documento maestro (roles, decisiones): [`docs/jornada-02-tienda-express.md`](../../../docs/jornada-02-tienda-express.md). Contrato del brief: [`tools/tienda/brief.schema.md`](../../../tools/tienda/brief.schema.md).
 
-## Al arrancar
-1. Crear `jornadas/<slug-producto>/{insumos,referencia,creativos,tema}` y `brief.md`, `qa.md`.
-2. Confirmar insumos F0 (si falta uno, preguntar; no inventar): producto, precio de venta y costo, proveedor/ficha, fotos reales, URL de referencia, país y moneda, COD sí/no, tienda Shopify destino.
-3. Verificar la tienda conectada con `get-shop-info` del MCP de Shopify y **confirmar que es la de destino** antes de escribir nada.
+## 0. Antes de que corra el reloj (tienda base, una sola vez)
+Verificar con el MCP de Shopify y no repetir si ya está:
+- [ ] Tienda `hackaecom.myshopify.com`: moneda COP, mercado Colombia, zona de envío Colombia, bodega en Colombia (`tienda-shopify-setup` §7).
+- [ ] Releasit instalado y configurado en español; App embed en el tema base (`tienda-shopify-setup` §8).
+- [ ] Páginas y menús en español sin enlaces rotos (§6). Inicio con `hk-redirect`.
+- [ ] Tema base **"HACKY Landing"** (id 165468078339) con el kit `hk-*`, logo, header/footer HACKY y locale en español. No se edita durante la corrida: se duplica.
+- [ ] Panel del navegador con la tienda desbloqueada (contraseña escrita por el usuario) y sesión de admin; Shopify CLI con sesión (`shopify theme list --store hackaecom.myshopify.com`).
+- [ ] Créditos de Magnific ≥ 2.000 (`account_balance`).
 
-## Fases → skill
-| Fase | Skill |
-|---|---|
-| F0 Ficha del producto | `tienda-ficha-producto` |
-| F1 Leer referencia | `tienda-leer-referencia` |
-| F1→Creativos | `tienda-pedido-creativos` |
-| F2 Brief y copy (+ marca y logo si no hay) | `tienda-brief-producto` (+ `forja-ecom-cro`, `forja-voz-humana`) |
-| F3 Setup Shopify | `tienda-shopify-setup` |
-| F4 Página clonada | `tienda-clonar-pagina` (+ `forja-liquid-sections`, `forja-art-direction`) |
-| F5–F6 QA y lanzamiento | `tienda-qa-lanzamiento` |
+## 1. Arranque (minuto 0)
+Pide en un solo mensaje lo que falte: URL o fotos del producto, URL de referencia, precio/oferta (si no, demo). Luego:
+```
+python -I tools/tienda/nueva.py <slug> "<url producto>" "<url referencia>"
+```
 
-Si una skill aún no existe, hacer el paso a mano, anotar lo que funcionó en `jornadas/<slug>/notas-skill.md` y al cerrar la fase convertirlo en la skill.
+## 2. Olas (lanzar cada ola en UN mensaje con varias llamadas `Agent`)
+| Min | Ola | Agentes en paralelo | Sale |
+|---|---|---|---|
+| 0–4 | 1 | `tienda-referencia` · `tienda-producto` · `tienda-creativos` (arranca con la URL; espera `producto.json` si lo necesita) | mapa + estilo · ficha + producto.json · imágenes |
+| 4–8 | 2 | `tienda-copy` (creativos sigue corriendo) | brief.json |
+| 8–11 | 3 | `tienda-ensamblador` (cuando copy y creativos terminaron) | tema nuevo + producto + preview |
+| 11–13 | 4 | `tienda-qa` | qa.js ok + capturas |
+| 13–15 | — | Orquestador: resumen al equipo, link de preview, pendientes humanos | |
+
+Prompt de cada agente: `Corrida jornadas/<slug>. Lee corrida.json y sigue tu definición. Presupuesto N min.` (nada más: el agente sabe qué hacer).
+Mientras corre la ola 2, avisar a Anuncios (Joaquín): ficha + ángulos del brief para empezar campañas; a Creativos: `creativos/revision.jpg` para aprobar.
+
+## 3. Si algo se atrasa
+- Creativos tarde → ensamblar igual: las imágenes que falten salen como placeholder rayado con su ID; se re-sube solo `assets/` después (`--only assets/*`).
+- Referencia con sección SIN KIT → usar la clave más cercana y anotarlo para crear la sección después (no frenar la corrida).
+- Agente sin acceso al navegador → el orquestador corre `tools/tienda/qa.js` él mismo.
+
+## 4. Cierre
+- Publicar el tema (solo con OK del orquestador; el conector no publica temas: admin → Temas → Publicar).
+- Pedido de prueba por Releasit y cancelación (`tienda-shopify-setup` §8), solo si el equipo lo pide.
+- `corrida.json` con todos los hitos → tiempo total en `docs/estado.md`.
 
 ## Reglas
-- **Navegación sin callejones**: si la página tiene menú (header o footer), cada enlace lleva a una página creada, publicada y en español, verificada con status 200 en el preview. Si una página no se puede crear, se quita el enlace (o el menú). El inicio (`/`) no puede quedar con el contenido genérico del tema: en tiendas de un producto redirige a la landing (`hk-redirect`). Detalle en `tienda-shopify-setup` §6.
-- La referencia aporta estructura y estilo; los datos salen del producto. Cifras, reseñas, garantías y "envío gratis" solo si el equipo los confirma.
-- Cada fase cierra con su checkpoint del orquestador (Juan Diego) antes de pasar a la siguiente.
-- Nada se publica sin contraseña quitada por decisión explícita del orquestador; pedidos de prueba se cancelan/reembolsan.
-- Trabajo largo y fuera de la ruta crítica (investigación de competidores, variantes de copy de anuncios, video) → Hermes (`delegar-hermes`).
+- La referencia aporta estructura y estilo; los datos salen del producto. Cifras, reseñas y garantías solo con fuente o decisión del equipo (reseñas demo marcadas).
+- Misma estructura que la referencia, sin quitar secciones ni elementos.
+- **Navegación sin callejones**: todo enlace del menú apunta a una página creada o se quita.
+- Cada corrida en un **tema nuevo** y con su propia plantilla `product.<sufijo>`; nunca editar el tema publicado ni el base.
+- Trabajo largo fuera de la ruta crítica (variantes de anuncios, video) → Hermes (`delegar-hermes`).

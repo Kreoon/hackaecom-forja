@@ -14,7 +14,7 @@
 <section class="hk hk-bb{% if compact %} hk-bb--compact hk-sec--alt{% endif %}" {% unless compact %}id="comprar"{% endunless %}>
   {%- if compact -%}
     <div class="hk-wrap hk-center" style="max-width:720px">
-      <div class="hk-bb__hero-img">{% render 'hk-img', image: section.settings.header_image, label: 'G5 · Producto en sus colores' %}</div>
+      <div class="hk-bb__hero-img">{% render 'hk-img', image: section.settings.header_image, asset: section.settings.header_image_asset, label: 'G5 · Producto en sus colores' %}</div>
       <h2>{{ section.settings.heading }}</h2>
       <p class="hk-sub">{{ section.settings.subheading }}</p>
     </div>
@@ -44,7 +44,7 @@
         <div class="hk-vids">
           {%- for v in vids -%}
             <div class="hk-vid" {{ v.shopify_attributes }}>
-              {%- if v.settings.video != blank -%}{{ v.settings.video | video_tag: autoplay: true, loop: true, muted: true, playsinline: true, image_size: '400x' }}{%- else -%}{% render 'hk-img', image: v.settings.image, label: 'Video UGC', sizes: '200px' %}{%- endif -%}
+              {%- if v.settings.video != blank -%}{{ v.settings.video | video_tag: autoplay: true, loop: true, muted: true, playsinline: true, image_size: '400x' }}{%- else -%}{% render 'hk-img', image: v.settings.image, asset: v.settings.image_asset, label: 'Video UGC', sizes: '200px' %}{%- endif -%}
               <span class="hk-vid__play" aria-hidden="true">▶</span>
               {%- if v.settings.caption != blank -%}<span class="hk-vid__cap">{{ v.settings.caption }}</span>{%- endif -%}
             </div>
@@ -58,7 +58,7 @@
       {%- unless compact -%}
       {%- if section.settings.proof != blank -%}
         <div class="hk-bb__proof"><span class="hk-stars">★★★★★</span> {{ section.settings.proof }}
-          {%- if avatars.size > 0 -%}<span class="hk-avatars">{%- for a in avatars -%}{%- if a.settings.image != blank -%}{{ a.settings.image | image_url: width: 80 | image_tag: loading: 'lazy', alt: '' }}{%- endif -%}{%- endfor -%}</span>{%- endif -%}
+          {%- if avatars.size > 0 -%}<span class="hk-avatars">{%- for a in avatars -%}{%- capture src -%}{% render 'hk-src', image: a.settings.image, asset: a.settings.image_asset, width: 80 %}{%- endcapture -%}{%- if src != blank -%}<img src="{{ src }}" loading="lazy" alt="" width="26" height="26">{%- endif -%}{%- endfor -%}</span>{%- endif -%}
         </div>
       {%- endif -%}
       <p class="hk-bb__eyebrow">{{ section.settings.eyebrow }}</p>
@@ -106,7 +106,7 @@
             <span class="hk-gifts__label">{{ section.settings.gifts_label }}</span>
             {%- for g in gifts -%}
               <div class="hk-gift{% if g.settings.locked %} is-locked{% endif %}" data-hk-gift-locked="{{ g.settings.unlock_offer | escape }}" {{ g.shopify_attributes }}>
-                <div class="hk-gift__img">{% render 'hk-img', image: g.settings.image, label: g.settings.title %}</div>
+                <div class="hk-gift__img">{% render 'hk-img', image: g.settings.image, asset: g.settings.image_asset, label: g.settings.title %}</div>
                 {%- if g.settings.value != blank -%}<s>{{ g.settings.value }}</s>{%- endif -%}
                 <span class="hk-gift__t">{{ g.settings.title }}</span>
                 <span class="hk-gift__lock">🔒 Bloqueado</span>
@@ -194,7 +194,7 @@
 { "name": "HK · Bloque compra",
   "settings": [
     { "type": "select", "id": "layout", "label": "Diseño", "default": "full", "options": [{ "value": "full", "label": "Completo (galería)" }, { "value": "compact", "label": "Compacto (oferta repetida)" }] },
-    { "type": "image_picker", "id": "header_image", "label": "Imagen superior (compacto)" },
+    { "type": "image_picker", "id": "header_image", "label": "Imagen superior (compacto)" }, { "type": "text", "id": "header_image_asset", "label": "Imagen superior (compacto) · archivo del tema" },
     { "type": "text", "id": "videos_heading", "label": "Título de videos bajo la galería", "default": "Lo que dicen nuestros clientes:" },
     { "type": "text", "id": "gifts_label", "label": "Etiqueta regalos", "default": "REGALOS DESBLOQUEADOS" },
     { "type": "range", "id": "eta_days", "label": "Días hábiles de entrega (fecha automática, 0 = sin fecha)", "min": 0, "max": 10, "step": 1, "default": 3 },
@@ -220,13 +220,13 @@
       { "type": "text", "id": "tag", "label": "Etiqueta (ej. Más elegido)" },
       { "type": "text", "id": "gift", "label": "Regalo" } ] },
     { "type": "gift", "name": "Regalo", "settings": [
-      { "type": "image_picker", "id": "image", "label": "Imagen" }, { "type": "text", "id": "title", "label": "Título" },
+      { "type": "image_picker", "id": "image", "label": "Imagen" }, { "type": "text", "id": "image_asset", "label": "Imagen · archivo del tema" }, { "type": "text", "id": "title", "label": "Título" },
       { "type": "text", "id": "value", "label": "Valor tachado" }, { "type": "checkbox", "id": "locked", "label": "Bloqueado al inicio" },
       { "type": "text", "id": "unlock_offer", "label": "Se desbloquea con la oferta (valor exacto)" } ] },
     { "type": "video", "name": "Video bajo galería", "settings": [
-      { "type": "video", "id": "video", "label": "Video vertical" }, { "type": "image_picker", "id": "image", "label": "Imagen si no hay video" },
+      { "type": "video", "id": "video", "label": "Video vertical" }, { "type": "image_picker", "id": "image", "label": "Imagen si no hay video" }, { "type": "text", "id": "image_asset", "label": "Imagen si no hay video · archivo del tema" },
       { "type": "text", "id": "caption", "label": "Subtítulo" } ] },
-    { "type": "avatar", "name": "Avatar", "settings": [{ "type": "image_picker", "id": "image", "label": "Foto" }] },
+    { "type": "avatar", "name": "Avatar", "settings": [{ "type": "image_picker", "id": "image", "label": "Foto" }, { "type": "text", "id": "image_asset", "label": "Foto · archivo del tema" }] },
     { "type": "accordion", "name": "Acordeón", "settings": [
       { "type": "text", "id": "title", "label": "Título" },
       { "type": "richtext", "id": "body", "label": "Contenido" } ] }

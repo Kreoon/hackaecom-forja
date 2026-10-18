@@ -8,7 +8,7 @@
           {%- if b.settings.video != blank -%}
             {{ b.settings.video | video_tag: autoplay: true, loop: true, muted: true, playsinline: true, controls: false, image_size: '400x' }}
           {%- else -%}
-            {% render 'hk-img', image: b.settings.image, label: b.settings.ph, sizes: '220px' %}
+            {% render 'hk-img', image: b.settings.image, asset: b.settings.image_asset, label: b.settings.ph, sizes: '220px' %}
           {%- endif -%}
           <span class="hk-vid__play" aria-hidden="true">▶</span>
           {%- if b.settings.caption != blank -%}<span class="hk-vid__cap">{{ b.settings.caption }}</span>{%- endif -%}
@@ -25,7 +25,7 @@
   { "type": "range", "id": "pad_top", "label": "Espacio arriba", "min": 0, "max": 80, "step": 4, "default": 64 },
   { "type": "text", "id": "button", "label": "Botón" } ],
   "blocks": [{ "type": "video", "name": "Video", "settings": [
-    { "type": "video", "id": "video", "label": "Video (vertical)" }, { "type": "image_picker", "id": "image", "label": "Imagen si no hay video" },
+    { "type": "video", "id": "video", "label": "Video (vertical)" }, { "type": "image_picker", "id": "image", "label": "Imagen si no hay video" }, { "type": "text", "id": "image_asset", "label": "Imagen si no hay video · archivo del tema" },
     { "type": "text", "id": "ph", "label": "Etiqueta placeholder" }, { "type": "text", "id": "caption", "label": "Subtítulo sobre el video" } ] }],
   "presets": [{ "name": "HK · Videos UGC" }] }
 {% endschema %}

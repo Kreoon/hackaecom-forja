@@ -1,4 +1,5 @@
-/* Tokens de la jornada sony-wh-ch720n (tomados de la referencia Resilia) */
+/* Tokens de la corrida (generado por tools/tienda/gen_tema.py desde brief.json → tokens). No editar a mano. */
+
 .hk {
   --hk-primary: #095946;
   --hk-secondary: #009370;
