@@ -162,6 +162,25 @@
         while (n > 0) { d.setDate(d.getDate() + 1); if (d.getDay() % 6) n--; }
         eta.querySelector('[data-hk-eta-date]').textContent = d.toLocaleDateString('es-CO', { weekday: 'short', day: 'numeric', month: 'short' });
       }
+      // App COD (Releasit u otra): si inyecta su botón en el formulario, se oculta el nuestro (queda de respaldo si la app no carga).
+      const codSel = {{ section.settings.cod_selector | json }};
+      if (codSel) {
+        const form = root.querySelector('[data-hk-form]'), own = root.querySelector('[data-hk-submit]');
+        const sync = () => { if (form && own) own.hidden = !!form.querySelector(codSel); };
+        sync(); new MutationObserver(sync).observe(form, { childList: true, subtree: true });
+        // Si la app solo se montó en otro bloque de compra (p. ej. el principal), este botón copia la selección y abre ese formulario.
+        form?.addEventListener('submit', e => {
+          if (form.querySelector(codSel)) return;
+          const host = [...document.querySelectorAll('.hk-bb')].find(s => s !== root && s.querySelector('[data-hk-form] ' + codSel));
+          if (!host) return;
+          e.preventDefault();
+          ['hk-color', 'hk-offer'].forEach(n => {
+            const v = pick(n), t = v && [...host.querySelectorAll(`input[name="${n}"]`)].find(i => i.value === v);
+            if (t && !t.checked) { t.checked = true; t.dispatchEvent(new Event('change', { bubbles: true })); }
+          });
+          (host.querySelector('[data-hk-form] button' + codSel) || host.querySelector('[data-hk-form] ' + codSel)).click();
+        });
+      }
       root.addEventListener('change', e => { if (e.target.name === 'hk-color' || e.target.name === 'hk-offer') update(); });
       root.querySelectorAll('.hk-gal__thumbs button[data-src]').forEach(b => b.addEventListener('click', () => {
         root.querySelectorAll('.hk-gal__thumbs button').forEach(x => x.removeAttribute('aria-current'));
@@ -190,7 +209,8 @@
     { "type": "text", "id": "scarcity_label", "label": "Texto escasez", "default": "vendido" },
     { "type": "text", "id": "shipping", "label": "Texto de entrega" },
     { "type": "text", "id": "button", "label": "Botón", "default": "PEDIR AHORA · PAGO CONTRAENTREGA" },
-    { "type": "text", "id": "trust", "label": "Confianza (separar con |)" }
+    { "type": "text", "id": "trust", "label": "Confianza (separar con |)" },
+    { "type": "text", "id": "cod_selector", "label": "Selector del botón de la app COD (oculta el botón propio si aparece)", "default": "[class*=\"rsi_\"]", "info": "Releasit: [class*=\"rsi_\"]. Vacío = siempre mostrar el botón propio." }
   ],
   "blocks": [
     { "type": "offer", "name": "Oferta", "settings": [

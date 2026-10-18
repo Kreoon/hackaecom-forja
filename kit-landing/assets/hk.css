@@ -222,3 +222,4 @@
 .hk-foot__logo img { max-width: 140px; height: auto; }
 .hk-bb__media .hk-vids { grid-auto-columns: minmax(150px, 1fr); }
 @media (max-width: 749px) { .hk-bc__product { max-width: 300px; } }
+.hk [hidden] { display: none !important; }
