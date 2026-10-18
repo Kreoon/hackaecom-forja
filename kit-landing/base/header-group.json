@@ -95,10 +95,11 @@
   "hk_ann": {
    "type": "hk-announcement",
    "settings": {
-    "title": "LANZAMIENTO HACKY",
-    "text": "Hasta 24 % de descuento · Paga al recibir",
-    "countdown_hours": 2
-   }
+    "title": "",
+    "text": "",
+    "countdown_hours": 0
+   },
+   "disabled": true
   }
  },
  "order": [

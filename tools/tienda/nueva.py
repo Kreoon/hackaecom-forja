@@ -16,6 +16,6 @@ run = ROOT / "jornadas" / slug
 for d in ("insumos", "referencia", "creativos/marca", "creativos/ugc", "tema"):
     (run / d).mkdir(parents=True, exist_ok=True)
 meta = {"slug": slug, "producto": producto, "referencia": referencia, "inicio": datetime.now().isoformat(timespec="seconds"),
-        "tienda": "hackaecom.myshopify.com", "tema_base": "HACKY Landing", "hitos": {}}
+        "tienda": "hackaecom.myshopify.com", "tema_base": "Base tienda express (no tocar)", "tema_base_id": 165468078339, "hitos": {}}
 (run / "corrida.json").write_text(json.dumps(meta, ensure_ascii=False, indent=1), encoding="utf-8")
 print(f"ok · {run.relative_to(ROOT)}")

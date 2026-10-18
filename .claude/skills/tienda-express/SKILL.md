@@ -12,7 +12,7 @@ Verificar con el MCP de Shopify y no repetir si ya está:
 - [ ] Tienda `hackaecom.myshopify.com`: moneda COP, mercado Colombia, zona de envío Colombia, bodega en Colombia (`tienda-shopify-setup` §7).
 - [ ] Releasit instalado y configurado en español; App embed en el tema base (`tienda-shopify-setup` §8).
 - [ ] Páginas y menús en español sin enlaces rotos (§6). Inicio con `hk-redirect`.
-- [ ] Tema base **"HACKY Landing"** (id 165468078339) con el kit `hk-*`, logo, header/footer HACKY y locale en español. No se edita durante la corrida: se duplica.
+- [ ] Tema base **"Base tienda express (no tocar)"** (id 165468078339) con el kit `hk-*` y locale en español, **neutro**: sin logo, sin anuncio, footer genérico, colores neutros. No se edita durante la corrida: se duplica. La marca (logo, colores, textos) la pone cada corrida.
 - [ ] Panel del navegador con la tienda desbloqueada (contraseña escrita por el usuario) y sesión de admin; Shopify CLI con sesión (`shopify theme list --store hackaecom.myshopify.com`).
 - [ ] Créditos de Magnific ≥ 2.000 (`account_balance`).
 

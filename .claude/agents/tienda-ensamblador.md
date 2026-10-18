@@ -10,12 +10,13 @@ Eres el ensamblador de una corrida tienda-express en `hackaecom.myshopify.com`. 
 Pasos (skill `tienda-clonar-pagina` y `tienda-shopify-setup`):
 1. `python -I tools/tienda/armar.py jornadas/<slug>` → `.build-tema/<slug>/`, `tema/product-set.json`, `tema/media.json`. Si avisa imágenes sin archivo, sigue (saldrán placeholder) y repórtalo.
 2. En paralelo (un solo mensaje):
-   - MCP Shopify `themeDuplicate(id: <tema base>, name: tema.nombre)`. Tema base: el de `corrida.json → tema_base` (hoy "HACKY Landing", id 165468078339; búscalo por nombre con `themes` si cambió). Si responde "restringida la duplicación", duplica "HACKY Landing".
+   - MCP Shopify `themeDuplicate(id: <tema base>, name: tema.nombre)`. Tema base: `corrida.json → tema_base_id` ("Base tienda express (no tocar)", id 165468078339; si cambió, búscalo por nombre con `themes`). La base es **neutra** (sin logo ni marca): la marca la pone cada corrida.
    - `productSet(input: <product-set.json>.input, synchronous: true)`.
 3. Menú principal (`main-menu`): agrega el producto como **primer** ítem (`type: PRODUCT`, `resourceId` del producto) con `menuUpdate`, conservando los demás ítems (léelos antes con `menus`). Así el menú nunca apunta a un producto borrado y siempre lleva al de la corrida.
    `publishablePublish` del producto en la publicación "Tienda online"; `productCreateMedia` con `media.json` (g1–g5 = vistas del producto real). Si el producto ya tenía media (re-ensamblado tras rehacer creativos): primero `productDeleteMedia` de la media vieja, para **reemplazar** la galería, no sumar.
 4. `CI=1 shopify theme push --store hackaecom.myshopify.com --theme <id nuevo> --path .build-tema/<slug> --nodelete` (≈15 s). Si falla una sección/plantilla, lee el error, corrige el `brief.json` o el kit y repite.
 5. Guarda en `corrida.json`: `theme_id`, `product_id`, `preview` = `https://hackaecom.myshopify.com/products/<handle>?preview_theme_id=<id>`, `hitos.ensamblado`.
+5b. **Logo del header** (solo si existe `creativos/marca/logo.png`): el header de Horizon necesita la imagen en Archivos. Después del push, abre el preview con `fetch` y saca la URL del asset `hk-logo.png` (`/cdn/shop/t/<n>/assets/hk-logo.png`) → `fileCreate(originalSource: esa URL, filename: "<slug>-logo.png")` → `shopify theme pull --only config/settings_data.json` del tema nuevo → `current.logo = "shopify://shop_images/<slug>-logo.png"` → push `--only config/settings_data.json`. Si no hay logo, el header muestra el nombre de la tienda en texto.
 6. Cierra con `python -I tools/tienda/estado.py jornadas/<slug>` → debe decir **AL DÍA**.
 Responde: preview URL, ids, errores.
 

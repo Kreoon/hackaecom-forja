@@ -19,7 +19,8 @@ DATOS
 - Slug: <nombre-corto-sin-espacios>
 - Oferta: <"demo" | 1 unidad $____ · Pack x2 $____ + regalo ____>
 - Garantía: <"demo 7 días" | la real>
-- Tienda: hackaecom.myshopify.com · tema base "HACKY Landing" · contraentrega con Releasit
+- Marca de la tienda: <la del producto | otra | "nombre de la tienda">
+- Tienda: hackaecom.myshopify.com · tema base "Base tienda express (no tocar)" (neutro; la marca la pone la corrida) · contraentrega con Releasit
 
 CÓMO CORRERLA
 1. Arranque: python -I tools/tienda/nueva.py <slug> "<producto>" "<referencia>". Si mandé fotos, guárdalas en jornadas/<slug>/insumos/.
@@ -28,7 +29,7 @@ CÓMO CORRERLA
    - tienda-producto deja PRIMERO insumos/ref_frontal.jpg (+ otras vistas) y luego la ficha y producto.json.
    - tienda-creativos usa Nano Banana Pro 1k con las vistas del producto + la imagen objetivo de cada ID; UGC uno por uno; actualiza urls.json y corre descargar.py después de cada espera.
 3. Ola 2: tienda-copy apenas terminen referencia y producto (creativos sigue).
-4. Ola 3: tienda-ensamblador cuando terminen copy Y creativos (tema nuevo duplicado de "HACKY Landing", producto, galería, push).
+4. Ola 3: tienda-ensamblador cuando terminen copy Y creativos (tema nuevo duplicado de "Base tienda express (no tocar)", producto, galería, push).
 5. Ola 4: tienda-qa. Si el agente no tiene navegador, corre tú tools/tienda/qa.js en el panel.
 6. Cierre: python -I tools/tienda/estado.py jornadas/<slug> debe decir AL DÍA. Dame el link de preview, el tiempo por ola (corrida.json → hitos) y los pendientes humanos.
 

@@ -29,8 +29,8 @@ Archivos: `creativos/<id>.jpg|png` (+ `creativos/ugc/ugcNN.jpg`). URLs públicas
 
 ```jsonc
 {
-  "tema": {"sufijo": "hacky2", "nombre": "HACKY · <producto>"},   // sufijo = plantilla product.<sufijo>.json (único por corrida)
-  "marca": {"nombre": "HACKY", "logo": "logo", "logo_blanco": "logo_blanco"},
+  "tema": {"sufijo": "<slugsinguiones>", "nombre": "<Marca> · <producto>"},   // sufijo = plantilla product.<sufijo>.json (único por corrida)
+  "marca": {"nombre": "<marca del producto o de la tienda; nunca la de otra corrida>", "logo": "logo", "logo_blanco": "logo_blanco"},
   "orden": ["pop","mq","main","stats","tech","rev1","bc","rows","mq2","tl","why","cmp","gu","vids2","buy2","rev2"], // opcional: orden de la referencia
   "producto": {
     "handle": "…", "titulo": "…", "marca": "…", "tipo": "…", "sku": "BASE", "tags": ["tienda-express"],
