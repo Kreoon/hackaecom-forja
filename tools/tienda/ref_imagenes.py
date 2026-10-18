@@ -13,11 +13,13 @@ import json
 import re
 import shutil
 import sys
-import urllib.request
 from io import BytesIO
 from pathlib import Path
 
 from PIL import Image, ImageDraw
+
+sys.path.insert(0, str(Path(__file__).parent))
+from _seguro import bajar, dentro, id_valido  # noqa: E402
 
 sys.stdout.reconfigure(encoding="utf-8")
 
@@ -34,9 +36,9 @@ def descargar(run: Path):
     seen, n, thumbs = set(), 0, []
     for u in urls:
         try:
-            req = urllib.request.Request(u, headers={"User-Agent": "Mozilla/5.0"})
-            data = urllib.request.urlopen(req, timeout=15).read()
-            im = Image.open(BytesIO(data)).convert("RGB")
+            im = Image.open(BytesIO(bajar(u, timeout=15)))  # http(s), host público, ≤ 20 MB, tope de píxeles
+            im.load()
+            im = im.convert("RGB")
         except Exception:
             continue
         if min(im.size) < 300:
@@ -64,10 +66,14 @@ def asignar(run: Path):
     m = json.loads((run / "referencia" / "imagenes.json").read_text(encoding="utf-8"))
     raw = run / "referencia" / "imgs" / "raw"
     ok = []
+    imgs = run / "referencia" / "imgs"
     for img_id, num in m.items():
+        dst = imgs / f"{img_id}.jpg"
+        if not id_valido(img_id) or not dentro(dst, imgs):
+            print(f"✗ {img_id!r}: id no válido, se ignora"); continue
         src = raw / f"{int(num):02d}.jpg"
         if src.exists():
-            shutil.copy(src, run / "referencia" / "imgs" / f"{img_id}.jpg"); ok.append(img_id)
+            shutil.copy(src, dst); ok.append(img_id)
     print(f"asignadas: {len(ok)} → referencia/imgs/<id>.jpg")
 
 

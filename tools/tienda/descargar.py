@@ -9,10 +9,12 @@ Imprime: ids descargados, ids que faltan respecto de la lista fija y ids sin ref
 """
 import json
 import sys
-import urllib.request
 from pathlib import Path
 
 from PIL import Image, ImageDraw
+
+sys.path.insert(0, str(Path(__file__).parent))
+from _seguro import bajar, dentro, id_valido  # noqa: E402
 
 sys.stdout.reconfigure(encoding="utf-8")
 FIJOS = ["g1", "g2", "g3", "g4", "g5", "t1", "t2", "t3", "t4", "b1", "b2", "b3", "b4", "z1", "z2", "z3", "z4", "z5", "w1", "l1"] + \
@@ -30,13 +32,17 @@ def main(run_dir):
     urls = json.loads((cre / "urls.json").read_text(encoding="utf-8")) if (cre / "urls.json").exists() else {}
     nuevos = []
     for img_id, url in urls.items():
+        if not id_valido(img_id):
+            print(f"✗ {img_id!r}: id no válido, se ignora"); continue
         d = destino(cre, img_id)
+        if not dentro(d, cre):
+            print(f"✗ {img_id!r}: ruta fuera de creativos/, se ignora"); continue
         if d.exists() and d.stat().st_size > 0:
             continue
         try:
-            urllib.request.urlretrieve(url, d)
+            d.write_bytes(bajar(url))
             nuevos.append(img_id)
-        except Exception as e:  # URL vencida o caída: se reporta y se sigue
+        except Exception as e:  # URL vencida, no permitida o caída: se reporta y se sigue
             print(f"✗ {img_id}: {e}")
     tiles, s = [], 220
     for img_id in [i for i in FIJOS + ["p1"] if destino(cre, i).exists()]:
