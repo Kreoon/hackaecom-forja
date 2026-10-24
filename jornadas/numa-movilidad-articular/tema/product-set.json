@@ -1,0 +1,65 @@
+{
+ "input": {
+  "title": "NÜMA Movilidad Articular · Masticables para perros (90 u.)",
+  "handle": "numa-movilidad-articular",
+  "descriptionHtml": "<p>NÜMA Movilidad Articular son masticables de sabor pollo natural para perros activos. Cada porción de 2 masticables (5 g) combina glucosamina, condroitina, MSM, ácido hialurónico, vitamina C y manganeso para apoyar sus articulaciones.</p><ul><li>Pote de 90 masticables</li><li>Sin granos, sin colorantes artificiales, sin sabores artificiales</li><li>Textura suave y fácil de dar</li></ul><p>Suplemento nutricional de apoyo articular. No es un medicamento ni reemplaza la consulta con tu veterinario. Pago contraentrega en toda Colombia.</p>",
+  "vendor": "NÜMA Bienestar Canino",
+  "productType": "Suplemento para perros",
+  "status": "ACTIVE",
+  "tags": [
+   "tienda-express",
+   "contraentrega",
+   "perros"
+  ],
+  "templateSuffix": "numamovilidadarticular",
+  "seo": {
+   "title": "NÜMA Movilidad Articular · Masticables para perros | HACKY",
+   "description": "Masticables de pollo natural con glucosamina, condroitina, MSM y ácido hialurónico para apoyar las articulaciones de tu perro. Paga al recibir."
+  },
+  "productOptions": [
+   {
+    "name": "Oferta",
+    "values": [
+     {
+      "name": "1 unidad"
+     },
+     {
+      "name": "Pack x2 + shampoo de regalo"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Oferta",
+      "name": "1 unidad"
+     }
+    ],
+    "price": "79700",
+    "compareAtPrice": "79700",
+    "inventoryPolicy": "CONTINUE",
+    "inventoryItem": {
+     "tracked": false
+    },
+    "sku": "NUMAMOV90-X1"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Oferta",
+      "name": "Pack x2 + shampoo de regalo"
+     }
+    ],
+    "price": "129700",
+    "compareAtPrice": "159400",
+    "inventoryPolicy": "CONTINUE",
+    "inventoryItem": {
+     "tracked": false
+    },
+    "sku": "NUMAMOV90-X2"
+   }
+  ]
+ }
+}

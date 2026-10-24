@@ -1,0 +1,214 @@
+{
+  "tema": {"sufijo": "numamovilidadarticular", "nombre": "HACKY · NÜMA Movilidad Articular"},
+  "marca": {"nombre": "HACKY", "logo": "logo", "logo_blanco": "logo_blanco"},
+  "orden": ["pop","mq","main","stats","tech","rev1","bc","rows","mq2","tl","why","cmp","gu","vids2","buy2","rev2"],
+  "producto": {
+    "handle": "numa-movilidad-articular",
+    "titulo": "NÜMA Movilidad Articular · Masticables para perros (90 u.)",
+    "marca": "NÜMA Bienestar Canino",
+    "tipo": "Suplemento para perros",
+    "sku": "NUMAMOV90",
+    "tags": ["tienda-express", "contraentrega", "perros"],
+    "opcion_color": "Color",
+    "colores": [],
+    "descripcion_html": "<p>NÜMA Movilidad Articular son masticables de sabor pollo natural para perros activos. Cada porción de 2 masticables (5 g) combina glucosamina, condroitina, MSM, ácido hialurónico, vitamina C y manganeso para apoyar sus articulaciones.</p><ul><li>Pote de 90 masticables</li><li>Sin granos, sin colorantes artificiales, sin sabores artificiales</li><li>Textura suave y fácil de dar</li></ul><p>Suplemento nutricional de apoyo articular. No es un medicamento ni reemplaza la consulta con tu veterinario. Pago contraentrega en toda Colombia.</p>",
+    "seo": {
+      "title": "NÜMA Movilidad Articular · Masticables para perros | HACKY",
+      "description": "Masticables de pollo natural con glucosamina, condroitina, MSM y ácido hialurónico para apoyar las articulaciones de tu perro. Paga al recibir."
+    },
+    "galeria": ["g1","g2","g3","g4","g5"],
+    "ofertas": [
+      {"valor": "1 unidad", "titulo": "Lleva 1", "detalle": "$79.700 el pote de 90 masticables", "precio": 79700, "sku_sufijo": "X1"},
+      {"valor": "Pack x2 + shampoo de regalo", "titulo": "Lleva 2 + regalo", "detalle": "$64.850 c/u · 180 masticables para más momentos juntos", "etiqueta": "Más elegido", "regalo": "GRATIS Shampoo para perros", "precio": 129700, "antes": 159400, "sku_sufijo": "X2"}
+    ]
+  },
+  "tokens": {
+    "primario": "#B5583A",
+    "secundario": "#25476F",
+    "acento": "#F6EAD3",
+    "fondo_alterno": "#F4ECDD",
+    "texto": "#1C2430",
+    "texto_suave": "#5A5F66",
+    "borde": "#E2D6C0",
+    "alerta": "#C0392B",
+    "oscuro_2": "#1E3350",
+    "oscuro_3": "#14233A",
+    "comparativa": "#233B5C",
+    "fuente_titulos": "'Clash Grotesk', sans-serif",
+    "fuente_texto": "'Satoshi', sans-serif"
+  },
+  "anuncio": {"titulo": "NÜMA EN HACKY", "texto": "Pack x2 con shampoo de regalo · Paga al recibir", "horas": 2},
+  "popup": {"segundos": 5, "etiqueta": "NÜMA para tu perro 🐶", "titulo": "¡Tienes un regalo!", "texto": "Rasca la tarjeta y mira lo que ganaste 👀", "premio": "SHAMPOO DE REGALO CON EL PACK x2", "img": "g3"},
+  "cinta": ["Sabor pollo natural", "90 masticables", "Sin granos", "Sin colorantes artificiales", "Fáciles de dar", "Pagas al recibir"],
+  "compra": {
+    "prueba_social": "",
+    "eyebrow": "Masticables para perros · Movilidad articular",
+    "titulo": "Movilidad para más momentos juntos",
+    "subtitulo": "Masticables de pollo natural con glucosamina, condroitina, MSM y ácido hialurónico para apoyar las articulaciones de tu perro activo.",
+    "beneficios": ["Glucosamina 500 mg", "Condroitina 400 mg", "MSM y ácido hialurónico", "Sin granos", "Sabor pollo natural", "90 masticables"],
+    "escasez": 0,
+    "escasez_texto": "",
+    "entrega_dias": 3,
+    "entrega_texto": "Pide hoy y recíbelo el",
+    "origen": "Envío desde Colombia 🇨🇴",
+    "boton": "PEDIR AHORA · PAGO CONTRAENTREGA",
+    "confianza": "🔒 No pagas nada por adelantado | ↩ Devolución hasta 7 días",
+    "regalos": [
+      {"img": "g1", "titulo": "Pago al recibir", "valor": ""},
+      {"img": "g2", "titulo": "Shampoo para perros GRATIS", "valor": "", "bloqueado": true, "se_desbloquea_con": "Pack x2 + shampoo de regalo"},
+      {"img": "w1", "titulo": "Garantía 7 días", "valor": ""}
+    ],
+    "avatares": ["ugc01","ugc02","ugc03","ugc04"],
+    "acordeones": [
+      {"titulo": "Descripción", "html": "<p>NÜMA Movilidad Articular es un suplemento nutricional masticable de sabor pollo natural, pensado para el soporte articular de perros activos. Cada pote trae 90 masticables de textura suave y fáciles de dar.</p>"},
+      {"titulo": "¿Por qué NÜMA?", "html": "<p>Tu perro corre, salta y te acompaña a todo. NÜMA reúne seis activos en un masticable que le gusta, sin granos, sin colorantes artificiales y sin sabores artificiales. Una forma simple de cuidar sus articulaciones cada día.</p>"},
+      {"titulo": "Sobre tu regalo", "html": "<p><strong>Shampoo para perros:</strong> viene de regalo con el Pack x2.</p><p><strong>Pago contraentrega:</strong> pagas cuando recibes tu pedido.</p>"},
+      {"titulo": "Ingredientes", "html": "<p><strong>Por 2 masticables (5 g):</strong> glucosamina HCl 500 mg, condroitina sulfato 400 mg, MSM 300 mg, ácido hialurónico 50 mg, vitamina C 50 mg, manganeso 5 mg.</p><p>Harina de pollo, glicerina vegetal, glucosamina HCl, condroitina sulfato, MSM, ácido hialurónico, vitamina C, manganeso, ingredientes naturales, sabor natural a pollo y conservantes naturales.</p>"},
+      {"titulo": "Importante", "html": "<p>Suplemento nutricional de apoyo articular. No es un medicamento y no sustituye el consejo de tu veterinario. Consulta con él la dosis adecuada para tu perro.</p>"},
+      {"titulo": "¿Tienen garantía?", "html": "<p>Sí. Tienes hasta 7 días después de la entrega. Si llega dañado o con defecto, te devolvemos el dinero o te lo cambiamos.</p>"}
+    ],
+    "videos_titulo": "Lo que dicen nuestros clientes:",
+    "videos": [
+      {"img": "ugc05", "texto": ""},
+      {"img": "ugc06", "texto": "Mi perro los pide"},
+      {"img": "ugc07", "texto": "Así los recibe"}
+    ]
+  },
+  "cifras": {
+    "img": "t1",
+    "titulo": "Seis activos. Un solo masticable.",
+    "texto": "La fórmula de NÜMA por porción de 2 masticables (5 g).",
+    "boton": "Pídelo sin riesgo hoy",
+    "items": [
+      {"cifra": "500 mg", "texto": "Glucosamina HCl por porción"},
+      {"cifra": "400 mg", "texto": "Condroitina sulfato por porción"},
+      {"cifra": "300 mg", "texto": "MSM por porción"},
+      {"cifra": "90", "texto": "Masticables por pote"}
+    ]
+  },
+  "tecnologias": {
+    "titulo": "4 ingredientes <em>que trabajan en equipo</em>",
+    "items": [
+      {"img": "t1", "titulo": "Glucosamina", "texto": "500 mg por porción. Componente natural del cartílago, muy usado en el soporte articular de perros."},
+      {"img": "t2", "titulo": "Condroitina", "texto": "400 mg por porción. Acompaña a la glucosamina en el cuidado del cartílago."},
+      {"img": "t3", "titulo": "MSM", "texto": "300 mg por porción. Fuente de azufre que se suma al soporte para las articulaciones."},
+      {"img": "t4", "titulo": "Ácido hialurónico", "texto": "50 mg por porción. Parte del líquido que lubrica las articulaciones."}
+    ]
+  },
+  "resenas_destacadas": {
+    "titulo": "Historias reales, <em>perros felices</em>",
+    "texto": "Mira lo que cuentan quienes ya se lo dan a su perro.",
+    "fotos": ["ugc01","ugc02","ugc03","ugc04","ugc05","ugc06","ugc07","ugc08","ugc09","ugc10"],
+    "resenas": [
+      {"nota": "5.0", "titulo": "Se lo come como un premio", "texto": "A mi perro le encanta el sabor a pollo. Se lo doy y lo pide de nuevo, no hay que pelear con él.", "autor": "Laura M.", "avatar": "ugc04", "etiquetas": ["Sabor", "Fácil de dar"], "demo": true},
+      {"nota": "5.0", "titulo": "Lo veo más animado en los paseos", "texto": "Salimos a caminar todos los días y siento que disfruta más. Ya llevo varios potes.", "autor": "Andrés P.", "avatar": "ugc05", "etiquetas": ["Paseos", "Uso diario"], "demo": true},
+      {"nota": "4.9", "titulo": "Me gustó que no tenga granos", "texto": "Mi perro es sensible y busqué algo sin granos ni colorantes. La etiqueta es clara y eso me dio confianza.", "autor": "Camila R.", "avatar": "ugc06", "etiquetas": ["Ingredientes", "Confianza"], "demo": true}
+    ]
+  },
+  "beneficios_producto": {
+    "titulo": "<em>Cada movimiento cuenta.</em> Cuídalo a diario.",
+    "texto": "Un masticable simple para acompañar su vida activa.",
+    "img": "p1",
+    "items": [
+      {"icono": "500mg", "texto": "Glucosamina por porción"},
+      {"icono": "6", "texto": "Activos en la fórmula"},
+      {"icono": "🍗", "texto": "Sabor pollo natural"},
+      {"icono": "0", "texto": "Granos ni colorantes artificiales"}
+    ]
+  },
+  "beneficios_filas": {
+    "titulo": "<em>Beneficios pensados</em> para su día a día.",
+    "texto": "Cuatro cosas que vas a valorar de NÜMA.",
+    "items": [
+      {"img": "b1", "titulo": "Soporte articular", "subtitulo": "Apoya sus articulaciones.", "texto": "Glucosamina, condroitina, MSM y ácido hialurónico en cada porción."},
+      {"img": "b2", "titulo": "Para perros activos", "subtitulo": "Más momentos juntos.", "texto": "Pensado para acompañar los paseos, las carreras y el juego de cada día."},
+      {"img": "b3", "titulo": "Fácil de dar", "subtitulo": "Textura suave y sabor a pollo.", "texto": "Un masticable que se parece a un premio, sin forzar ni mezclar."},
+      {"img": "b4", "titulo": "Ingredientes claros", "subtitulo": "Sin granos ni artificiales.", "texto": "Sin granos, sin colorantes artificiales y sin sabores artificiales."}
+    ]
+  },
+  "linea_tiempo": {
+    "img": "l1",
+    "titulo": "<em>Su rutina</em> con NÜMA",
+    "texto": "El cuidado articular funciona mejor cuando se vuelve hábito. Así lo puedes integrar a su día.",
+    "boton": "Quiero el de mi perro →",
+    "pasos": [
+      {"titulo": "Paso 1 · Habla con tu veterinario", "puntos": ["Confirma la dosis adecuada para su peso y edad", "Cuéntale que vas a sumar un suplemento", "Guarda la indicación a mano"]},
+      {"titulo": "Paso 2 · Hazlo parte del día", "puntos": ["Dáselo a la misma hora, como un premio", "Masticable suave y sabor a pollo natural", "Sin mezclas ni complicaciones"]},
+      {"titulo": "Paso 3 · Mantén la constancia", "puntos": ["Un pote trae 90 masticables", "Deja un pote de repuesto a la mano", "Con el Pack x2 tienes 180 masticables"]},
+      {"titulo": "Paso 4 · Disfruta sus paseos", "puntos": ["Salidas, juego y carreras de siempre", "Más momentos juntos", "Cada movimiento cuenta"]}
+    ]
+  },
+  "razones": {
+    "badge": "5 razones",
+    "titulo": "Por qué NÜMA es una buena rutina para tu perro",
+    "boton": "Pídelo sin riesgo hoy",
+    "prefijo": "Razón",
+    "items": [
+      {"img": "z1", "titulo": "Fórmula con seis activos", "texto": "Glucosamina, condroitina, MSM, ácido hialurónico, vitamina C y manganeso."},
+      {"img": "z2", "titulo": "Sabor pollo natural", "texto": "Un masticable que a los perros les suena a premio."},
+      {"img": "z3", "titulo": "Textura suave", "texto": "Fácil de masticar y de dar, sin pelear a la hora de la dosis."},
+      {"img": "z4", "titulo": "Sin granos ni artificiales", "texto": "Sin granos, sin colorantes artificiales y sin sabores artificiales."},
+      {"img": "z5", "titulo": "90 masticables por pote", "texto": "Un pote para varias semanas de constancia, y el Pack x2 trae dos."}
+    ]
+  },
+  "comparativa": {
+    "nosotros": "NÜMA",
+    "otros": "Otros suplementos",
+    "titulo": "NÜMA vs. suplementos genéricos",
+    "puntos": [
+      "<strong>Fórmula completa</strong> — seis activos en una porción",
+      "<strong>Sabor que aceptan</strong> — pollo natural",
+      "<strong>Sin granos</strong> — ni colorantes ni sabores artificiales",
+      "<strong>Pago seguro</strong> — pagas al recibir"
+    ],
+    "boton": "Pídelo sin riesgo hoy",
+    "filas": [
+      ["Glucosamina + condroitina + MSM", "Revisa qué activos incluye"],
+      ["Con ácido hialurónico", "No siempre lo incluyen"],
+      ["Sin granos", "Revisa la etiqueta"],
+      ["Sin colorantes ni sabores artificiales", "Revisa la etiqueta"],
+      ["Pago contraentrega", "Pago por adelantado"]
+    ]
+  },
+  "garantia": {
+    "numero": "7",
+    "unidad": "DÍAS",
+    "antetitulo": "Compra sin riesgo",
+    "titulo": "Garantía de 7 días",
+    "texto": "Si llega dañado o con defecto, te devolvemos el dinero o te lo cambiamos. Y pagas solo cuando lo recibes.",
+    "img": "w1"
+  },
+  "videos": {
+    "titulo": "Dueños reales. <em>Perros felices.</em>",
+    "texto": "Míralo en sus propias palabras.",
+    "boton": "Pídelo sin riesgo hoy",
+    "items": [
+      {"img": "ugc08", "texto": ""},
+      {"img": "ugc09", "texto": "Así los recibe"},
+      {"img": "ugc10", "texto": "Mi perro los pide"},
+      {"img": "ugc11", "texto": ""},
+      {"img": "ugc12", "texto": "Ya repetí pote"},
+      {"img": "ugc03", "texto": ""}
+    ]
+  },
+  "oferta_repetida": {
+    "img": "g5",
+    "titulo": "<em>Más momentos juntos.</em> Llévate dos y ahorra.",
+    "texto": "El Pack x2 trae 180 masticables y shampoo para perros de regalo."
+  },
+  "resenas_lista": {
+    "calificacion": "Reseñas de ejemplo (demo)",
+    "titulo": "Lo probaron. Tu perro también puede.",
+    "resenas": [
+      {"nota": "5.0", "titulo": "Fácil de dar", "texto": "Lo recibe como un premio. Cero drama a la hora de dárselo.", "etiquetas": ["Sabor", "Rutina"], "demo": true},
+      {"nota": "5.0", "titulo": "Etiqueta clara", "texto": "Me gustó ver los miligramos de cada activo y que no lleve granos ni colorantes artificiales.", "etiquetas": ["Ingredientes", "Confianza"], "demo": true},
+      {"nota": "5.0", "titulo": "Pagué al recibir, sin miedo", "texto": "Me llegó en pocos días, revisé el pote y pagué. Muy buena experiencia.", "etiquetas": ["Contraentrega", "Envío"], "demo": true},
+      {"nota": "4.8", "titulo": "Para sus paseos de siempre", "texto": "Mi perro es muy activo y quise acompañarlo con algo para sus articulaciones. Ya lo tengo en la rutina.", "etiquetas": ["Perro activo", "Uso diario"], "demo": true}
+    ]
+  },
+  "footer": {
+    "newsletter_titulo": "Únete a la lista HACKY",
+    "newsletter_texto": "Recibe lanzamientos, ofertas y descuentos exclusivos.",
+    "legal_html": "<p>NÜMA es una marca de suplementos para perros. Suplemento nutricional de apoyo articular: no es un medicamento y no sustituye el consejo de tu veterinario.</p><p>* Las reseñas marcadas como demo son de ejemplo y se reemplazan por reseñas reales. Tienda demo del HackaEcom 2026.</p>"
+  }
+}

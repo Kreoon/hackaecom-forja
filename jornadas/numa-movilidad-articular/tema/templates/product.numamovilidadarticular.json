@@ -1,0 +1,1007 @@
+{
+ "sections": {
+  "pop": {
+   "type": "hk-popup",
+   "settings": {
+    "enabled": true,
+    "delay": 5,
+    "logo_asset": "hk-logo.png",
+    "pill": "NÜMA para tu perro 🐶",
+    "heading": "¡Tienes un regalo!",
+    "text": "Rasca la tarjeta y mira lo que ganaste 👀",
+    "prize": "SHAMPOO DE REGALO CON EL PACK x2",
+    "image_asset": "hk-g3.jpg"
+   },
+   "blocks": {},
+   "block_order": []
+  },
+  "mq": {
+   "type": "hk-marquee",
+   "settings": {},
+   "blocks": {
+    "mq_0": {
+     "type": "item",
+     "settings": {
+      "text": "Sabor pollo natural"
+     }
+    },
+    "mq_1": {
+     "type": "item",
+     "settings": {
+      "text": "90 masticables"
+     }
+    },
+    "mq_2": {
+     "type": "item",
+     "settings": {
+      "text": "Sin granos"
+     }
+    },
+    "mq_3": {
+     "type": "item",
+     "settings": {
+      "text": "Sin colorantes artificiales"
+     }
+    },
+    "mq_4": {
+     "type": "item",
+     "settings": {
+      "text": "Fáciles de dar"
+     }
+    },
+    "mq_5": {
+     "type": "item",
+     "settings": {
+      "text": "Pagas al recibir"
+     }
+    }
+   },
+   "block_order": [
+    "mq_0",
+    "mq_1",
+    "mq_2",
+    "mq_3",
+    "mq_4",
+    "mq_5"
+   ]
+  },
+  "main": {
+   "type": "hk-buybox",
+   "settings": {
+    "layout": "full",
+    "features": "Glucosamina 500 mg\nCondroitina 400 mg\nMSM y ácido hialurónico\nSin granos\nSabor pollo natural\n90 masticables",
+    "color_option": "Color",
+    "scarcity": 0,
+    "scarcity_label": "",
+    "eta_days": 3,
+    "shipping": "Pide hoy y recíbelo el",
+    "origin": "Envío desde Colombia 🇨🇴",
+    "button": "PEDIR AHORA · PAGO CONTRAENTREGA",
+    "gifts_label": "REGALOS DESBLOQUEADOS",
+    "trust": "🔒 No pagas nada por adelantado | ↩ Devolución hasta 7 días",
+    "videos_heading": "Lo que dicen nuestros clientes:",
+    "proof": "",
+    "eyebrow": "Masticables para perros · Movilidad articular",
+    "heading": "Movilidad para más momentos juntos",
+    "subheading": "Masticables de pollo natural con glucosamina, condroitina, MSM y ácido hialurónico para apoyar las articulaciones de tu perro activo."
+   },
+   "blocks": {
+    "main_0": {
+     "type": "offer",
+     "settings": {
+      "option_value": "1 unidad",
+      "title": "Lleva 1",
+      "meta": "$79.700 el pote de 90 masticables"
+     }
+    },
+    "main_1": {
+     "type": "offer",
+     "settings": {
+      "option_value": "Pack x2 + shampoo de regalo",
+      "title": "Lleva 2 + regalo",
+      "meta": "$64.850 c/u · 180 masticables para más momentos juntos",
+      "tag": "Más elegido",
+      "gift": "GRATIS Shampoo para perros"
+     }
+    },
+    "main_2": {
+     "type": "gift",
+     "settings": {
+      "image_asset": "hk-g1.jpg",
+      "title": "Pago al recibir",
+      "value": "",
+      "locked": false
+     }
+    },
+    "main_3": {
+     "type": "gift",
+     "settings": {
+      "image_asset": "hk-g2.jpg",
+      "title": "Shampoo para perros GRATIS",
+      "value": "",
+      "locked": true,
+      "unlock_offer": "Pack x2 + shampoo de regalo"
+     }
+    },
+    "main_4": {
+     "type": "gift",
+     "settings": {
+      "image_asset": "hk-w1.jpg",
+      "title": "Garantía 7 días",
+      "value": "",
+      "locked": false
+     }
+    },
+    "main_5": {
+     "type": "avatar",
+     "settings": {
+      "image_asset": "hk-ugc01.jpg"
+     }
+    },
+    "main_6": {
+     "type": "avatar",
+     "settings": {
+      "image_asset": "hk-ugc02.jpg"
+     }
+    },
+    "main_7": {
+     "type": "avatar",
+     "settings": {
+      "image_asset": "hk-ugc03.jpg"
+     }
+    },
+    "main_8": {
+     "type": "avatar",
+     "settings": {
+      "image_asset": "hk-ugc04.jpg"
+     }
+    },
+    "main_9": {
+     "type": "accordion",
+     "settings": {
+      "title": "Descripción",
+      "body": "<p>NÜMA Movilidad Articular es un suplemento nutricional masticable de sabor pollo natural, pensado para el soporte articular de perros activos. Cada pote trae 90 masticables de textura suave y fáciles de dar.</p>"
+     }
+    },
+    "main_10": {
+     "type": "accordion",
+     "settings": {
+      "title": "¿Por qué NÜMA?",
+      "body": "<p>Tu perro corre, salta y te acompaña a todo. NÜMA reúne seis activos en un masticable que le gusta, sin granos, sin colorantes artificiales y sin sabores artificiales. Una forma simple de cuidar sus articulaciones cada día.</p>"
+     }
+    },
+    "main_11": {
+     "type": "accordion",
+     "settings": {
+      "title": "Sobre tu regalo",
+      "body": "<p><strong>Shampoo para perros:</strong> viene de regalo con el Pack x2.</p><p><strong>Pago contraentrega:</strong> pagas cuando recibes tu pedido.</p>"
+     }
+    },
+    "main_12": {
+     "type": "accordion",
+     "settings": {
+      "title": "Ingredientes",
+      "body": "<p><strong>Por 2 masticables (5 g):</strong> glucosamina HCl 500 mg, condroitina sulfato 400 mg, MSM 300 mg, ácido hialurónico 50 mg, vitamina C 50 mg, manganeso 5 mg.</p><p>Harina de pollo, glicerina vegetal, glucosamina HCl, condroitina sulfato, MSM, ácido hialurónico, vitamina C, manganeso, ingredientes naturales, sabor natural a pollo y conservantes naturales.</p>"
+     }
+    },
+    "main_13": {
+     "type": "accordion",
+     "settings": {
+      "title": "Importante",
+      "body": "<p>Suplemento nutricional de apoyo articular. No es un medicamento y no sustituye el consejo de tu veterinario. Consulta con él la dosis adecuada para tu perro.</p>"
+     }
+    },
+    "main_14": {
+     "type": "accordion",
+     "settings": {
+      "title": "¿Tienen garantía?",
+      "body": "<p>Sí. Tienes hasta 7 días después de la entrega. Si llega dañado o con defecto, te devolvemos el dinero o te lo cambiamos.</p>"
+     }
+    },
+    "main_15": {
+     "type": "video",
+     "settings": {
+      "image_asset": "hk-ugc05.jpg",
+      "caption": ""
+     }
+    },
+    "main_16": {
+     "type": "video",
+     "settings": {
+      "image_asset": "hk-ugc06.jpg",
+      "caption": "Mi perro los pide"
+     }
+    },
+    "main_17": {
+     "type": "video",
+     "settings": {
+      "image_asset": "hk-ugc07.jpg",
+      "caption": "Así los recibe"
+     }
+    }
+   },
+   "block_order": [
+    "main_0",
+    "main_1",
+    "main_2",
+    "main_3",
+    "main_4",
+    "main_5",
+    "main_6",
+    "main_7",
+    "main_8",
+    "main_9",
+    "main_10",
+    "main_11",
+    "main_12",
+    "main_13",
+    "main_14",
+    "main_15",
+    "main_16",
+    "main_17"
+   ]
+  },
+  "stats": {
+   "type": "hk-stats",
+   "settings": {
+    "bg_asset": "hk-t1.jpg",
+    "heading": "Seis activos. Un solo masticable.",
+    "text": "La fórmula de NÜMA por porción de 2 masticables (5 g).",
+    "button": "Pídelo sin riesgo hoy"
+   },
+   "blocks": {
+    "stats_0": {
+     "type": "stat",
+     "settings": {
+      "number": "500 mg",
+      "label": "Glucosamina HCl por porción"
+     }
+    },
+    "stats_1": {
+     "type": "stat",
+     "settings": {
+      "number": "400 mg",
+      "label": "Condroitina sulfato por porción"
+     }
+    },
+    "stats_2": {
+     "type": "stat",
+     "settings": {
+      "number": "300 mg",
+      "label": "MSM por porción"
+     }
+    },
+    "stats_3": {
+     "type": "stat",
+     "settings": {
+      "number": "90",
+      "label": "Masticables por pote"
+     }
+    }
+   },
+   "block_order": [
+    "stats_0",
+    "stats_1",
+    "stats_2",
+    "stats_3"
+   ]
+  },
+  "tech": {
+   "type": "hk-cards",
+   "settings": {
+    "heading": "4 ingredientes <em>que trabajan en equipo</em>",
+    "columns": "4",
+    "style": "square",
+    "alt": true
+   },
+   "blocks": {
+    "tech_0": {
+     "type": "card",
+     "settings": {
+      "image_asset": "hk-t1.jpg",
+      "ph": "t1",
+      "title": "Glucosamina",
+      "text": "500 mg por porción. Componente natural del cartílago, muy usado en el soporte articular de perros."
+     }
+    },
+    "tech_1": {
+     "type": "card",
+     "settings": {
+      "image_asset": "hk-t2.jpg",
+      "ph": "t2",
+      "title": "Condroitina",
+      "text": "400 mg por porción. Acompaña a la glucosamina en el cuidado del cartílago."
+     }
+    },
+    "tech_2": {
+     "type": "card",
+     "settings": {
+      "image_asset": "hk-t3.jpg",
+      "ph": "t3",
+      "title": "MSM",
+      "text": "300 mg por porción. Fuente de azufre que se suma al soporte para las articulaciones."
+     }
+    },
+    "tech_3": {
+     "type": "card",
+     "settings": {
+      "image_asset": "hk-t4.jpg",
+      "ph": "t4",
+      "title": "Ácido hialurónico",
+      "text": "50 mg por porción. Parte del líquido que lubrica las articulaciones."
+     }
+    }
+   },
+   "block_order": [
+    "tech_0",
+    "tech_1",
+    "tech_2",
+    "tech_3"
+   ]
+  },
+  "rev1": {
+   "type": "hk-reviews",
+   "settings": {
+    "score": "",
+    "heading": "Historias reales, <em>perros felices</em>",
+    "text": "Mira lo que cuentan quienes ya se lo dan a su perro.",
+    "alt": true,
+    "layout": "grid"
+   },
+   "blocks": {
+    "rev1_0": {
+     "type": "thumb",
+     "settings": {
+      "image_asset": "hk-ugc01.jpg"
+     }
+    },
+    "rev1_1": {
+     "type": "thumb",
+     "settings": {
+      "image_asset": "hk-ugc02.jpg"
+     }
+    },
+    "rev1_2": {
+     "type": "thumb",
+     "settings": {
+      "image_asset": "hk-ugc03.jpg"
+     }
+    },
+    "rev1_3": {
+     "type": "thumb",
+     "settings": {
+      "image_asset": "hk-ugc04.jpg"
+     }
+    },
+    "rev1_4": {
+     "type": "thumb",
+     "settings": {
+      "image_asset": "hk-ugc05.jpg"
+     }
+    },
+    "rev1_5": {
+     "type": "thumb",
+     "settings": {
+      "image_asset": "hk-ugc06.jpg"
+     }
+    },
+    "rev1_6": {
+     "type": "thumb",
+     "settings": {
+      "image_asset": "hk-ugc07.jpg"
+     }
+    },
+    "rev1_7": {
+     "type": "thumb",
+     "settings": {
+      "image_asset": "hk-ugc08.jpg"
+     }
+    },
+    "rev1_8": {
+     "type": "thumb",
+     "settings": {
+      "image_asset": "hk-ugc09.jpg"
+     }
+    },
+    "rev1_9": {
+     "type": "thumb",
+     "settings": {
+      "image_asset": "hk-ugc10.jpg"
+     }
+    },
+    "rev1_10": {
+     "type": "review",
+     "settings": {
+      "rating": "5.0",
+      "title": "Se lo come como un premio",
+      "text": "A mi perro le encanta el sabor a pollo. Se lo doy y lo pide de nuevo, no hay que pelear con él.",
+      "author": "Laura M.",
+      "avatar_asset": "hk-ugc04.jpg",
+      "tags": "Sabor | Fácil de dar",
+      "demo": true
+     }
+    },
+    "rev1_11": {
+     "type": "review",
+     "settings": {
+      "rating": "5.0",
+      "title": "Lo veo más animado en los paseos",
+      "text": "Salimos a caminar todos los días y siento que disfruta más. Ya llevo varios potes.",
+      "author": "Andrés P.",
+      "avatar_asset": "hk-ugc05.jpg",
+      "tags": "Paseos | Uso diario",
+      "demo": true
+     }
+    },
+    "rev1_12": {
+     "type": "review",
+     "settings": {
+      "rating": "4.9",
+      "title": "Me gustó que no tenga granos",
+      "text": "Mi perro es sensible y busqué algo sin granos ni colorantes. La etiqueta es clara y eso me dio confianza.",
+      "author": "Camila R.",
+      "avatar_asset": "hk-ugc06.jpg",
+      "tags": "Ingredientes | Confianza",
+      "demo": true
+     }
+    }
+   },
+   "block_order": [
+    "rev1_0",
+    "rev1_1",
+    "rev1_2",
+    "rev1_3",
+    "rev1_4",
+    "rev1_5",
+    "rev1_6",
+    "rev1_7",
+    "rev1_8",
+    "rev1_9",
+    "rev1_10",
+    "rev1_11",
+    "rev1_12"
+   ]
+  },
+  "bc": {
+   "type": "hk-benefits-center",
+   "settings": {
+    "heading": "<em>Cada movimiento cuenta.</em> Cuídalo a diario.",
+    "text": "Un masticable simple para acompañar su vida activa.",
+    "image_asset": "hk-p1.png"
+   },
+   "blocks": {
+    "bc_0": {
+     "type": "item",
+     "settings": {
+      "icon": "500mg",
+      "title": "Glucosamina por porción"
+     }
+    },
+    "bc_1": {
+     "type": "item",
+     "settings": {
+      "icon": "6",
+      "title": "Activos en la fórmula"
+     }
+    },
+    "bc_2": {
+     "type": "item",
+     "settings": {
+      "icon": "🍗",
+      "title": "Sabor pollo natural"
+     }
+    },
+    "bc_3": {
+     "type": "item",
+     "settings": {
+      "icon": "0",
+      "title": "Granos ni colorantes artificiales"
+     }
+    }
+   },
+   "block_order": [
+    "bc_0",
+    "bc_1",
+    "bc_2",
+    "bc_3"
+   ]
+  },
+  "rows": {
+   "type": "hk-rows",
+   "settings": {
+    "heading": "<em>Beneficios pensados</em> para su día a día.",
+    "text": "Cuatro cosas que vas a valorar de NÜMA."
+   },
+   "blocks": {
+    "rows_0": {
+     "type": "row",
+     "settings": {
+      "image_asset": "hk-b1.jpg",
+      "ph": "b1",
+      "title": "Soporte articular",
+      "subtitle": "Apoya sus articulaciones.",
+      "text": "Glucosamina, condroitina, MSM y ácido hialurónico en cada porción."
+     }
+    },
+    "rows_1": {
+     "type": "row",
+     "settings": {
+      "image_asset": "hk-b2.jpg",
+      "ph": "b2",
+      "title": "Para perros activos",
+      "subtitle": "Más momentos juntos.",
+      "text": "Pensado para acompañar los paseos, las carreras y el juego de cada día."
+     }
+    },
+    "rows_2": {
+     "type": "row",
+     "settings": {
+      "image_asset": "hk-b3.jpg",
+      "ph": "b3",
+      "title": "Fácil de dar",
+      "subtitle": "Textura suave y sabor a pollo.",
+      "text": "Un masticable que se parece a un premio, sin forzar ni mezclar."
+     }
+    },
+    "rows_3": {
+     "type": "row",
+     "settings": {
+      "image_asset": "hk-b4.jpg",
+      "ph": "b4",
+      "title": "Ingredientes claros",
+      "subtitle": "Sin granos ni artificiales.",
+      "text": "Sin granos, sin colorantes artificiales y sin sabores artificiales."
+     }
+    }
+   },
+   "block_order": [
+    "rows_0",
+    "rows_1",
+    "rows_2",
+    "rows_3"
+   ]
+  },
+  "mq2": {
+   "type": "hk-marquee",
+   "settings": {},
+   "blocks": {
+    "mq2_0": {
+     "type": "item",
+     "settings": {
+      "text": "Sabor pollo natural"
+     }
+    },
+    "mq2_1": {
+     "type": "item",
+     "settings": {
+      "text": "90 masticables"
+     }
+    },
+    "mq2_2": {
+     "type": "item",
+     "settings": {
+      "text": "Sin granos"
+     }
+    },
+    "mq2_3": {
+     "type": "item",
+     "settings": {
+      "text": "Sin colorantes artificiales"
+     }
+    },
+    "mq2_4": {
+     "type": "item",
+     "settings": {
+      "text": "Fáciles de dar"
+     }
+    },
+    "mq2_5": {
+     "type": "item",
+     "settings": {
+      "text": "Pagas al recibir"
+     }
+    }
+   },
+   "block_order": [
+    "mq2_0",
+    "mq2_1",
+    "mq2_2",
+    "mq2_3",
+    "mq2_4",
+    "mq2_5"
+   ]
+  },
+  "tl": {
+   "type": "hk-timeline",
+   "settings": {
+    "image_asset": "hk-l1.jpg",
+    "heading": "<em>Su rutina</em> con NÜMA",
+    "text": "El cuidado articular funciona mejor cuando se vuelve hábito. Así lo puedes integrar a su día.",
+    "button": "Quiero el de mi perro →"
+   },
+   "blocks": {
+    "tl_0": {
+     "type": "step",
+     "settings": {
+      "title": "Paso 1 · Habla con tu veterinario",
+      "items": "Confirma la dosis adecuada para su peso y edad\nCuéntale que vas a sumar un suplemento\nGuarda la indicación a mano"
+     }
+    },
+    "tl_1": {
+     "type": "step",
+     "settings": {
+      "title": "Paso 2 · Hazlo parte del día",
+      "items": "Dáselo a la misma hora, como un premio\nMasticable suave y sabor a pollo natural\nSin mezclas ni complicaciones"
+     }
+    },
+    "tl_2": {
+     "type": "step",
+     "settings": {
+      "title": "Paso 3 · Mantén la constancia",
+      "items": "Un pote trae 90 masticables\nDeja un pote de repuesto a la mano\nCon el Pack x2 tienes 180 masticables"
+     }
+    },
+    "tl_3": {
+     "type": "step",
+     "settings": {
+      "title": "Paso 4 · Disfruta sus paseos",
+      "items": "Salidas, juego y carreras de siempre\nMás momentos juntos\nCada movimiento cuenta"
+     }
+    }
+   },
+   "block_order": [
+    "tl_0",
+    "tl_1",
+    "tl_2",
+    "tl_3"
+   ]
+  },
+  "why": {
+   "type": "hk-cards",
+   "settings": {
+    "badge": "5 razones",
+    "heading": "Por qué NÜMA es una buena rutina para tu perro",
+    "columns": "3",
+    "style": "wide",
+    "alt": true,
+    "button": "Pídelo sin riesgo hoy"
+   },
+   "blocks": {
+    "why_0": {
+     "type": "card",
+     "settings": {
+      "image_asset": "hk-z1.jpg",
+      "ph": "z1",
+      "kicker": "Razón 1",
+      "title": "Fórmula con seis activos",
+      "text": "Glucosamina, condroitina, MSM, ácido hialurónico, vitamina C y manganeso."
+     }
+    },
+    "why_1": {
+     "type": "card",
+     "settings": {
+      "image_asset": "hk-z2.jpg",
+      "ph": "z2",
+      "kicker": "Razón 2",
+      "title": "Sabor pollo natural",
+      "text": "Un masticable que a los perros les suena a premio."
+     }
+    },
+    "why_2": {
+     "type": "card",
+     "settings": {
+      "image_asset": "hk-z3.jpg",
+      "ph": "z3",
+      "kicker": "Razón 3",
+      "title": "Textura suave",
+      "text": "Fácil de masticar y de dar, sin pelear a la hora de la dosis."
+     }
+    },
+    "why_3": {
+     "type": "card",
+     "settings": {
+      "image_asset": "hk-z4.jpg",
+      "ph": "z4",
+      "kicker": "Razón 4",
+      "title": "Sin granos ni artificiales",
+      "text": "Sin granos, sin colorantes artificiales y sin sabores artificiales."
+     }
+    },
+    "why_4": {
+     "type": "card",
+     "settings": {
+      "image_asset": "hk-z5.jpg",
+      "ph": "z5",
+      "kicker": "Razón 5",
+      "title": "90 masticables por pote",
+      "text": "Un pote para varias semanas de constancia, y el Pack x2 trae dos."
+     }
+    }
+   },
+   "block_order": [
+    "why_0",
+    "why_1",
+    "why_2",
+    "why_3",
+    "why_4"
+   ]
+  },
+  "cmp": {
+   "type": "hk-compare",
+   "settings": {
+    "us": "NÜMA",
+    "them": "Otros suplementos",
+    "heading": "NÜMA vs. suplementos genéricos",
+    "points": "<strong>Fórmula completa</strong> — seis activos en una porción\n<strong>Sabor que aceptan</strong> — pollo natural\n<strong>Sin granos</strong> — ni colorantes ni sabores artificiales\n<strong>Pago seguro</strong> — pagas al recibir",
+    "button": "Pídelo sin riesgo hoy"
+   },
+   "blocks": {
+    "cmp_0": {
+     "type": "row",
+     "settings": {
+      "us": "Glucosamina + condroitina + MSM",
+      "them": "Revisa qué activos incluye"
+     }
+    },
+    "cmp_1": {
+     "type": "row",
+     "settings": {
+      "us": "Con ácido hialurónico",
+      "them": "No siempre lo incluyen"
+     }
+    },
+    "cmp_2": {
+     "type": "row",
+     "settings": {
+      "us": "Sin granos",
+      "them": "Revisa la etiqueta"
+     }
+    },
+    "cmp_3": {
+     "type": "row",
+     "settings": {
+      "us": "Sin colorantes ni sabores artificiales",
+      "them": "Revisa la etiqueta"
+     }
+    },
+    "cmp_4": {
+     "type": "row",
+     "settings": {
+      "us": "Pago contraentrega",
+      "them": "Pago por adelantado"
+     }
+    }
+   },
+   "block_order": [
+    "cmp_0",
+    "cmp_1",
+    "cmp_2",
+    "cmp_3",
+    "cmp_4"
+   ]
+  },
+  "gu": {
+   "type": "hk-guarantee",
+   "settings": {
+    "number": "7",
+    "unit": "DÍAS",
+    "kicker": "Compra sin riesgo",
+    "heading": "Garantía de 7 días",
+    "text": "Si llega dañado o con defecto, te devolvemos el dinero o te lo cambiamos. Y pagas solo cuando lo recibes.",
+    "image_asset": "hk-w1.jpg"
+   },
+   "blocks": {},
+   "block_order": []
+  },
+  "vids2": {
+   "type": "hk-videos",
+   "settings": {
+    "heading": "Dueños reales. <em>Perros felices.</em>",
+    "text": "Míralo en sus propias palabras.",
+    "button": "Pídelo sin riesgo hoy"
+   },
+   "blocks": {
+    "vids2_0": {
+     "type": "video",
+     "settings": {
+      "image_asset": "hk-ugc08.jpg",
+      "caption": ""
+     }
+    },
+    "vids2_1": {
+     "type": "video",
+     "settings": {
+      "image_asset": "hk-ugc09.jpg",
+      "caption": "Así los recibe"
+     }
+    },
+    "vids2_2": {
+     "type": "video",
+     "settings": {
+      "image_asset": "hk-ugc10.jpg",
+      "caption": "Mi perro los pide"
+     }
+    },
+    "vids2_3": {
+     "type": "video",
+     "settings": {
+      "image_asset": "hk-ugc11.jpg",
+      "caption": ""
+     }
+    },
+    "vids2_4": {
+     "type": "video",
+     "settings": {
+      "image_asset": "hk-ugc12.jpg",
+      "caption": "Ya repetí pote"
+     }
+    },
+    "vids2_5": {
+     "type": "video",
+     "settings": {
+      "image_asset": "hk-ugc03.jpg",
+      "caption": ""
+     }
+    }
+   },
+   "block_order": [
+    "vids2_0",
+    "vids2_1",
+    "vids2_2",
+    "vids2_3",
+    "vids2_4",
+    "vids2_5"
+   ]
+  },
+  "buy2": {
+   "type": "hk-buybox",
+   "settings": {
+    "layout": "compact",
+    "features": "Glucosamina 500 mg\nCondroitina 400 mg\nMSM y ácido hialurónico\nSin granos\nSabor pollo natural\n90 masticables",
+    "color_option": "Color",
+    "scarcity": 0,
+    "scarcity_label": "",
+    "eta_days": 3,
+    "shipping": "Pide hoy y recíbelo el",
+    "origin": "Envío desde Colombia 🇨🇴",
+    "button": "PEDIR AHORA · PAGO CONTRAENTREGA",
+    "gifts_label": "REGALOS DESBLOQUEADOS",
+    "trust": "🔒 No pagas nada por adelantado | ↩ Devolución hasta 7 días",
+    "videos_heading": "Lo que dicen nuestros clientes:",
+    "header_image_asset": "hk-g5.jpg",
+    "heading": "<em>Más momentos juntos.</em> Llévate dos y ahorra.",
+    "subheading": "El Pack x2 trae 180 masticables y shampoo para perros de regalo."
+   },
+   "blocks": {
+    "buy2_0": {
+     "type": "offer",
+     "settings": {
+      "option_value": "1 unidad",
+      "title": "Lleva 1",
+      "meta": "$79.700 el pote de 90 masticables"
+     }
+    },
+    "buy2_1": {
+     "type": "offer",
+     "settings": {
+      "option_value": "Pack x2 + shampoo de regalo",
+      "title": "Lleva 2 + regalo",
+      "meta": "$64.850 c/u · 180 masticables para más momentos juntos",
+      "tag": "Más elegido",
+      "gift": "GRATIS Shampoo para perros"
+     }
+    },
+    "buy2_2": {
+     "type": "gift",
+     "settings": {
+      "image_asset": "hk-g1.jpg",
+      "title": "Pago al recibir",
+      "value": "",
+      "locked": false
+     }
+    },
+    "buy2_3": {
+     "type": "gift",
+     "settings": {
+      "image_asset": "hk-g2.jpg",
+      "title": "Shampoo para perros GRATIS",
+      "value": "",
+      "locked": true,
+      "unlock_offer": "Pack x2 + shampoo de regalo"
+     }
+    },
+    "buy2_4": {
+     "type": "gift",
+     "settings": {
+      "image_asset": "hk-w1.jpg",
+      "title": "Garantía 7 días",
+      "value": "",
+      "locked": false
+     }
+    }
+   },
+   "block_order": [
+    "buy2_0",
+    "buy2_1",
+    "buy2_2",
+    "buy2_3",
+    "buy2_4"
+   ]
+  },
+  "rev2": {
+   "type": "hk-reviews",
+   "settings": {
+    "score": "Reseñas de ejemplo (demo)",
+    "heading": "Lo probaron. Tu perro también puede.",
+    "alt": false,
+    "layout": "list"
+   },
+   "blocks": {
+    "rev2_0": {
+     "type": "review",
+     "settings": {
+      "rating": "5.0",
+      "title": "Fácil de dar",
+      "text": "Lo recibe como un premio. Cero drama a la hora de dárselo.",
+      "tags": "Sabor | Rutina",
+      "demo": true
+     }
+    },
+    "rev2_1": {
+     "type": "review",
+     "settings": {
+      "rating": "5.0",
+      "title": "Etiqueta clara",
+      "text": "Me gustó ver los miligramos de cada activo y que no lleve granos ni colorantes artificiales.",
+      "tags": "Ingredientes | Confianza",
+      "demo": true
+     }
+    },
+    "rev2_2": {
+     "type": "review",
+     "settings": {
+      "rating": "5.0",
+      "title": "Pagué al recibir, sin miedo",
+      "text": "Me llegó en pocos días, revisé el pote y pagué. Muy buena experiencia.",
+      "tags": "Contraentrega | Envío",
+      "demo": true
+     }
+    },
+    "rev2_3": {
+     "type": "review",
+     "settings": {
+      "rating": "4.8",
+      "title": "Para sus paseos de siempre",
+      "text": "Mi perro es muy activo y quise acompañarlo con algo para sus articulaciones. Ya lo tengo en la rutina.",
+      "tags": "Perro activo | Uso diario",
+      "demo": true
+     }
+    }
+   },
+   "block_order": [
+    "rev2_0",
+    "rev2_1",
+    "rev2_2",
+    "rev2_3"
+   ]
+  }
+ },
+ "order": [
+  "pop",
+  "mq",
+  "main",
+  "stats",
+  "tech",
+  "rev1",
+  "bc",
+  "rows",
+  "mq2",
+  "tl",
+  "why",
+  "cmp",
+  "gu",
+  "vids2",
+  "buy2",
+  "rev2"
+ ]
+}

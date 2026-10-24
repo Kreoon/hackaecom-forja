@@ -1,0 +1,36 @@
+{
+ "orden": [
+  "pop",
+  "mq",
+  "main",
+  "stats",
+  "tech",
+  "rev1",
+  "bc",
+  "rows",
+  "mq2",
+  "tl",
+  "why",
+  "cmp",
+  "gu",
+  "vids2",
+  "buy2",
+  "rev2"
+ ],
+ "tokens": {
+  "primario": "#0E4D3C",
+  "secundario": "#009370",
+  "acento": "#FFF7D4",
+  "fondo_alterno": "#F0EFE3",
+  "texto": "#1A1A1A",
+  "texto_suave": "#5B5B5B",
+  "borde": "#DDDDD3",
+  "alerta": "#D93636",
+  "oscuro_2": "#2B4F26",
+  "oscuro_3": "#0A3A2D",
+  "comparativa": "#3B4A1E",
+  "fuente_titulos": "'Clash Grotesk', sans-serif",
+  "fuente_texto": "'Satoshi', sans-serif"
+ },
+ "notas": "Tokens de la referencia Resilia (verde bosque + crema + verde menta). Decidir si se reemplazan por terracota/crema/azul marino de NÜMA (decisiones.md); la estructura no cambia. Botones pill, tarjetas radio ~12px, bandas oscuras alternadas con crema."
+}

@@ -1,0 +1,82 @@
+{
+ "slug": "numa-movilidad-articular",
+ "producto": "fotos",
+ "referencia": "https://resilia.shop/es/products/resilia-oil-of-oregano-softgels",
+ "inicio": "2026-10-17T19:47:00",
+ "tienda": "hackaecom.myshopify.com",
+ "tema_base": "HACKY Landing",
+ "hitos": {
+  "producto": {
+   "estado": "ok",
+   "fuente": "insumos/numa-branding.webp",
+   "ficha": "insumos/ficha-producto.md",
+   "json": "insumos/producto.json",
+   "foto_oficial_url": null,
+   "nota": "marca propia sin URL oficial; usar foto_oficial_local (hoja de branding, recortar vista frontal)"
+  },
+  "referencia": "2026-10-17T19:49:15",
+  "copy": "2026-10-17T19:51:26",
+  "creativos": {
+   "version": 2,
+   "at": "2026-10-17",
+   "imagenes": 34,
+   "creditos": 2643,
+   "rehechas": [
+    "ugc01-12 (primera tanda salió en collages; regenerada como 12 individuales)"
+   ],
+   "v1": "creativos/v1/",
+   "nota": "g1-g5 desde hoja NÜMA (refs recortadas); p1 = g2 sin fondo; b1-b4 cuadradas 1:1 (no 4:3); t1 = macro oscuro de masticables (también fondo de cifras); w1 con sello 7 DÍAS; urls.json con URLs Magnific"
+  },
+  "ensamblado": {
+   "at": "2026-10-17T19:53:08",
+   "nota": "publishablePublish y productCreateMedia (5) hechos con aprobación del usuario"
+  },
+  "qa": {
+   "at": "2026-10-17",
+   "ok": true,
+   "qa_js": {
+    "ok": true,
+    "secciones_hk": 18,
+    "placeholders": [],
+    "imagenes": 75,
+    "imagenes_rotas": [],
+    "enlaces": 13,
+    "enlaces_rotos": [],
+    "boton_cod_app": true,
+    "boton_propio_oculto": true,
+    "variantes": 2,
+    "textos_en_ingles": []
+   },
+   "arreglado": "hk-logo.png y hk-logo_blanco.png daban 404 (popup y footer): faltaba creativos/marca/logo*.png; copiados los logos HACKY de sony-wh-ch720n, armar.py + push assets/hk-logo*, templates/*, footer-group.json",
+   "cod": "formulario Releasit abre con 1 unidad $79.700 (variante por defecto); cerrado con Escape",
+   "pendiente_humano": [
+    "contrasena de la tienda/publicar tema",
+    "menu del header dice 'Audifonos Sony WH-CH720N' (menu de la tienda, no del tema)",
+    "resenas reales (las actuales son demo)",
+    "probar pack x2 en el formulario COD a mano",
+    "sin submit de pedidos"
+   ]
+  },
+  "creativos_v1": {
+   "at": "2026-10-17",
+   "imagenes": 33,
+   "creditos": 2100,
+   "rehechas": [
+    "g5"
+   ],
+   "nota": "UGC como 12 imagenes individuales (no collages); frascos UGC sin etiqueta legible"
+  }
+ },
+ "precio": {
+  "1u": 79700,
+  "x2": 129700,
+  "regalo_x2": "Shampoo para perros"
+ },
+ "insumos": [
+  "insumos/numa-branding.webp"
+ ],
+ "notas": "Producto solo por fotos (hoja de branding). Ver decisiones.md",
+ "theme_id": 165470535939,
+ "product_id": 9737318760707,
+ "preview": "https://hackaecom.myshopify.com/products/numa-movilidad-articular?preview_theme_id=165470535939"
+}

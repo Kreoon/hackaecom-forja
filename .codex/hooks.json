@@ -1,0 +1,25 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit|Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node 'D:\\Github\\02-effix\\hackaecom-forja\\.codex\\hooks\\guard-secrets.mjs'"
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node 'D:\\Github\\02-effix\\hackaecom-forja\\.codex\\hooks\\session-context.mjs'"
+          }
+        ]
+      }
+    ]
+  }
+}

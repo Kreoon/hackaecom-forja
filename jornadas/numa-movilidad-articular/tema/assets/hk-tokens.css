@@ -1,0 +1,17 @@
+/* Tokens de la corrida (generado por tools/tienda/gen_tema.py desde brief.json → tokens). No editar a mano. */
+
+.hk {
+  --hk-primary: #B5583A;
+  --hk-secondary: #25476F;
+  --hk-accent: #F6EAD3;
+  --hk-bg-alt: #F4ECDD;
+  --hk-text: #1C2430;
+  --hk-text-soft: #5A5F66;
+  --hk-border: #E2D6C0;
+  --hk-alert: #C0392B;
+  --hk-dark-2: #1E3350;
+  --hk-dark-3: #14233A;
+  --hk-cmp-us: #233B5C;
+  --hk-font-head: 'Clash Grotesk', sans-serif;
+  --hk-font-body: 'Satoshi', sans-serif;
+}
